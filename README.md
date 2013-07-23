@@ -1,1 +1,4 @@
-
+<a href="[~[*id*]~]"><img align="left" alt="Kimberly Wagner" border="0" class="left" src="/assets/images/blogger_thumbnails/2.jpg" title="[*pagetitle*]"  /></a>
+<div style="margin-left:130px"><a href="[~[*id*]~]"><h3>[*pagetitle*]</h3></a>
+<p>Kimberly Wagner's passion is Christ, and she desires to ignite women&rsquo;s pursuit of God&rsquo;s glory. She is a frequent guest on the <a href="http://www.reviveourhearts.com"><em>Revive Our Hearts</em></a> radio program, as well as a regular contributor to the <a href="http://www.truewoman.com/?id=168">True Woman blog</a>. Kim is the author of <a href="https://www.reviveourhearts.com/store/product/fierce-women-power-soft-warrior/">Fierce Women: The Power of a Soft Warrior</a>.</p> 
+</div>
