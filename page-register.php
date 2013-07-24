@@ -27,34 +27,34 @@ Template Name: Register
 	  	    		    <h3>Main Session</h3>
 	  	    		    <table class="table table-bordered">
 		  	    		    <tr>
-			  	    		    <th>Registration</th>
-			  	    		    <th>Individuals</th>
-			  	    		    <th class="col-group">Group<sup>*</sup></th>
-			  	    		    <th>Students</th>
+			  	    		    <th>Type</th>
+			  	    		    <th class="col-early">Early <span class="dim">(thru&nbsp;5/1/14)</span></th>
+			  	    		    <th class="col-reg">Regular <span class="dim">(5/2/14&nbsp;- 9/15/14)</span></th>
+			  	    		    <th class="col-late">Late <span class="dim">(after&nbsp;9/15/14)</span></th>
 			  	    		  </tr>
-			  	    		  <tr>
+			  	    		  <tr class="individual-rates">
 				  	    		  <td>
-					  	    		  <strong>Early</strong> thru (5/1/14)
+					  	    		  <strong>Individual</strong>
 					  	    		</td>
 					  	    		<td class="col-individuals"><strong>$129.00</strong></td>
-					  	    		<td class="col-group"><strong>$109.00/person</strong></td>
-					  	    		<td class="col-students darken"><strong>$109.00</strong></td>
+					  	    		<td class="col-group"><strong>$149.00</strong></td>
+					  	    		<td class="col-late"><strong>$169.00</strong></td>
 					  	    	</tr>
-					  	    	<tr>
+					  	    	<tr class="student-rates">
 					  	    		<td>
-						  	    		<strong>Regular</strong> (5/2/14 &ndash; 9/15/14)
+						  	    		<strong>Student</strong> (high school, full-time college or seminary)
 						  	    	</td>
-						  	    	<td class="col-individuals"><strong>$149.00</strong></td>
-						  	    	<td class="col-group"><strong>$129.00/person</strong></td>
-						  	    	<td class="col-students darken"><strong>$129.00</strong></td>
+						  	    	<td class="col-individuals"><strong>$109.00</strong></td>
+						  	    	<td class="col-group"><strong>$129.00</strong></td>
+						  	    	<td class="col-late"><strong>$149.00</strong></td>
 						  	    </tr>
-						  	    <tr>
+						  	    <tr class="group-rates">
 						  	    	<td>
-							  	    	<strong>Late</strong> (after 9/15/14)
+							  	    	<strong>Group</strong> (10+) (purchase 10 or more &ldquo;Individual&rdquo; tickets today)
 							  	    </td>
-							  	    <td class="col-individuals"><strong>$169.00</strong></td>
-							  	    <td class="col-group"><strong>N/A</strong></td>
-							  	    <td class="col-students darken"><strong>$149</strong></td>
+							  	    <td class="col-individuals"><strong>$109.00</strong></td>
+							  	    <td class="col-group"><strong>$129</strong></td>
+							  	    <td class="col-late"><strong>N/a</strong></td>
 		  	    		  </table>
 									<p class="info">Tickets are non-refundable but are transferable to another woman.</p>
 			  	    		<p class="info"><span class="pull-left"><strong><sup>*</sup>Group = 10 or more tickets:</strong> &nbsp;</span>Purchase ten or more "Individual" tickets in one transaction to save $20 off each "Individual" ticket. (Student tickets don&rsquo;t count toward the group price because they&rsquo;re already discounted.)</p>
@@ -99,7 +99,7 @@ Template Name: Register
 									</div><!-- /span7 -->
 									<div class="span6">
 										<h3>Volunteering?</h3>
-										<p><strong>Please do not register here.</strong> If you’re interested in volunteering for True Woman '14, we want to register you at a special 50% off price. <a href="http://localhost:8888/tw14/?page_id=16#">Get more information and details, along with a separate registration.</a></p>
+										<p><strong>Please do not register here.</strong> If you’re interested in volunteering for True Woman '14, we want to register you at a special 50% off price. <a href="">Get more information and details, along with a separate registration.</a></p>
 										<p><a class="btn btn-flat" href="#">Register as a Volunteer</a></p>
 									</div>
 								</div><!-- /row -->

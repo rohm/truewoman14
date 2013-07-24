@@ -27,7 +27,7 @@
 						<a href="http://vimeo.com/reviveourhearts" class="btn vimeo"><i class="icon-vimeo">Vimeo</i></a>
 					</nav>
 				</div>
-			</div>
+			</div><!-- end .row -->
 			
 			<nav class="clearfix">
 				<p class="attribution pull-left"><em>True Woman</em> is a ministry of <em><a href="http://www.reviveourhearts.com">Revive Our Hearts</a></em></p> <?php bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>
@@ -36,15 +36,14 @@
 
 		
 		</div> <!-- end #inner-footer -->
-	</div>
+	</div><!-- end .container -->
 </footer> <!-- end footer -->
-		
-		
-				
+
 <!--[if lt IE 7 ]>
   	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
   	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
 <![endif]-->
+
 <script src="<?php echo get_template_directory_uri(); ?>/library/js/waypoints.min.js"></script>
 <script type="text/javascript">
 var $head = jQuery( '#ha-header' );

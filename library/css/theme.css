@@ -44,6 +44,7 @@ body {
   background-repeat: no-repeat;
   background-size: 908px auto;
   background-attachment: fixed;
+  background-position: center 150px;
 }
 body.pagename-speakers {
   background-image: url('../img/bg-art-tree.jpg');
@@ -418,11 +419,6 @@ address h4 {
 .form-actions input[type="submit"].btn-register {
   margin: 30px 0;
 }
-.btn.btn-register-global,
-.form-actions input[type="submit"].btn-register-global {
-  margin-left: -45px;
-  margin-right: -45px;
-}
 .btn i,
 .form-actions input[type="submit"] i {
   font-style: normal;
@@ -655,7 +651,7 @@ address h4 {
 }
 #main article.page .paper {
   background-color: #fff;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.75);
   margin: 0 -50px 0 -50px;
   padding: 50px 50px 60px;
   -webkit-border-radius: 2px;
@@ -803,6 +799,9 @@ address h4 {
   background-color: #BD93C0;
   background-color: #bd93c0;
 }
+#main article.page section.post_content .main-session table th .dim {
+  font-weight: 300;
+}
 #main article.page section.post_content .main-session table td.darken {
   background-color: rgba(189, 147, 192, 0.15);
 }
@@ -862,10 +861,6 @@ footer[role="contentinfo"] {
   padding: 46px 0 40px;
   margin-top: 0 0px;
   background: url("../img/pencil-line-horizontal.png") repeat-x 0 -2px, url("../img/exclusive_paper.png") repeat, #e6e3e1;
-  height: 210px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   color: #808080;
 }
 footer[role="contentinfo"] p,
@@ -1195,15 +1190,21 @@ footer[role="contentinfo"] #sbi_camera_button {
 ///////////////////   CUSTOM CSS   /////////////////////////////
 ////////////////////////////////////////////////////////////////
 */
-@media (min-width: 980px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    min-width: 1024px;
+  }
+}
+@media (min-width: 481px) {
   #main {
     margin-bottom: 0;
   }
   #main article.page {
     padding-top: 90px;
   }
-}
-@media (min-width: 979px) {
+  .home {
+    padding-top: 100px;
+  }
   .home #ha-header {
     -webkit-transition: all;
     -moz-transition: all;
@@ -1247,7 +1248,143 @@ footer[role="contentinfo"] #sbi_camera_button {
     display: block;
   }
 }
-@media (max-width: 979px) {
+/*
+@media (min-width: 768px) {
+	body.home {
+		background-size: 680px auto;
+		background-position: 70% 35%;
+	}
+	body {
+		&.pagename-speakers {
+			background-size: 1000px auto !important;
+		}
+	}
+}
+
+*/
+/*
+
+@media (min-width: 1200px) {
+	body.home {
+		background-size: 828px auto;
+		background-position: 80% 130px;
+	}
+}
+*/
+@media (max-width: 768px) {
+  body.home {
+    background-size: 90% auto;
+    background-position: 290% 60%;
+  }
+  header[role="banner"] {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .pull-right {
+    float: none;
+    clear: both;
+    display: block;
+  }
+  body {
+    padding-left: 0;
+    padding-right: 0;
+    background-size: 100% auto;
+  }
+  body .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  body.home {
+    background-size: 860px auto;
+    background-position: 80% 170px;
+  }
+  #main .speakers li .photo img {
+    max-width: 100%;
+  }
+  #main article.page .span3 .nav {
+    background-image: none;
+    padding-left: 0;
+  }
+  #main article.page .span3 .nav li a {
+    padding: 10px 0;
+  }
+  #main table.table {
+    font-size: 14px;
+    width: 100%;
+  }
+  footer[role="contentinfo"] {
+    clear: both;
+    float: none;
+    height: auto;
+  }
+  footer[role="contentinfo"] .footer-links {
+    clear: both;
+    margin-left: 0;
+    float: none;
+    display: block;
+  }
+  footer[role="contentinfo"] .footer-links .menu li {
+    float: none;
+    display: block;
+  }
+  footer[role="contentinfo"] #menu-footer-nav {
+    margin-left: 0;
+    margin-top: 2em;
+  }
+  footer[role="contentinfo"] #menu-footer-nav .pipe {
+    display: none;
+  }
+  footer[role="contentinfo"] .footer-social-nav {
+    float: left;
+    margin-bottom: 2em;
+  }
+}
+@media (min-width: 480px) {
+  .small-screen-only {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .small-screen-hide {
+    display: none;
+  }
+  body {
+    background-size: 480px auto;
+    background-position: center 80px;
+  }
+  body.home {
+    background-position: 20% 90px;
+  }
+  body.home article.page #intro {
+    margin-top: 0;
+  }
+  body.home article.page #intro .location,
+  body.home article.page #intro .date {
+    float: none;
+    text-align: center;
+    padding: 10% 0;
+  }
+  body.home article.page #intro img {
+    width: 70%;
+  }
+  body.home article.page #intro .btn-cta {
+    width: 80%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+  body.pagename-speakers {
+    background-size: 480px auto;
+    background-position: center -80px;
+  }
+  body.pagename-promote,
+  body.pagename-about,
+  body.pagename-faqs,
+  body.pagename-contact,
+  body.pagename-location-travel,
+  body.pagename-schedule {
+    background-size: 480px auto;
+    background-position: center 80px;
+  }
   #logo {
     margin-left: 12px;
   }
@@ -1376,144 +1513,34 @@ footer[role="contentinfo"] #sbi_camera_button {
     display: none;
   }
 }
-@media (min-width: 768px) {
-  body.home {
-    background-size: 680px auto;
-    background-position: 70% 35%;
-  }
-  body.pagename-speakers {
-    background-size: 1000px auto !important;
-  }
-}
-@media (min-width: 1200px) {
-  body.home {
-    background-size: 828px auto;
-    background-position: 80% 130px;
-  }
-}
-@media (max-width: 767px) {
-  .small-screen-hide {
-    display: none;
-  }
-  body.home {
-    background-size: 90% auto;
-    background-position: 290% 60%;
-  }
-  header[role="banner"] {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .pull-right {
-    float: none;
-    clear: both;
-    display: block;
-  }
-  body {
-    padding-left: 0;
-    padding-right: 0;
-    background-size: 100% auto;
-  }
-  body .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .home article.page #intro {
-    margin-top: 0;
-  }
-  .home article.page #intro .location,
-  .home article.page #intro .date {
-    float: none;
-    text-align: center;
-    padding: 10% 0;
-  }
-  .home article.page #intro img {
-    width: 70%;
+@media only screen and (width: 768px) {
+  .home article.page #intro .tw14-logo-purple {
+    margin-bottom: 100px;
   }
   .home article.page #intro .btn-cta {
-    width: 80%;
-    padding-top: 15px;
-    padding-bottom: 10px;
-  }
-  #main .speakers li .photo img {
-    max-width: 100%;
-  }
-  #main article.page .span3 .nav {
-    background-image: none;
-    padding-left: 0;
-  }
-  #main article.page .span3 .nav li a {
-    padding: 10px 0;
-  }
-  #main table.table {
-    font-size: 14px;
-    width: 100%;
-  }
-  footer[role="contentinfo"] {
-    clear: both;
-    float: none;
-    height: auto;
-  }
-  footer[role="contentinfo"] .footer-links {
-    clear: both;
-    margin-left: 0;
-    float: none;
-    display: block;
-  }
-  footer[role="contentinfo"] .footer-links .menu li {
-    float: none;
-    display: block;
-  }
-  footer[role="contentinfo"] #menu-footer-nav {
-    margin-left: 0;
-    margin-top: 2em;
-  }
-  footer[role="contentinfo"] #menu-footer-nav .pipe {
-    display: none;
-  }
-  footer[role="contentinfo"] .footer-social-nav {
-    float: left;
-    margin-bottom: 2em;
-  }
-}
-@media (min-width: 979px) {
-  .small-screen-only {
-    display: none;
-  }
-}
-@media (min-width: 768px) and (max-width: 979px) {
-  body.home {
-    background-size: 700px auto;
-    background-position: 80% 70px;
+    margin-top: 190px;
   }
   .home article.page #intro .location h2,
-  .home article.page #intro .date h2 {
-    font-size: 23px;
-  }
-  .home article.page #intro .location p,
-  .home article.page #intro .date p {
-    font-size: 14px;
+  .home article.page #intro .location p {
+    margin-left: 30px;
   }
 }
-@media (max-width: 640px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .btn.pull-right {
+    float: right;
+  }
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   body {
-    background-size: 480px auto;
-    background-position: center 80px;
+    max-width: 768px;
+    background-size: 700px auto;
+    background-position: 80% 170px;
   }
-  body.home {
-    background-position: 20% 90px;
-  }
-  body.pagename-speakers {
-    background-size: 480px auto;
-    background-position: center -80px;
-  }
-  body.pagename-promote,
-  body.pagename-about,
-  body.pagename-faqs,
-  body.pagename-contact,
-  body.pagename-location-travel,
-  body.pagename-schedule {
-    background-size: 480px auto;
-    background-position: center 80px;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body {
+    max-width: 480px;
   }
 }
 @media (min-width: 481px) and (max-width: 767px) {

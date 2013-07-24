@@ -5,20 +5,24 @@
 */
 
 
-@media (min-width: 980px) {
-	#main {
-		margin-bottom: 0;
 
-		article.page {
-			padding-top: 90px;
-		}
+@media (min-width: 768px) and (max-width: 1024px) {
+	body {
+		min-width:1024px;
 	}
 }
 
 
-
-@media (min-width: 979px) {
+@media (min-width: 481px) {
+	#main {
+		margin-bottom: 0;
+	
+		article.page {
+			padding-top: 90px;
+		}
+	}
 	.home {
+		padding-top: 100px;
 		#ha-header {
 			.transition(all);
 			.transition-duration(.4s);
@@ -61,8 +65,173 @@
 }
 
 
-@media (max-width: 979px) {
 
+
+/*
+@media (min-width: 768px) {
+	body.home {
+		background-size: 680px auto;
+		background-position: 70% 35%;
+	}
+	body {
+		&.pagename-speakers {
+			background-size: 1000px auto !important;
+		}
+	}
+}
+
+*/
+/*
+
+@media (min-width: 1200px) {
+	body.home {
+		background-size: 828px auto;
+		background-position: 80% 130px;
+	}
+}
+*/
+
+
+
+@media (max-width: 768px) {
+	
+	body.home {
+		background-size: 90% auto;
+		background-position: 290% 60%;
+	}
+	header[role="banner"] {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.pull-right {
+		float: none;
+		clear: both;
+		display: block;
+	}
+	body {
+		padding-left: 0;
+		padding-right: 0;
+		background-size: 100% auto;
+		.container {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+		&.home {
+			background-size: 860px auto;
+			background-position: 80% 170px;
+			//padding-top: 100px;
+		}
+	}
+
+	
+	#main {
+		.speakers {
+			li {
+				.photo img {
+					max-width: 100%;
+				}
+			}
+		}
+		article.page {
+			.span3 {
+				.nav {
+					background-image: none;
+					padding-left: 0;
+					li {
+						a {
+							padding: 10px 0;
+						}
+					}
+				}
+			}
+		}
+		table.table {
+			font-size: 14px;
+			width: 100%;
+		}
+	}
+	footer[role="contentinfo"] {
+		clear: both;
+		float: none;
+		height: auto;
+		.footer-links {
+			clear: both;
+			margin-left: 0;
+			float: none;
+			display: block;
+			.menu {
+				li {
+					float: none;
+					display: block;
+				}
+			}
+		}
+		#menu-footer-nav {
+			margin-left: 0;
+			margin-top: 2em;
+			.pipe {
+				display: none;
+			}
+		}
+		.footer-social-nav {
+			float: left;
+			margin-bottom: 2em;
+		}
+	}
+}
+
+
+@media (min-width: 480px) {
+	.small-screen-only {
+		display: none;
+	}
+}
+
+@media (max-width: 480px) {
+	.small-screen-hide {
+		display: none;
+	}
+	body {
+		background-size: 480px auto;
+		background-position: center 80px;
+		&.home {
+			background-position: 20% 90px;
+			article.page {
+				#intro {
+					margin-top: 0;
+					.location, .date {
+						float: none;
+						text-align: center;
+						padding: 10% 0;
+					}
+					img {
+						width: 70%
+					}
+					.btn-cta {
+						width: 80%;
+						padding-top: 15px;
+						padding-bottom: 10px;
+					}
+				}
+		
+			}
+		}
+		&.pagename-speakers {
+			background-size: 480px auto;
+			background-position: center -80px;
+		}
+		&.pagename-promote, 
+		&.pagename-about,
+		&.pagename-faqs,
+		&.pagename-contact,
+		&.pagename-location-travel,
+		&.pagename-schedule {
+			background-size: 480px auto;
+			background-position: center 80px;
+		}
+		
+	}
+	
 	#logo {
 		margin-left: 12px;
 	}
@@ -157,7 +326,7 @@
 					}
 				}
 			}
-			
+
 		}
 	}
 	#toolbar-nav {
@@ -196,7 +365,7 @@
 				}
 			}
 		}
-		
+
 	}
 	#main {
 		article.page {
@@ -213,197 +382,54 @@
 			display: none;
 		}
 	}
+
+	
 }
 
-
-
-
-@media (min-width: 768px) {
-	body.home {
-		background-size: 680px auto;
-		background-position: 70% 35%;
+@media only screen and (width: 768px) {
+	
+	.home article.page #intro .tw14-logo-purple {
+		margin-bottom: 100px;
 	}
+	.home article.page #intro .btn-cta {
+		margin-top: 190px;
+	}
+	.home article.page #intro .location {
+		h2, p {
+			margin-left: 30px;
+		}
+	}
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+
+	.btn.pull-right {
+		float: right;
+	}
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
 	body {
-		&.pagename-speakers {
-			background-size: 1000px auto !important;
-		}
-	}
-}
-
-
-
-
-@media (min-width: 1200px) {
-	body.home {
-		background-size: 828px auto;
-		background-position: 80% 130px;
-	}
-}
-
-
-
-
-@media (max-width: 767px) {
-	.small-screen-hide {
-		display: none;
-	}
-	body.home {
-		background-size: 90% auto;
-		background-position: 290% 60%;
-	}
-	header[role="banner"] {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-	.pull-right {
-		float: none;
-		clear: both;
-		display: block;
-	}
-	body {
-		padding-left: 0;
-		padding-right: 0;
-		background-size: 100% auto;
-		.container {
-			padding-left: 20px;
-			padding-right: 20px;
-		}
-	}
-	.home {
-		article.page {
-			#intro {
-				margin-top: 0;
-				.location, .date {
-					float: none;
-					text-align: center;
-					padding: 10% 0;
-				}
-				img {
-					width: 70%
-				}
-				.btn-cta {
-					width: 80%;
-					padding-top: 15px;
-					padding-bottom: 10px;
-				}
-			}
-
-		}
-	}
-	#main {
-		.speakers {
-			li {
-				.photo img {
-					max-width: 100%;
-				}
-			}
-		}
-		article.page {
-			.span3 {
-				.nav {
-					background-image: none;
-					padding-left: 0;
-					li {
-						a {
-							padding: 10px 0;
-						}
-					}
-				}
-			}
-		}
-		table.table {
-			font-size: 14px;
-			width: 100%;
-		}
-	}
-	footer[role="contentinfo"] {
-		clear: both;
-		float: none;
-		height: auto;
-		.footer-links {
-			clear: both;
-			margin-left: 0;
-			float: none;
-			display: block;
-			.menu {
-				li {
-					float: none;
-					display: block;
-				}
-			}
-		}
-		#menu-footer-nav {
-			margin-left: 0;
-			margin-top: 2em;
-			.pipe {
-				display: none;
-			}
-		}
-		.footer-social-nav {
-			float: left;
-			margin-bottom: 2em;
-		}
-	}
-}
-
-
-@media (min-width: 979px) {
-	.small-screen-only {
-		display: none;
-	}
-}
-
-
-
-@media (min-width: 768px) and (max-width: 979px)  {
-	body.home {
+		max-width: 768px;
 		background-size: 700px auto;
-		background-position: 80% 70px;
-	}
-	.home {
-		article.page {
-			#intro {
-
-				.location, .date {
-					//margin-left: 0;
-					h2 {
-						font-size: 23px;
-					}
-					p {
-						font-size: 14px;
-					}
-				}
-			}
-		}
+		background-position: 80% 170px;
 	}
 }
 
-
-
-@media (max-width: 640px) {
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
 	body {
-		background-size: 480px auto;
-		background-position: center 80px;
-		&.home {
-			background-position: 20% 90px;
-		}
-		&.pagename-speakers {
-			background-size: 480px auto;
-			background-position: center -80px;
-		}
-		&.pagename-promote, 
-		&.pagename-about,
-		&.pagename-faqs,
-		&.pagename-contact,
-		&.pagename-location-travel,
-		&.pagename-schedule {
-			background-size: 480px auto;
-			background-position: center 80px;
-		}
-		
+		max-width: 480px;
 	}
+	
 }
-
 
 
 @media (min-width: 481px) and (max-width: 767px) {

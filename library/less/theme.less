@@ -22,12 +22,14 @@ body {
   color: @grayDark;
   -webkit-font-smoothing: antialiased;
   height: 100%;
+  
 
   background-color: #F6F6F6;
   background-image: url('../img/bg-art-grapes.jpg');
   background-repeat: no-repeat;
   background-size: 908px auto;
   background-attachment: fixed;
+  background-position: center 150px;
 
   &.pagename-speakers {
     background-image: url('../img/bg-art-tree.jpg');
@@ -328,8 +330,8 @@ address {
     margin: 30px 0;
   }
   &.btn-register-global {
-    margin-left: -45px;
-    margin-right: -45px;
+    //margin-left: -45px;
+    //margin-right: -45px;
   }
   i {
     font-style: normal;
@@ -560,7 +562,7 @@ address {
     }
     .paper {
       background-color: #fff;
-      background-color: rgba(255,255,255,.9);
+      background-color: rgba(255,255,255,.75);
       margin: 0 -50px 0 -50px;
       padding: 50px 50px 60px;
       .border-radius(@baseBorderRadius);
@@ -699,6 +701,9 @@ address {
         th {
           background-color: #BD93C0;
           background-color: rgb(189, 147, 192);
+          .dim {
+            font-weight: 300;
+          }
         }
         td.darken {
           background-color: rgba(189, 147, 192, .15);
@@ -775,9 +780,10 @@ footer[role="contentinfo"] {
   padding: 46px 0 40px;
   margin-top: -0 0px;
   background: url("../img/pencil-line-horizontal.png") repeat-x 0 -2px, url("../img/exclusive_paper.png") repeat, #E6E3E1;
-  height: 210px;
-  .box-sizing(border-box);
+  //height: 210px;
+  //.box-sizing(border-box);
   color: @gray;
+  
   
   p, li {
     font-family: @sansFontFamily;
@@ -900,6 +906,7 @@ footer[role="contentinfo"] {
         }
       }
     }
+    
     #intro {
       //margin-top: 0%;
       margin-bottom: 20%;
@@ -1088,4 +1095,5 @@ footer[role="contentinfo"] {
 }
 
 @import "theme-responsive.less";
+
 

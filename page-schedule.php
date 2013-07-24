@@ -58,7 +58,7 @@ Template Name: Schedule
 						    		   	<tr class="emphasize">
 						    		   		<td class="name column-name">8:30am</td>
 						    		   		<td class="column-session">
-						    		   			Morning Session/Teen Track Begins 
+						    		   			Morning Session / <a href="/teen-track/">Teen Track</a> Begins 
 						    		   		</td>
 						    		   		<td class="column-room">&nbsp;</td>
 						    		   	</tr>

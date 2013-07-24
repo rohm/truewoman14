@@ -655,7 +655,9 @@ blockquote.pull-left{
 	}
 }
 
-@media only screen and (min-width: 980px) {
+
+
+@media only screen and (min-width: 641px) {
 	body{
 		padding-top: 60px;
 	}
@@ -737,3 +739,5 @@ blockquote.pull-left{
 		padding-right: 0;
 	}
 }
+
+
