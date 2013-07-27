@@ -146,12 +146,6 @@ Template Name: Schedule
 					    	</div>-->
 					    </div>
 		    		</div><!-- /paper -->
-	    			<footer>
-	    
-	    				<p class="clearfix"><?php the_tags('<span class="tags">' . __("Tags","bonestheme") . ': ', ', ', '</span>'); ?></p>
-	    				
-	    			</footer> <!-- end article footer -->
-
 						
 					
 					</article> <!-- end article -->

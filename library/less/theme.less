@@ -172,10 +172,10 @@ address {
 
 .arrow-down {
   display: inline-block;
-  height: 16px;
-  width: 16px;
+  height: 24px;
+  width: 24px;
   text-indent: -900em;
-  .retina-image('../img/arrow-down2', 'png', no-repeat, 16px, 16px, 0, 3px);
+  .retina-image('../img/arrow-down2', 'png', no-repeat, 24px, 24px, 0, 3px);
 }
 
 .well {
@@ -397,6 +397,7 @@ address {
       &.active {
         a {
           background-color: rgba(0,0,0,.05);
+          .box-shadow2(inset 0 2px 1px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1));
           &:hover {
             background-color: rgba(0,0,0,.1);
           }
@@ -460,6 +461,27 @@ address {
     
     ul.nav {
       width: 100%;
+      @media only screen 
+        and (min-width: 481px) {
+          li {
+            &:last-child {
+              float: right;
+            }
+            &.li-cta { /* call to action */
+              float: right;
+              width: 23%;
+              
+              & > a {
+                padding-top: 12px !important;
+                padding-bottom: 12px !important;
+                margin-top: 18px;
+                margin-right: 1.5%;
+                font-size: 22px;
+                
+              }
+            }
+          }
+        }
       li {
         font-size: 22px;
         text-transform: uppercase;
@@ -471,25 +493,11 @@ address {
         &:nth-child(3) {
           width: 25%;
         }
-        &:last-child {
-          float: right;
-        }
-        &.li-cta { /* call to action */
-          float: right;
-          width: 23%;
-          
-          & > a {
-            padding-top: 12px !important;
-            padding-bottom: 12px !important;
-            margin-top: 18px;
-            margin-right: 1.5%;
-            font-size: 22px;
-            
-          }
-        }
+        
         &.active {
           a, a:hover, a:focus {
             background-color: rgba(0,0,0,.05);
+            .box-shadow2(inset 0 2px 1px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.6));
             color: @purple;
           }
         }
@@ -594,6 +602,13 @@ address {
       h2 {
         font-size: 36px;
         font-weight: normal;
+        position: relative;
+
+        span {
+          position: absolute;
+          top: -200px;
+        }
+
       }
       h3 {
         font-size: 26px;
@@ -616,29 +631,41 @@ address {
     footer {
       clear: both;
     }
-    .span3 {
+    .paper > .row > .span3 {
+      //background: @red;
+      overflow: hidden;
+      min-height: 300px;
+      
+      
       .nav {
-        margin-top: 10px;
-        padding: 30px 0 50px;
+        //background: @blue;
+        min-width: 190px;
+        position: fixed;
+        margin-top: 0;
+        padding: 0 0 50px;
         margin-left: 30px;
+        
         //background: url("../img/pencil-line-vertical.png") repeat-y -2px;
         li {
           font-family: @baseFontFamily;
           font-size: 110%;
+          
           &.break {
             padding: 20px;
           }
           a {
-            padding: 10px 30px;
+            padding: 10px 0;
             //border-bottom: 1px dashed #ddd;
             background: url("../img/pencil-line-horizontal.png") repeat-x center bottom;
             background-size:200px 1px;
             .transition(background-color);
             .transition-duration(.3s);
+            
             &:hover {
+              border-right: 6px solid @palePurple;
               //background: rgba(0,0,0,.05);
-              background: #F1EEE3;
-              background: rgba(241, 236, 224, .6) url("../img/pencil-line-horizontal.png") repeat-x center bottom;
+              //background: #F1EEE3;
+              //background: rgba(241, 236, 224, .6) url("../img/pencil-line-horizontal.png") repeat-x center bottom;
             }
           }
         }
@@ -654,6 +681,9 @@ address {
         margin-bottom: 30px;
         text-transform: uppercase;
         letter-spacing: 2px;
+        position: relative;
+        
+        
       }
       h3 {
         text-align: center;
@@ -1004,6 +1034,19 @@ footer[role="contentinfo"] {
           cite {
             font-style: italic;
             font-size: 110%;
+          }
+        }
+      }
+      
+      @media only screen
+      and (max-width : 480px) {
+        #testimonials {
+          blockquote {
+            margin-left: 0;
+            margin-right: 0;
+            p {
+              font-size: 120%;
+            }
           }
         }
       }

@@ -97,11 +97,6 @@ Template Name: Volunteer
 							</div>
 							</section> <!-- end article section -->
 
-							<footer>
-
-								<p class="clearfix"><?php the_tags('<span class="tags">' . __("Tags","bonestheme") . ': ', ', ', '</span>'); ?>
-
-							</footer> <!-- end article footer -->
 						</div><!-- /paper -->
 					</article> <!-- end article -->
 

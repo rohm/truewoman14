@@ -24,12 +24,7 @@ Template Name: Full Width Page
 								<?php the_content(); ?>
 						
 							</section> <!-- end article section -->
-							
-							<footer>
-				
-								<p class="clearfix"><?php the_tags('<span class="tags">' . __("Tags","bonestheme") . ': ', ', ', '</span>'); ?></p>
-								
-							</footer> <!-- end article footer -->
+
 						</div><!-- /paper -->
 					</article> <!-- end article -->
 					

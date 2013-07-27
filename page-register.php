@@ -94,7 +94,7 @@ Template Name: Register
 													</td>
 												</tr>
 											</table>
-											<p><a href="#" class="btn btn-cta">Register <i>for the</i> Pre-Event</a></p>
+											<p><a href="#" class="btn btn-cta btn-lpe">Register <i>for the</i> Leadership Pre-Event</a></p>
 										</div>
 									</div><!-- /span7 -->
 									<div class="span6">
@@ -107,12 +107,6 @@ Template Name: Register
 														
 												
 		    			</section> <!-- end article section -->
-		    			
-		    			<footer>
-		    
-		    				<p class="clearfix"><?php the_tags('<span class="tags">' . __("Tags","bonestheme") . ': ', ', ', '</span>'); ?></p>
-		    				
-		    			</footer> <!-- end article footer -->
 						</div>
 						
 					

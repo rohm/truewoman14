@@ -43,22 +43,22 @@ Template Name: Location &amp; Travel
 									
 				    						
 				    					</div>
-											<div class="section" id="flying">
+											<div class="section">
 												<p>Here&rsquo;s what you need to know about getting to and around downtown Indianapolis:</p>
-												<h2>Flying to Indy</h2>
+												<h2><span id="flying"></span>Flying to Indy</h2>
 												<p>The Indianapolis Airport Ground Transportation Center, located on the first floor of the Parking Garage offers connection to bus service, hotel courtesy vehicles, car rental and limousines. Curbside taxicab service is available just outside Baggage Claim.</p>
 							
 												<p>If you are flying into Indianapolis, the airport is approximately 15 miles from downtown. It is important to know that not all of the hotels provide a shuttle service to/from the airport. You will need to check with the hotel where you are staying. The other options available would be a shared ride or limo service, or using a taxi (which could be approx. $40 for a one way trip).</p>
 												
 												<p><strong><a href="http://www.icclos.com/attendees/getting-around-transportation.aspx">Here is some helpful information</a> on public transportation, rental cars, limo and shared ride services, and taxis.</strong></p>
 											</div>
-					    		   	<div class="section" id="driving">
-					    		   		<h2>Driving to Indy <a class="btn pull-right" href="http://www.icclos.com/pdf/Driving_Directions_to_ICC.pdf">Driving Directions (PDF)<i class="icon-pdf"></i></a></h2>
+					    		   	<div class="section">
+					    		   		<h2><span id="driving"></span>Driving to Indy <a class="btn pull-right" href="http://www.icclos.com/pdf/Driving_Directions_to_ICC.pdf">Driving Directions (PDF)<i class="icon-pdf"></i></a></h2>
 					    		   		<p>If you are driving to Indianapolis, <a href="http://www.icclos.com/attendees/getting-around-maps-directions.aspx#directions">here are some helpful directions</a>.</p>
 					    		   	</div><!-- /driving -->
 				    		    </div>
-				    		    <div class="section" id="parking-options">
-				    		    	<h2>Parking <a href="http://www.icclos.com/pdf/DTParkingMap.pdf" class="btn pull-right">Parking Map (PDF)</a></h2>
+				    		    <div class="section">
+				    		    	<h2><span id="parking"></span>Parking <a href="http://www.icclos.com/pdf/DTParkingMap.pdf" class="btn pull-right">Parking Map (PDF)</a></h2>
 				    		    	
 				    		    	<div class="row">
 				    		    		<div class="span3">
@@ -107,8 +107,8 @@ Template Name: Location &amp; Travel
 				    		    		</div>
 				    		    	</div><!-- /row -->
 				    		    </div><!-- /parking-options -->
-				    		    <div class="section" id="resaurants">
-					    		    <h2>Restaurants <a class="btn pull-right" href="http://www.icclos.com/pdf/DTRestaurantsMap.pdf">Hotel Map (PDF)<i class="icon-pdf"></i></a></h2>
+				    		    <div class="section">
+					    		    <h2><span id="restaurants"></span>Restaurants <a class="btn pull-right" href="http://www.icclos.com/pdf/DTRestaurantsMap.pdf">Hotel Map (PDF)<i class="icon-pdf"></i></a></h2>
 					    		    <p>There are a whole lot of yummy restaurants within walking distance of the Convention Center. Check them out with this <a href="http://www.icclos.com/pdf/DTRestaurantsMap.pdf">downtown restaurant map</a>. If you don&rsquo;t want to leave the Convention Center, you can eat in any of these areas: </p>
 					    		    <ul>
 						    		    <li>The Landing on Maryland Food Court (servicing Halls A–C) features the Espresso Caffé, Indiana Grille, Pizza, and American Delicatessen.</li>
@@ -118,8 +118,8 @@ Template Name: Location &amp; Travel
 												<li>The refreshment stand in the Hoosier Corridor offers a variety of items as well.</li>
 						    		  </ul>
 					    		  </div>
-					    		  <div class="section" id="lodging">
-						    		  <h2>Lodging <a class="btn pull-right" href="http://visitindy.com/files/map/DTHotelMap_c042309.pdf">Hotel Map (PDF)<i class="icon-pdf"></i></a></h2>
+					    		  <div class="section">
+						    		  <h2><span id="lodging"></span>Lodging <a class="btn pull-right" href="http://visitindy.com/files/map/DTHotelMap_c042309.pdf">Hotel Map (PDF)<i class="icon-pdf"></i></a></h2>
 						    		  <p><strong>Will discount info be coming in soon?</strong></p>
 						    		  <p>Check back soon for discounted rates for True Woman attendees at various hotels within walking distance of the Indiana Convention Center. </p> 
 						    		  
@@ -175,8 +175,8 @@ Template Name: Location &amp; Travel
 				    		    
 					    		  
 					    		  
-				    		    <div class="section" id="map-area">
-				    		    	<h2>Map of Area<a class="btn pull-right" href="http://bit.ly/1aKaNDS">Open in Google Maps</a></h2>
+				    		    <div class="section">
+				    		    	<h2><span id="map"></span>Map of Area<a class="btn pull-right" href="http://bit.ly/1aKaNDS">Open in Google Maps</a></h2>
 				    		    	
 				    		    	<iframe width="100%" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://bit.ly/1aKaNDS" style="color:#0000FF;text-align:left">View Larger Map</a></small></iframe>
 				    		    </div>
@@ -186,20 +186,15 @@ Template Name: Location &amp; Travel
 		    				</div>
 		    				<div class="span3">
 			    				<ul class="nav nav-location">
-			    					<li><a href="#what-to-expect">What to Expect</a></li>
-			    					<li><a href="#hotels">Hotels</a></li>
-			    					<li><a href="#map-area">Map of Area</a></li>
-			    					<li><a href="#arrival-procedures">Arrival Procedures</a></li>
+			    					<li><a href="#flying">Flying Info</a></li>
+			    					<li><a href="#driving">Driving Info</a></li>
+			    					<li><a href="#parking">Parking</a></li>
+			    					<li><a href="#restaurants">Restaurants</a></li>
+			    					<li><a href="#lodging">Lodging</a></li>
+			    					<li><a href="#map">Map of Area</a></li>
 			    				</ul>
 			    			</div>
-		    			</div>
-	    			<footer>
-	    
-	    				<p class="clearfix"><?php the_tags('<span class="tags">' . __("Tags","bonestheme") . ': ', ', ', '</span>'); ?></p>
-	    				
-	    			</footer> <!-- /article footer -->
-
-						
+		    			</div>						
 					
 					</article> <!-- /article -->
 					
