@@ -24,9 +24,9 @@
   width: 0;
   height: 0;
   vertical-align: top;
-  border-top:   4px solid @black;
-  border-right: 4px solid transparent;
-  border-left:  4px solid transparent;
+  border-top:   5px solid @black;
+  border-right: 5px solid transparent;
+  border-left:  5px solid transparent;
   content: "";
 }
 
@@ -91,7 +91,7 @@
 .dropdown-submenu:focus > a {
   text-decoration: none;
   color: @dropdownLinkColorHover;
-  #gradient > .vertical(@dropdownLinkBackgroundHover, darken(@dropdownLinkBackgroundHover, 5%));
+  //#gradient > .vertical(@dropdownLinkBackgroundHover, darken(@dropdownLinkBackgroundHover, 5%));
 }
 
 // Active state
@@ -102,7 +102,7 @@
   color: @dropdownLinkColorActive;
   text-decoration: none;
   outline: 0;
-  #gradient > .vertical(@dropdownLinkBackgroundActive, darken(@dropdownLinkBackgroundActive, 5%));
+  //#gradient > .vertical(@dropdownLinkBackgroundActive, darken(@dropdownLinkBackgroundActive, 5%));
 }
 
 // Disabled state

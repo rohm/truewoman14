@@ -64,6 +64,8 @@
 @headingsFontWeight:    bold;    // instead of browser default, bold
 @headingsColor:         inherit; // empty to use BS default, @textColor
 
+@baseTextShadow:				0 1px 0 @white;
+@altTextShadow:					0 -1px 0 rgba(0,0,0,.3);
 
 // Component sizing
 // -------------------------
@@ -135,7 +137,7 @@
 @dropdownLinkColorHover:        @white;
 @dropdownLinkColorActive:       @white;
 
-@dropdownLinkBackgroundActive:  @linkColor;
+@dropdownLinkBackgroundActive:  @red;
 @dropdownLinkBackgroundHover:   @dropdownLinkBackgroundActive;
 
 
@@ -164,7 +166,7 @@
 
 // Input placeholder text color
 // -------------------------
-@placeholderText:         @grayLight;
+@placeholderText:         @red;
 
 
 // Hr border color
@@ -194,10 +196,10 @@
 
 @navbarText:                      #777;
 @navbarLinkColor:                 #777;
-@navbarLinkColorHover:            @grayDark;
-@navbarLinkColorActive:           @gray;
+@navbarLinkColorHover:            darken(@purple, 15%);
+@navbarLinkColorActive:           @purple;
 @navbarLinkBackgroundHover:       transparent;
-@navbarLinkBackgroundActive:      darken(@navbarBackground, 5%);
+@navbarLinkBackgroundActive:      rgba(0,0,0,.05);
 
 @navbarBrandColor:                @navbarLinkColor;
 

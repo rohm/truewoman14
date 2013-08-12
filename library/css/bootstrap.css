@@ -1061,15 +1061,15 @@ input[type="checkbox"]:focus {
 }
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-  color: #999999;
+  color: #b22b4e;
 }
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  color: #999999;
+  color: #b22b4e;
 }
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #999999;
+  color: #b22b4e;
 }
 .radio,
 .checkbox {
@@ -2420,9 +2420,9 @@ table th[class*="span"],
   width: 0;
   height: 0;
   vertical-align: top;
-  border-top: 4px solid #000000;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
+  border-top: 5px solid #000000;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
   content: "";
 }
 .dropdown .caret {
@@ -2483,14 +2483,6 @@ table th[class*="span"],
 .dropdown-submenu:focus > a {
   text-decoration: none;
   color: #ffffff;
-  background-color: #0495d1;
-  background-image: -moz-linear-gradient(top, #049cdb, #048ac2);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#049cdb), to(#048ac2));
-  background-image: -webkit-linear-gradient(top, #049cdb, #048ac2);
-  background-image: -o-linear-gradient(top, #049cdb, #048ac2);
-  background-image: linear-gradient(to bottom, #049cdb, #048ac2);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff049cdb', endColorstr='#ff048ac2', GradientType=0);
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -2498,14 +2490,6 @@ table th[class*="span"],
   color: #ffffff;
   text-decoration: none;
   outline: 0;
-  background-color: #0495d1;
-  background-image: -moz-linear-gradient(top, #049cdb, #048ac2);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#049cdb), to(#048ac2));
-  background-image: -webkit-linear-gradient(top, #049cdb, #048ac2);
-  background-image: -o-linear-gradient(top, #049cdb, #048ac2);
-  background-image: linear-gradient(to bottom, #049cdb, #048ac2);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff049cdb', endColorstr='#ff048ac2', GradientType=0);
 }
 .dropdown-menu > .disabled > a,
 .dropdown-menu > .disabled > a:hover,
@@ -3778,7 +3762,7 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-link:hover,
 .navbar-link:focus {
-  color: #333333;
+  color: #372a45;
 }
 .navbar .divider-vertical {
   height: 40px;
@@ -3934,15 +3918,15 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
   background-color: transparent;
-  color: #333333;
+  color: #372a45;
   text-decoration: none;
 }
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
-  color: #808080;
+  color: #5d4775;
   text-decoration: none;
-  background-color: #e5e5e5;
+  background-color: rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
@@ -4038,14 +4022,14 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar .nav li.dropdown > a:hover .caret,
 .navbar .nav li.dropdown > a:focus .caret {
-  border-top-color: #333333;
-  border-bottom-color: #333333;
+  border-top-color: #372a45;
+  border-bottom-color: #372a45;
 }
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-  background-color: #e5e5e5;
-  color: #808080;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #5d4775;
 }
 .navbar .nav li.dropdown > .dropdown-toggle .caret {
   border-top-color: #777777;
@@ -4054,8 +4038,8 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.active > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
-  border-top-color: #808080;
-  border-bottom-color: #808080;
+  border-top-color: #5d4775;
+  border-bottom-color: #5d4775;
 }
 .navbar .pull-right > li > .dropdown-menu,
 .navbar .nav > li > .dropdown-menu.pull-right {
@@ -4136,7 +4120,6 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
   background-color: #111111;
-  color: #ffffff;
 }
 .navbar-inverse .nav li.dropdown > a:hover .caret,
 .navbar-inverse .nav li.dropdown > a:focus .caret {

@@ -60,52 +60,7 @@ Template Name: Location &amp; Travel
 				    		    <div class="section">
 				    		    	<h2><span id="parking"></span>Parking <a href="http://www.icclos.com/pdf/DTParkingMap.pdf" class="btn pull-right">Parking Map (PDF)</a></h2>
 				    		    	
-				    		    	<div class="row">
-				    		    		<div class="span3">
-				    		    			<h4><a href="#">Parking Lot Name</a></h4>
-				    		    			<address class="street">
-				    		    				100 W. South St.<br />
-				    		    				Indianapolis, IN 46225
-				    		    			</address>
-				    		    		</div>
-				    		    		<div class="span3">
-				    		    			<h4><a href="#">Parking Lot Name</a></h4>
-				    		    			<address class="street">
-				    		    				100 W. South St.<br />
-				    		    				Indianapolis, IN 46225
-				    		    			</address>
-				    		    		</div>
-				    		    		<div class="span3">
-				    		    			<h4><a href="#">Parking Lot Name</a></h4>
-				    		    			<address class="street">
-				    		    				100 W. South St.<br />
-				    		    				Indianapolis, IN 46225
-				    		    			</address>
-				    		    		</div>
-				    		    	</div><!-- /row -->
-				    		    	<div class="row">
-				    		    		<div class="span3">
-				    		    			<h4><a href="#">Parking Lot Name</a></h4>
-				    		    			<address class="street">
-				    		    				100 W. South St.<br />
-				    		    				Indianapolis, IN 46225
-				    		    			</address>
-				    		    		</div>
-				    		    		<div class="span3">
-				    		    			<h4><a href="#">Parking Lot Name</a></h4>
-				    		    			<address class="street">
-				    		    				100 W. South St.<br />
-				    		    				Indianapolis, IN 46225
-				    		    			</address>
-				    		    		</div>
-				    		    		<div class="span3">
-				    		    			<h4><a href="#">Parking Lot Name</a></h4>
-				    		    			<address class="street">
-				    		    				100 W. South St.<br />
-				    		    				Indianapolis, IN 46225
-				    		    			</address>
-				    		    		</div>
-				    		    	</div><!-- /row -->
+				    		    	
 				    		    </div><!-- /parking-options -->
 				    		    <div class="section">
 					    		    <h2><span id="restaurants"></span>Restaurants <a class="btn pull-right" href="http://www.icclos.com/pdf/DTRestaurantsMap.pdf">Hotel Map (PDF)<i class="icon-pdf"></i></a></h2>
@@ -125,52 +80,6 @@ Template Name: Location &amp; Travel
 						    		  
 						    		  <p>In the meantime, know that Indianapolis offers an enclosed pedestrian walkway from the Convention Center to twelve premium hotels including the Westin, Hyatt, Marriott, Conrad, Omni, Crowne Plaza at Union Station, Embassy Suites and JW Marriott. Cool, huh? <a href="http://visitindy.com/files/map/DTHotelMap_c042309.pdf">Here&rsquo;s a map of the downtown hotels</a> as well as a list of <a href="http://www.icclos.com/attendees/getting-around-hotels.aspx">hotels and their proximity to the Convention Center</a>. </p>
 
-					 		    		<div class="row">
-				    		    		<div class="span3">
-					    		    		<address>
-						    		    		<h4><a href="#">Comfort Inn &amp; Suites</a></h4>
-						    		    		<div class="street">100 W. South St.</div>
-						    		    		<div class="phone">(555) 555-1212</div>
-						    		    	</address>
-					    		    	</div>
-					    		    	<div class="span3">
-					    		    		<address>
-					    		    			<h4><a href="#">Marriott</a></h4>
-					    		    			<div class="street">100 W. South St.</div>
-					    		    			<div class="phone">(555) 555-1212</div>
-					    		    		</address>
-					    		    	</div>
-					    		    	<div class="span3">
-					    		    		<address>
-					    		    			<h4><a href="#">Holiday Inn</a></h4>
-					    		    			<div class="street">100 W. South St.</div>
-					    		    			<div class="phone">(555) 555-1212</div>
-					    		    		</address>
-					    		    	</div>
-				    		    	</div><!-- /row -->
-				    		    	<div class="row">
-				    		    		<div class="span3">
-				    		    			<address>
-				    		    				<h4><a href="#">Hampton Inn &amp; Suites</a></h4>
-				    		    				<div class="street">100 W. South St.</div>
-				    		    				<div class="phone">(555) 555-1212</div>
-				    		    			</address>
-				    		    		</div>
-				    		    		<div class="span3">
-				    		    			<address>
-				    		    				<h4><a href="#">Drury Inn</a></h4>
-				    		    				<div class="street">100 W. South St.</div>
-				    		    				<div class="phone">(555) 555-1212</div>
-				    		    			</address>
-				    		    		</div>
-				    		    		<div class="span3">
-				    		    			<address>
-				    		    				<h4><a href="#">Extended Stay</a></h4>
-				    		    				<div class="street">100 W. South St.</div>
-				    		    				<div class="phone">(555) 555-1212</div>
-				    		    			</address>
-				    		    		</div>
-				    		    	</div><!-- /row -->
 				    		    </div><!-- /hotels -->
 				    		    
 					    		  
@@ -185,7 +94,7 @@ Template Name: Location &amp; Travel
 		    					</section> <!-- /article section -->
 		    				</div>
 		    				<div class="span3">
-			    				<ul class="nav nav-location">
+			    				<ul id="sidebar" class="nav nav-location">
 			    					<li><a href="#flying">Flying Info</a></li>
 			    					<li><a href="#driving">Driving Info</a></li>
 			    					<li><a href="#parking">Parking</a></li>

@@ -30,7 +30,7 @@ Template Name: Contact
 									<div class="span5 offset1">
 										<div class="well">
 											<h3>More info</h3>
-											<p><strong><em>True Woman is an outreach of&nbsp;<a href="http://www.reviveourhearts.com">Revive&nbsp;Our&nbsp;Hearts</a></strong></em></p>
+											<p><strong>True Woman is an outreach of&nbsp;<em><a href="http://www.reviveourhearts.com">Revive&nbsp;Our&nbsp;Hearts</a></strong></em></p>
 											<address>
 											<strong>Revive Our Hearts</strong><br />
 											PO Box 2000<br />

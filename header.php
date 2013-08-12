@@ -13,11 +13,9 @@
 		<title><?php wp_title( '|', true, 'right' ); ?></title>
 				
 		<meta name="viewport" content="width=device-width">
-		<!--[if IE]><![endif]-->
 		<script type="text/javascript" src="//use.typekit.net/xmt6rje.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-		<link rel="shortcut icon" href="/favicon.ico">
-		<link rel="apple-touch-icon" href="/icon-small@2x.png">
+		
 		<!-- media-queries.js (fallback) -->
 		<!--[if lt IE 9]>
 			<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>			
@@ -34,7 +32,6 @@
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
 		<link href="<?php echo get_template_directory_uri(); ?>/library/css/theme.css" rel="stylesheet" type="text/css">
-		
 
 		<!-- typeahead plugin - if top nav search bar enabled -->
 		<!-- ?php require_once('library/typeahead.php'); ?-->
@@ -67,13 +64,13 @@
 								<div class="container">
 
 									<a class="btn btn-navbar btn-navbar-main" data-toggle="collapse" data-target=".nav-collapse">
-								    <i class="arrow-down">&darr;</i>
+								    <b class="caret"></b>
 									</a>
 									
 									<div class="nav-collapse">
 										
 										<?php bones_main_nav(); // Adjust using Menus in Wordpress Admin ?>
-										<div id="toolbar-nav-2" class="small-screen-only "><?php bones_toolbar_nav(); // Adjust using Menus in Wordpress Admin ?></div>
+										
 									</div>
 								</div>
 							</nav>

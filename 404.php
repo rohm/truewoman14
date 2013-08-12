@@ -1,37 +1,28 @@
 <?php get_header(); ?>
 			
-			<div id="content" class="clearfix row-fluid">
+			<div id="content" class="clearfix row">
 			
 				<div id="main" class="span12 clearfix" role="main">
 
-					<article id="post-not-found" class="clearfix">
+					<article id="post-not-found" class="page" role="article">
 						
 						<header>
-
-							<div class="hero-unit">
 							
-								<h1><?php _e("Epic 404 - Article Not Found","bonestheme"); ?></h1>
-								<p><?php _e("This is embarassing. We can't find what you were looking for.","bonestheme"); ?></p>
-															
-							</div>
-													
-						</header> <!-- end article header -->
-					
-						<section class="post_content">
-							
-							<p><?php _e("Whatever you were looking for was not found, but maybe try looking again or search using the form below.","bonestheme"); ?></p>
-
-							<div class="row-fluid">
-								<div class="span12">
-									<?php get_search_form(); ?>
-								</div>
-							</div>
-					
-						</section> <!-- end article section -->
+							<div class="page-header"><h1><?php _e("Sorry, Article Not Found (404)","bonestheme"); ?></h1></div>
 						
-						<footer>
-							
-						</footer> <!-- end article footer -->
+						</header> <!-- /article header -->
+						<div class="paper paper-short">
+							<section class="post_content">
+	
+								<p><?php _e("Sorry we couldn't find what you were looking for. Here&rsquo;s a list of pages to browse:","bonestheme"); ?></p>
+								<?php bones_main_nav(); // Adjust using Menus in Wordpress Admin ?>
+								<?php bones_toolbar_nav(); // Adjust using Menus in Wordpress Admin ?>
+								<?php bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>
+								
+						
+							</section> <!-- end article section -->
+						</div><!-- end paper -->
+
 					
 					</article> <!-- end article -->
 			

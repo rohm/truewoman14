@@ -16,7 +16,7 @@ Template Name: Teen Track
 						
 						<header>
 							
-							<div class="page-header"><h1><?php the_title(); ?> <a class="pull-right btn" href="#">Download Schedule <i class="icon-pdf"></i></a></h1></div>
+							<div class="page-header"><h1><?php the_title(); ?> <!-- a class="pull-right btn" href="#">Download Schedule <i class="icon-pdf"></i></a--></h1></div>
 						
 						</header> <!-- end article header -->
 						<div class="paper">

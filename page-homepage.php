@@ -25,9 +25,9 @@ Template Name: Homepage
 										</div>
 										<div class="span6">
 											
-											<img class="tw14-logo-purple" src="<?php echo get_template_directory_uri(); ?>/library/img/logo-tw14-purple@2x.png" alt="True Woman 2014 National Women&rsquo;s Conference" />
+											<img class="tw14-logo-purple" src="http://truewoman14.com.s3.amazonaws.com/library/img/logo-tw14-purple@2x.png" alt="True Woman 2014 National Women&rsquo;s Conference" />
 											<img src="<?php echo get_template_directory_uri(); ?>/library/img/logo-home@2x.png" alt="Finding Freedom, Fullness &amp; Fruitfullness in CHRIST" />
-											<a href="/register" class="btn btn-large btn-cta">Register Now<i class="info">Early Bird Rates through 5/1/14</i></a>
+											<a href="/register" class="btn btn-large btn-cta">Register Now<i class="info">Early Rates Through 5/1/14</i></a>
 										</div>
 										<div class="span3 date">
 											<div class="small-screen-only">
@@ -75,20 +75,20 @@ Template Name: Homepage
 										<h2 class="border text-glow">Speakers</h2>
 										<div class="row">
 											<div class="span3 speaker">
-												<img src="<?php echo get_template_directory_uri(); ?>/library/img/speaker-nancy.jpg" alt="Nancy Leigh DeMoss" />
+												<a href="/speakers#nancy"><img src="http://truewoman14.com.s3.amazonaws.com/library/img/speaker-nancy.jpg" alt="Nancy Leigh DeMoss" /></a>
 												<h3><a href="/speakers#nancy">Nancy Leigh DeMoss</a></h3>
 											</div>
 											<div class="span3 speaker">
-												<img src="<?php echo get_template_directory_uri(); ?>/library/img/speaker-janet.jpg" alt="Janet Parshall" />
+												<a href="/speakers#janet"><img src="http://truewoman14.com.s3.amazonaws.com/library/img/speaker-janet.jpg" alt="Janet Parshall" /></a>
 												<h3><a href="/speakers#janet">Janet Parshall</a></h3>
 											</div>
 											<div class="span3 speaker">
-												<img src="<?php echo get_template_directory_uri(); ?>/library/img/speaker-mary.jpg" alt="Mary Kassian" />
+												<a href="/speakers#mary"><img src="http://truewoman14.com.s3.amazonaws.com/library/img/speaker-mary.jpg" alt="Mary Kassian" /></a>
 												<h3><a href="/speakers#mary">Mary Kassian</a></h3>
 											</div>
 											<div class="span3 speaker">
-												<img src="<?php echo get_template_directory_uri(); ?>/library/img/speaker-joni.jpg" alt="Joni Earkeckson Tada" />
-												<h3><a href="/speakers#joni">Joni Earkeckson Tada</a></h3>
+												<a href="/speakers#joni"><img src="http://truewoman14.com.s3.amazonaws.com/library/img/speaker-joni.jpg" alt="Joni Eareckson Tada" /></a>
+												<h3><a href="/speakers#joni">Joni Eareckson Tada</a></h3>
 											</div>
 										</div>
 									</div><!-- #speakers -->

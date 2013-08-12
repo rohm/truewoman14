@@ -50,15 +50,15 @@ Template Name: Register
 						  	    </tr>
 						  	    <tr class="group-rates">
 						  	    	<td>
-							  	    	<strong>Group</strong> (10+) (purchase 10 or more &ldquo;Individual&rdquo; tickets today)
+							  	    	<strong>Group<sup>*</sup></strong> (10+) (purchase 10 or more &ldquo;Individual&rdquo; tickets today)
 							  	    </td>
 							  	    <td class="col-individuals"><strong>$109.00</strong></td>
-							  	    <td class="col-group"><strong>$129</strong></td>
-							  	    <td class="col-late"><strong>N/a</strong></td>
+							  	    <td class="col-group"><strong>$129.00</strong></td>
+							  	    <td class="col-late"><strong>N/A</strong></td>
 		  	    		  </table>
 									<p class="info">Tickets are non-refundable but are transferable to another woman.</p>
 			  	    		<p class="info"><span class="pull-left"><strong><sup>*</sup>Group = 10 or more tickets:</strong> &nbsp;</span>Purchase ten or more "Individual" tickets in one transaction to save $20 off each "Individual" ticket. (Student tickets don&rsquo;t count toward the group price because they&rsquo;re already discounted.)</p>
-			  	    		<p class="info"><span class="pull-left"><strong>Scholarships for Pastor&rsquo;s Wives:</strong></span> &nbsp;We have a limited number of scholarships available for senior pastors’ wives only. Click &ldquo;Register for the Main Session&rdquo; to get your free ticket. </p>
+			  	    		<p class="info"><span class="pull-left"><strong>Scholarships for Pastors&rsquo; Wives:</strong></span> &nbsp;We have a limited number of scholarships available for senior pastors&rsquo; wives only. Click &ldquo;Register for the Main Session&rdquo; to get your free ticket. </p>
 	
 			  	    		<p><a href="#" class="btn btn-cta">Register <i>for the</i> Main Session</a></p>
 		    		    </div><!-- end block main session -->
@@ -94,13 +94,13 @@ Template Name: Register
 													</td>
 												</tr>
 											</table>
-											<p><a href="#" class="btn btn-cta btn-lpe">Register <i>for the</i> Leadership Pre-Event</a></p>
+											<p><a href="#" class="btn btn-cta btn-lpe">Register <i>for the</i><br>Leadership&nbsp;Pre-Event</a></p>
 										</div>
 									</div><!-- /span7 -->
 									<div class="span6">
 										<h3>Volunteering?</h3>
-										<p><strong>Please do not register here.</strong> If you’re interested in volunteering for True Woman '14, we want to register you at a special 50% off price. <a href="">Get more information and details, along with a separate registration.</a></p>
-										<p><a class="btn btn-flat" href="#">Register as a Volunteer</a></p>
+										<p><strong>Please do not register here.</strong> If you’re interested in volunteering for True Woman '14, we want to register you at a special 50% off price. <a href="/volunteers/">Get more information and details</a>, along with a separate registration.</p>
+										<p><a class="btn btn-flat" href="/volunteers/">Learn About Volunteering</a></p>
 									</div>
 								</div><!-- /row -->
 														

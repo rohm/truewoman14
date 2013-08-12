@@ -1,19 +1,11 @@
-		<a href="#" class="btn btn-cta btn-register btn-register-global">Register Now<div class="info">Early Rates through 5/1/14</div></a>
+<a href="/register/" class="btn btn-cta btn-register btn-register-global">Register Now<div class="info">Early Rates Through 5/1/14</div></a>
 	</div> <!-- end #container -->
 </div><!-- end page-wrap -->
-<div style="height: 94px;">&nbsp;</div>
+<div class="small-screen-hide" style="height: 94px;">&nbsp;</div>
 <footer role="contentinfo">
 	<div class="container">
 		
 		<div id="inner-footer" class="clearfix">
-		  <div id="widget-footer" class="clearfix row-fluid">
-		    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer1') ) : ?>
-		    <?php endif; ?>
-		    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer2') ) : ?>
-		    <?php endif; ?>
-		    <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer3') ) : ?>
-		    <?php endif; ?>
-		  </div>
 		  <div class="row">
 			  <div class="span6">
 				  <img id="footer-branding" src="<?php echo get_template_directory_uri(); ?>/library/img/footer_branding@2x.png" alt="True Woman is a Ministry of Revive Our Hearts" />
@@ -30,7 +22,11 @@
 			</div><!-- end .row -->
 			
 			<nav class="clearfix">
-				<p class="attribution pull-left"><em>True Woman</em> is a ministry of <em><a href="http://www.reviveourhearts.com">Revive Our Hearts</a></em></p> <?php bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>
+				<p class="attribution pull-left"><a href="http://www.truewoman.com">True Woman</a> is a ministry of <em><a href="http://www.reviveourhearts.com">Revive Our Hearts</a></em></p>
+				<div class="footer-links-wrap">
+					<?php bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>
+					<div id="toolbar-nav-2" class="small-screen-only footer-links"><?php bones_toolbar_nav(); // Adjust using Menus in Wordpress Admin ?></div>
+				</div>
 			</nav>
 
 
@@ -61,6 +57,35 @@ jQuery( '.ha-waypoint' ).each( function(i) {
 				}
 		}, { offset: '100%' } );
 } );
+
+
+</script>
+<script type="text/javascript">
+		jQuery(function() {
+				var offset = jQuery("#sidebar").offset();
+				var topPadding = 220;
+				jQuery(window).scroll(function() {
+						if (jQuery(window).scrollTop() > offset.top) {
+								jQuery("#sidebar").stop().animate({
+										marginTop: jQuery(window).scrollTop() - offset.top + topPadding
+								});
+						} else {
+								jQuery("#sidebar").stop().animate({
+										marginTop: 0
+								});
+						};
+				});
+		});
+</script>
+<script type="text/javascript"> // Google Analytics 
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-667755-34', 'truewoman14.com');
+	ga('send', 'pageview');
+
 </script>
 
 <?php wp_footer(); // js scripts are inserted using this function ?>
