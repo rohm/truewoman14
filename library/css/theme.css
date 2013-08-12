@@ -1430,6 +1430,9 @@ footer[role="contentinfo"] #sbi_camera_button {
     padding-top: 15px;
     padding-bottom: 10px;
   }
+  body.home article.page .paper #speakers h3 {
+    margin-bottom: 2em;
+  }
   body.pagename-speakers {
     background-size: 480px auto;
     background-position: center -80px;
