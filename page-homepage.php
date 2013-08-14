@@ -16,7 +16,7 @@ Template Name: Homepage
 
 						<section class="post_content">
 
-								<?php the_content(); ?>
+								
 								<div id="intro">
 									<div class="row">
 										<div class="span3 location small-screen-hide">
@@ -37,12 +37,16 @@ Template Name: Homepage
 											<h2>Oct 9-11, 2014</h2>
 											<p>Pre-Event <i class="amp">&amp;</i> Main Session</p>
 										</div>
+										
 									</div>
+									<?php the_content(); ?>
 								</div><!-- end #intro --> 
+								
 								<div class="paper">
 									<div id="video" class="video ha-waypoint" data-animate-down="ha-header-small" data-animate-up="ha-header-large">
 										<div class="videowrapper">
-											<iframe src="http://player.vimeo.com/video/58431038" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+											<!--iframe src="http://player.vimeo.com/video/58431038" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe-->
+											<img class="video-placeholder" src="http://truewoman14.com.s3.amazonaws.com/library/img/video-placeholder.jpg" alt="Video Placeholder" />
 										</div>
 									</div><!-- end video -->
 									
@@ -50,22 +54,77 @@ Template Name: Homepage
 										<div class="carousel-inner">
 											<div class="active item">
 												<blockquote>
-													<p>&rdquo;A really awesome quote from the video or from a previous attender might be great here.&rdquo;</p>
-													<cite>&mdash; Sally Jacobsen, Manitoba</cite>
+													<p>&ldquo;This conference has shown me who I am and the woman I am supposed to be. My husband has seen the difference in me, and so has&nbsp;my&nbsp;church.&rdquo;</p>
+													<cite>&mdash; Nichole</cite>
 												</blockquote>
 											</div>
 											<div class="item">
 												<blockquote>
-													<p>&ldquo;Another great quote. Woo! *High Five*&rdquo;</p>
-													<cite>&mdash; Sally Jacobsen, Manitoba</cite>
+													<p>&ldquo;Before the conference, I was planning on becoming a girl-gone-really-wild, but now want to experience God&rsquo;s fullness and grace in&nbsp;my&nbsp;life.&rdquo;</p>
+													<cite>&mdash; Attendee</cite>
 												</blockquote>
 											</div>
 											<div class="item">
 												<blockquote>
-													<p>&ldquo;Another AMAZING quote in this spot right here. It&rsquo;s amazing and awesome &ndash; what you&rsquo;d expect.&rdquo;</p>
-													<cite>&mdash; Sally Jacobsen, Manitoba</cite>
+													<p>&ldquo;I came back home on fire, realizing that one person can start a counter-cultural revival or revolution. Now is the time to influence the women in my sphere of&nbsp;influence.&rdquo;</p>
+													<cite>&mdash; Esther</cite>
 												</blockquote>
 											</div>
+											<div class="item">
+												<blockquote>
+													<p>&ldquo;The conference helped me to recharge my&nbsp;batteries.&rdquo;</p>
+													<cite>&mdash; Geana</cite>
+												</blockquote>
+											</div>
+											<div class="item">
+												<blockquote>
+													<p>&ldquo;My son said, &lsquo;Mommy, you are different. What happened?' My answer to a six-year-old is, &lsquo;Jesus is changing me for the better.&rsquo; You&rsquo;ve got to love it when even a child notices something different&nbsp;in his&nbsp;mommy.&rdquo;</p>
+													<cite>&mdash; Michele</cite>
+												</blockquote>
+											</div>
+											<div class="item">
+												<blockquote>
+													<p>&ldquo;I gained a new sense of the purpose, urgency, and value of following&nbsp;Christ.&rdquo;</p>
+													<cite>&mdash; Attendee</cite>
+												</blockquote>
+											</div>
+											<div class="item">
+												<blockquote>
+													<p>&ldquo;This was one of the most amazing times of&nbsp;my&nbsp;life.&rdquo;</p>
+													<cite>&mdash; Betsy</cite>
+												</blockquote>
+											</div>
+											<div class="item">
+												<blockquote>
+													<p>&ldquo;This conference was well worth the effort and sacrifice of leaving my husband and home to attend. I watched women of so many generations coming together in a unity of purpose. I may be swimming up-stream, but I&lsquo;m&nbsp;not&nbsp;alone.&rdquo;</p>
+													<cite>&mdash; Starr</cite>
+												</blockquote>
+											</div>
+											<div class="item">
+												<blockquote>
+													<p>&ldquo;I am a changed woman; no longer weary, confused, lonely, depressed and&nbsp;defeated.&rdquo;</p>
+													<cite>&mdash; Trisha</cite>
+												</blockquote>
+											</div>
+											<div class="item">
+												<blockquote>
+													<p>&ldquo;The work you put into the conference was as if you literally put work into my&nbsp;family.&rdquo;</p>
+													<cite>&mdash; Pam</cite>
+												</blockquote>
+											</div>
+											<div class="item">
+												<blockquote>
+													<p>&ldquo;My only regret is that I wasn&rsquo;t pushy enough in getting many other women to attend this incredible&nbsp;time.&rdquo;</p>
+													<cite>&mdash; Cynthia</cite>
+												</blockquote>
+											</div>
+											<div class="item">
+												<blockquote>
+													<p>&ldquo;It is obvious this conference was truly bathed in prayer. I was also impressed with all the speakers—real and down-to-earth, no masks or egos in&nbsp;the&nbsp;way.&rdquo;</p>
+													<cite>&mdash; Nancy</cite>
+												</blockquote>
+											</div>
+											
 										</div>
 										<a class="carousel-control left" href="#testimonials" data-slide="prev">&lsaquo;</a>
 										<a class="carousel-control right" href="#testimonials" data-slide="next">&rsaquo;</a>
@@ -96,18 +155,20 @@ Template Name: Homepage
 									<div id="topics" style="clear: both;">
 										<h2 class="border text-glow">Topics</h2>
 										<ul class="nolisttype text-glow">
-											<li>Name of Topic</li>
-											<li>Another Name of Topic</li>
-											<li>Topic Name</li>
-											<li>Interesting Topic</li>
-											<li>Amazing Topic</li>
-											<li>Awesomely Amazing Topic</li>
+											<li>Experiencing Freedom from Bondage </li>
+											<li>Embracing Your Beautiful Design</li>
+											<li>Marveling at the Gospel</li>
+											<li>Delighting in Christ</li>
+											<li>Personalizing God&rsquo;s Word</li>
+											<li>Maximizing Your Suffering</li>
+											<li>Investing in Relationships</li>
+											<li>Multiplying Your Life Impact</li>
 										</ul>
 									</div>
 								</div>
 													
 						</section> <!-- end article header -->
-					
+						
 					</article> <!-- end article -->
 					
 					<?php 

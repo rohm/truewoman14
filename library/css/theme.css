@@ -1214,7 +1214,7 @@ footer[role="contentinfo"] #sbi_camera_button {
 }
 .home article.page .paper #testimonials blockquote cite {
   font-style: italic;
-  font-size: 110%;
+  font-size: 130%;
 }
 @media only screen and (max-width: 480px) {
   .home article.page .paper #testimonials blockquote {
@@ -1238,6 +1238,7 @@ footer[role="contentinfo"] #sbi_camera_button {
   font-style: italic;
   line-height: 1.5em;
   margin-bottom: .4em;
+  text-transform: lowercase;
 }
 .pagename-faqs #main article.page .qa-faqs h2.faq-catname,
 .pagename-volunteers #main article.page .qa-faqs h2.faq-catname {
