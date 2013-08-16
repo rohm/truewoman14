@@ -20,12 +20,8 @@ Template Name: Teen Track
 						
 						</header> <!-- end article header -->
 						<div class="paper">
-							
-					    <p><strong>Save the date: October 10 from 8:30 a.m.&ndash;4 p.m.</strong></p>
+							<?php the_content(); ?>
 					    
-					    <p>True Woman is offering a special “For Teens Only” Track on Friday. This session is specially designed for young women in grades 9–12. Your teen(s) will love the worship, teaching, games, and fun during this special session.</p>
-					    
-					    <p>More details coming soon!</p>
 		    		</div><!-- /paper -->
 						
 					

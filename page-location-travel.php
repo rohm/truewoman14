@@ -33,7 +33,7 @@ Template Name: Location &amp; Travel
 				    						<p>
 				    							<address>
 				    								<h4><a href="http://www.icclos.com/">Indiana Convention Center</a></h4>
-				    								100 South Capitol Ave<br />
+				    								100 South Capitol Ave.<br />
 				    								Indianapolis, IN 46225
 				    							</address>
 				    						</p>

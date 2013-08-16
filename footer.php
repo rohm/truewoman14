@@ -1,4 +1,4 @@
-<a href="/register/" class="btn btn-cta btn-register btn-register-global">Register Now<div class="info">Early Rates Through 5/1/14</div></a>
+<a href="/register/" class="btn btn-cta btn-register btn-register-global">Register Now <b class="arrow-right">›</b><div class="info">Early Rates Through 5/1/14</div></a>
 	</div> <!-- end #container -->
 </div><!-- end page-wrap -->
 <div class="small-screen-hide" style="height: 94px;">&nbsp;</div>
@@ -87,7 +87,14 @@ jQuery( '.ha-waypoint' ).each( function(i) {
 	ga('send', 'pageview');
 
 </script>
-
+<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
 <?php wp_footer(); // js scripts are inserted using this function ?>
 
 </body>
