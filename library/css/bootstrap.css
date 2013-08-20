@@ -2425,11 +2425,6 @@ table th[class*="span"],
   border-left: 5px solid transparent;
   content: "";
 }
-.caret.caret-right {
-  border-left: 5px solid #000000;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-}
 .dropdown .caret {
   margin-top: 8px;
   margin-left: 2px;
@@ -3710,6 +3705,14 @@ input[type="submit"].btn.btn-mini {
   min-height: 40px;
   padding-left: 20px;
   padding-right: 20px;
+  background-color: #fafafa;
+  background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
+  background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
   border: 1px solid #d4d4d4;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
