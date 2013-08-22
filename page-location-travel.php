@@ -98,8 +98,9 @@ Template Name: Location &amp; Travel
 			    					<li><a href="#flying">Flying Info</a></li>
 			    					<li><a href="#driving">Driving Info</a></li>
 			    					<li><a href="#parking">Parking</a></li>
-			    					<li><a href="#restaurants">Restaurants</a></li>
 			    					<li><a href="#lodging">Lodging</a></li>
+			    					<li><a href="#restaurants">Restaurants</a></li>
+			    					
 			    					<li><a href="#map">Map of Area</a></li>
 			    				</ul>
 			    			</div>

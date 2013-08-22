@@ -64,7 +64,7 @@
 										<ul id="menu-share-nav" class="nav">
 											<li id="menu-item-91" class="tel menu-item menu-item-type-custom menu-item-object-custom"><i class="pipe"></i><a>(877) 966-2608</a></li>
 											<li class="menu-item has-dropdown">
-												<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-share icon-white"></i></a>
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Share <i class="icon-share icon-white"></i></a>
 												<ul class="dropdown-menu">
 													<li id="menu-item-facebook" class="menu-item">
 														<div class="fb-like" data-href="http://staging.truewoman14.com" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>

@@ -45,7 +45,7 @@ Template Name: Homepage
 								<div class="paper">
 									<div id="video" class="video ha-waypoint" data-animate-down="ha-header-small" data-animate-up="ha-header-large">
 										<div class="videowrapper">
-											<iframe src="http://player.vimeo.com/video/58431038" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+											<!-- iframe src="http://player.vimeo.com/video/58431038" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe-->
 											<img class="video-placeholder" src="http://truewoman14.com.s3.amazonaws.com/library/img/video-placeholder.jpg" alt="Video Placeholder" />
 										</div>
 									</div><!-- end video -->

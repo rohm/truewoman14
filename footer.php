@@ -13,16 +13,16 @@
 				<div class="span6">
 					<nav class="footer-social-nav pull-right">
 						<em><strong>Connect with us!</strong></em>
-						<a href="https://www.facebook.com/ReviveOurHearts" class="btn facebook"><i class="icon-facebook">Facebook</i></a>
-						<a href="http://twitter.com/reviveourhearts" class="btn twitter"><i class="icon-twitter">Twitter</i></a>
-						<a href="http://www.pinterest.com/reviveourhearts/" class="btn pinterest"><i class="icon-pinterest">Pinterest</i></a>
-						<a href="http://vimeo.com/reviveourhearts" class="btn vimeo"><i class="icon-vimeo">Vimeo</i></a>
+						<a href="http://www.facebook.com/TrueWomanMovement" class="btn facebook"><i class="icon-facebook">Facebook</i></a>
+						<a href="http://twitter.com/TrueWoman" class="btn twitter"><i class="icon-twitter">Twitter</i></a>
+						<!--a href="http://www.pinterest.com/reviveourhearts/" class="btn pinterest"><i class="icon-pinterest">Pinterest</i></a-->
+						<a href="http://vimeo.com/truewoman101" class="btn vimeo"><i class="icon-vimeo">Vimeo</i></a>
 					</nav>
 				</div>
 			</div><!-- end .row -->
 			
 			<nav class="clearfix">
-				<p class="attribution pull-left"><a href="http://www.truewoman.com">True Woman</a> is a ministry of <em><a href="http://www.reviveourhearts.com">Revive Our Hearts</a></em></p>
+				<p class="attribution pull-left"><a href="http://www.truewoman.com">True Woman</a> is a ministry of <em><a href="http://www.reviveourhearts.com">Revive Our Hearts</a></em>.</p>
 				<div class="footer-links-wrap">
 					<?php bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>
 					<div id="toolbar-nav-2" class="small-screen-only footer-links"><?php bones_toolbar_nav(); // Adjust using Menus in Wordpress Admin ?></div>

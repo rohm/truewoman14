@@ -133,7 +133,7 @@ li,
 blockquote,
 address {
   font-family: "Adobe Caslon Pro", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", Times, serif;
-  font-size: 120%;
+  font-size: 110%;
 }
 hr {
   border: 0;
@@ -152,7 +152,7 @@ hr {
 }
 p.lead {
   color: #808080;
-  line-height: 1.7em;
+  line-height: 1.5em;
   font-style: italic;
   font-size: 1.7em;
 }
@@ -1019,7 +1019,8 @@ address h4 {
 #main article.page section.post_content .table-schedule-wrap .table td.name {
   font-weight: 600;
 }
-#main article.page section.post_content .table-schedule-wrap .table td.indent {
+#main article.page section.post_content .table-schedule-wrap .table td.indent,
+#main article.page section.post_content .table-schedule-wrap .table th.indent {
   padding-left: 3%;
 }
 #main article.page section.post_content .main-session {
@@ -1385,7 +1386,7 @@ footer[role="contentinfo"] #sbi_camera_button {
 }
 .home article.page .paper #testimonials blockquote cite {
   font-style: italic;
-  font-size: 130%;
+  font-size: 100%;
 }
 @media only screen and (max-width: 480px) {
   .home article.page .paper #testimonials blockquote {
@@ -1975,6 +1976,12 @@ footer[role="contentinfo"] #sbi_camera_button {
 }
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  p,
+  li,
+  blockquote,
+  address {
+    font-size: 120%;
+  }
   body {
     max-width: 768px;
     background-size: 700px auto;
