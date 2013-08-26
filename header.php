@@ -36,7 +36,7 @@
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
 		<link href="<?php echo get_template_directory_uri(); ?>/library/css/theme.css" rel="stylesheet" type="text/css">
-
+		
 		<!-- typeahead plugin - if top nav search bar enabled -->
 		<!-- ?php require_once('library/typeahead.php'); ?-->
 
@@ -62,8 +62,9 @@
 										<?php bones_toolbar_nav(); // Adjust using Menus in Wordpress Admin ?>
 										
 										<ul id="menu-share-nav" class="nav">
-											<li id="menu-item-91" class="tel menu-item menu-item-type-custom menu-item-object-custom"><i class="pipe"></i><a>(877) 966-2608</a></li>
+											
 											<li class="menu-item has-dropdown">
+												
 												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Share <i class="icon-share icon-white"></i></a>
 												<ul class="dropdown-menu">
 													<li id="menu-item-facebook" class="menu-item">

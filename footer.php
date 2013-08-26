@@ -25,6 +25,7 @@
 				<p class="attribution pull-left"><a href="http://www.truewoman.com">True Woman</a> is a ministry of <em><a href="http://www.reviveourhearts.com">Revive Our Hearts</a></em>.</p>
 				<div class="footer-links-wrap">
 					<?php bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>
+					<strong class="tel">(877) 966-2608</strong>
 					<div id="toolbar-nav-2" class="small-screen-only footer-links"><?php bones_toolbar_nav(); // Adjust using Menus in Wordpress Admin ?></div>
 				</div>
 			</nav>
