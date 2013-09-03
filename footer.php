@@ -66,11 +66,17 @@ jQuery( '.ha-waypoint' ).each( function(i) {
 				var offset = jQuery("#sidebar").offset();
 				var topPadding = 220;
 				jQuery(window).scroll(function() {
-						if (jQuery(window).scrollTop() > offset.top) {
+            var topDistance = jQuery(window).scrollTop();
+            // If the distance scrolled is <= to height of the container - the height of the sidebar
+            // Previous check would never have happened as offset.top is constantly increasing
+						if (topDistance <= (jQuery('.paper').height() - jQuery("#sidebar").height())) {
+						    // Animate the sidebar down to the position (follow me!)
 								jQuery("#sidebar").stop().animate({
-										marginTop: jQuery(window).scrollTop() - offset.top + topPadding
+										marginTop: topDistance - offset.top + topPadding
 								});
+            // Otherwise, we've reached the end
 						} else {
+						    // Send me back to the top!
 								jQuery("#sidebar").stop().animate({
 										marginTop: 0
 								});
