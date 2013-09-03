@@ -448,6 +448,7 @@ address h4 {
 .btn i,
 .form-actions input[type="submit"] i {
   font-style: normal;
+  margin-top: 4px;
 }
 /* Call to Action Button */
 .btn-cta,
@@ -468,7 +469,7 @@ address h4 {
   text-shadow: none !important;
   font-family: "futura-pt";
   text-transform: uppercase;
-  font-size: 26px;
+  font-size: 26px !important;
   padding: 25px 20px 25px;
   float: none;
   display: block;
@@ -760,6 +761,9 @@ address h4 {
     float: right;
     width: 23%;
     margin-right: 0px;
+  }
+  .navbar nav.main-nav ul.nav > li:last-child a.btn-cta {
+    font-size: inherit !important;
   }
 }
 .navbar nav.main-nav ul.nav ul.dropdown-menu {
@@ -1332,7 +1336,7 @@ footer[role="contentinfo"] #sbi_camera_button {
   }
 }
 .home article.page #intro {
-  margin-bottom: 20%;
+  margin-bottom: 30%;
 }
 .home article.page #intro .location,
 .home article.page #intro .date {

@@ -30,22 +30,22 @@ Template Name: Promote
   		    		      
   		    		      <div class="span3">
     		    		      <div class="info">11 x 17 Color</div>
-    		    		      <a href="http://rohgraphics.s3.amazonaws.com/English/Conference%20Assets/True%20Woman%2014/Promo/TW-promo-11x17.pdf"><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-promo-11x17.jpg" alt="Promo 11 x 17" /></a>
+    		    		      <a href="http://truewoman14.com.s3.amazonaws.com/downloads/TW-promo-11x17.pdf"><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-promo-11x17.jpg" alt="Promo 11 x 17" /></a>
     		    		      
     		    		    </div>
     		    		    <div class="span3">
       		    		    <div class="info">11 x 17 B&amp;W</div>
-    		    		      <a href="http://rohgraphics.s3.amazonaws.com/English/Conference%20Assets/True%20Woman%2014/Promo/TW-promo-11x17-bw.pdf"><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-promo-11x17-bw.jpg" alt="Promo 11 x 17 B&amp;W" /></a>
+    		    		      <a href="http://truewoman14.com.s3.amazonaws.com/downloads/TW-promo-11x17-bw.pdf"><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-promo-11x17-bw.jpg" alt="Promo 11 x 17 B&amp;W" /></a>
     		    		      
     		    		    </div>
     		    		    <div class="span3">
       		    		    <div class="info">8.5 x 11 Color</div>
-    		    		      <a href="http://rohgraphics.s3.amazonaws.com/English/Conference%20Assets/True%20Woman%2014/Promo/TW-promo-85x11.pdf"><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-promo-85x11.jpg" alt="Promo 8.5 x 11" /></a>
+    		    		      <a href="http://truewoman14.com.s3.amazonaws.com/downloads/TW-promo-85x11.pdf"><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-promo-85x11.jpg" alt="Promo 8.5 x 11" /></a>
     		    		     
     		    		    </div>
     		    		    <div class="span3">
       		    		    <div class="info">8.5 x 11 B&amp;W</div> 
-    		    		      <a href="http://rohgraphics.s3.amazonaws.com/English/Conference%20Assets/True%20Woman%2014/Promo/TW-promo-85x11-bw.pdf"><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-promo-85x11-bw.jpg" alt="Promo 8.5 x 11 B&amp;W" /></a>
+    		    		      <a href="http://truewoman14.com.s3.amazonaws.com/downloads/TW-promo-85x11-bw.pdf"><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-promo-85x11-bw.jpg" alt="Promo 8.5 x 11 B&amp;W" /></a>
     		    		       
     		    		    </div>
   		    		    </div>
@@ -54,11 +54,11 @@ Template Name: Promote
   		    		      
   		    		      <div class="span3">
     		    		      <div class="info">5.5 x 8.5 Color</div>
-  		    		        <a href=""><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-promo-55x85.jpg" alt="Promo 5.5 x 8.5" /></a>
+  		    		        <a href="http://truewoman14.com.s3.amazonaws.com/downloads/TW-promo-55x85.pdf"><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-promo-55x85.jpg" alt="Promo 5.5 x 8.5" /></a>
   		    		      </div>
   		    		      <div class="span9">
     		    		      <div class="info">5.5 x 8.5 B&amp;W</div>
-  		    		        <a href=""><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-promo-55x85-bw.jpg" alt="Promo 5.5 x 8.5 B&amp;W" /></a>
+  		    		        <a href="http://truewoman14.com.s3.amazonaws.com/downloads/TW-promo-55x85-bw.pdf"><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-promo-55x85-bw.jpg" alt="Promo 5.5 x 8.5 B&amp;W" /></a>
   		    		      </div>
   		    		    </div>
   		    		    <h3>Rave Cards</h3>
@@ -66,11 +66,11 @@ Template Name: Promote
   		    		      
   		    		      <div class="span3">
     		    		      <div class="info">4 x 6 Color</div>
-  		    		        <a href=""><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-rave-4x6.jpg" alt="Promo 4 x 6" /></a>
+  		    		        <a href="http://truewoman14.com.s3.amazonaws.com/downloads/TW-promo-4x6.pdf"><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-rave-4x6.jpg" alt="Promo 4 x 6" /></a>
   		    		      </div>
   		    		      <div class="span9">
     		    		      <div class="info">4 x 6 B&amp;W</div>
-  		    		        <a href=""><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-rave-4x6-bw.jpg" alt="Promo 4 x 6 B&amp;W" /></a>
+  		    		        <a href="http://truewoman14.com.s3.amazonaws.com/downloads/TW-promo-4x6-bw.pdf"><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-rave-4x6-bw.jpg" alt="Promo 4 x 6 B&amp;W" /></a>
   		    		      </div>
   		    		    </div>
   		    		    <h3>Bulletin Ads</h3>
@@ -78,19 +78,19 @@ Template Name: Promote
   		    		      
   		    		      <div class="span3">
     		    		      <div class="info">2 x 2 Color</div>
-  		    		        <a href=""><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-promo-2x2.jpg" alt="Promo 2 x 2" /></a>
+  		    		        <a href="http://truewoman14.com.s3.amazonaws.com/downloads/TW-promo-2x2.pdf"><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-promo-2x2.jpg" alt="Promo 2 x 2" /></a>
   		    		      </div>
   		    		      <div class="span3">
     		    		      <div class="info">2 x 2 B&amp;W</div>
-  		    		        <a href=""><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-promo-2x2-bw.jpg" alt="Promo 2 x 2 B&amp;W" /></a>
+  		    		        <a href="http://truewoman14.com.s3.amazonaws.com/downloads/TW-promo-2x2-bw.pdf"><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-promo-2x2-bw.jpg" alt="Promo 2 x 2 B&amp;W" /></a>
   		    		      </div>
   		    		      <div class="span3">
     		    		      <div class="info">4 x 4 Color</div>
-  		    		        <a href=""><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-promo-4x4.jpg" alt="Promo 4 x 4" /></a>
+  		    		        <a href="http://truewoman14.com.s3.amazonaws.com/downloads/TW-promo-4x4.pdf"><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-promo-4x4.jpg" alt="Promo 4 x 4" /></a>
   		    		      </div>
   		    		      <div class="span3">
     		    		      <div class="info">4 x 4 B&amp;W</div>
-  		    		        <a href=""><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-promo-4x4-bw.jpg" alt="Promo 4 x 4 B&amp;W" /></a>   
+  		    		        <a href="http://truewoman14.com.s3.amazonaws.com/downloads/TW-promo-4x4-bw.pdf"><img src="http://truewoman14.com.s3.amazonaws.com/library/img/TW-promo-4x4-bw.jpg" alt="Promo 4 x 4 B&amp;W" /></a>   
   		    		      </div>
   		    		    </div>
 

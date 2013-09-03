@@ -363,6 +363,8 @@ address {
   }
   i {
     font-style: normal;
+    margin-top:4px;
+
   }
 }
 
@@ -383,7 +385,7 @@ address {
   text-shadow: none !important;
   font-family: @sansFontFamily;
   text-transform: uppercase;
-  font-size: 26px;
+  font-size: 26px !important;
   padding: 25px 20px 25px;
   float: none;
   display: block;
@@ -604,6 +606,9 @@ address {
               float: right;
               width: 23%;
               margin-right: -0px;
+              a.btn-cta {
+                font-size: inherit !important;
+              }
             }
           }
         }
@@ -1170,7 +1175,7 @@ footer[role="contentinfo"] {
     
     #intro {
       //margin-top: 0%;
-      margin-bottom: 20%;
+      margin-bottom: 30%;
       .location, .date {
         padding-top: 24%;
         h2 {

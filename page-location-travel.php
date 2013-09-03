@@ -39,7 +39,7 @@ Template Name: Location &amp; Travel
 				    						</p>
 				    						<p><a href="http://visitindy.com/">Indiana Convention &amp; Visitors Association </a></p>
 				    						<h3>Inside the Convention Center</h3>
-				    						<p><a  href="http://www.icclos.com/pdf/ICCLOSMap100711.pdf">Convention Center Floor&nbsp;Maps (PDF)<i class="icon-pdf"></i></a></p>
+				    						<p><a  href="http://www.icclos.com/pdf/ICCLOSMap100711.pdf">Convention Center Floor&nbsp;Maps (PDF)<i class="icon-file"></i></a></p>
 									
 				    						
 				    					</div>
@@ -53,7 +53,7 @@ Template Name: Location &amp; Travel
 												<p><strong><a href="http://www.icclos.com/attendees/getting-around-transportation.aspx">Here is some helpful information</a> on public transportation, rental cars, limo and shared ride services, and taxis.</strong></p>
 											</div>
 					    		   	<div class="section">
-					    		   		<h2><span id="driving"></span>Driving to Indy <a class="btn pull-right" href="http://www.icclos.com/pdf/Driving_Directions_to_ICC.pdf">Driving Directions (PDF)<i class="icon-pdf"></i></a></h2>
+					    		   		<h2><span id="driving"></span>Driving to Indy <a class="btn pull-right" href="http://www.icclos.com/pdf/Driving_Directions_to_ICC.pdf">Driving Directions (PDF)<i class="icon-file"></i></a></h2>
 					    		   		<p>If you are driving to Indianapolis, <a href="http://www.icclos.com/attendees/getting-around-maps-directions.aspx#directions">here are some helpful directions</a>.</p>
 					    		   	</div><!-- /driving -->
 				    		    </div>
@@ -63,7 +63,7 @@ Template Name: Location &amp; Travel
 				    		    	
 				    		    </div><!-- /parking-options -->
 				    		    <div class="section">
-					    		    <h2><span id="restaurants"></span>Restaurants <a class="btn pull-right" href="http://www.icclos.com/pdf/DTRestaurantsMap.pdf">Hotel Map (PDF)<i class="icon-pdf"></i></a></h2>
+					    		    <h2><span id="restaurants"></span>Restaurants <a class="btn pull-right" href="http://www.icclos.com/pdf/DTRestaurantsMap.pdf">Hotel Map (PDF)<i class="icon-file"></i></a></h2>
 					    		    <p>There are a whole lot of yummy restaurants within walking distance of the Convention Center. Check them out with this <a href="http://www.icclos.com/pdf/DTRestaurantsMap.pdf">downtown restaurant map</a>. If you don&rsquo;t want to leave the Convention Center, you can eat in any of these areas: </p>
 					    		    <ul>
 						    		    <li>The Landing on Maryland Food Court (servicing Halls A–C) features the Espresso Caffé, Indiana Grille, Pizza, and American Delicatessen.</li>
@@ -74,7 +74,7 @@ Template Name: Location &amp; Travel
 						    		  </ul>
 					    		  </div>
 					    		  <div class="section">
-						    		  <h2><span id="lodging"></span>Lodging <a class="btn pull-right" href="http://visitindy.com/files/map/DTHotelMap_c042309.pdf">Hotel Map (PDF)<i class="icon-pdf"></i></a></h2>
+						    		  <h2><span id="lodging"></span>Lodging <a class="btn pull-right" href="http://visitindy.com/files/map/DTHotelMap_c042309.pdf">Hotel Map (PDF)<i class="icon-file"></i></a></h2>
 						    		  <p><strong>Will discount info be coming in soon?</strong></p>
 						    		  <p>Check back soon for discounted rates for True Woman attendees at various hotels within walking distance of the Indiana Convention Center. </p> 
 						    		  
