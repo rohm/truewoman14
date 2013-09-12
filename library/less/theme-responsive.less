@@ -52,6 +52,7 @@ and (min-width: 481px) {
 	}
 	.home {
 		padding-top: 50px;
+		
 		#ha-header {
 			.transition(all);
 			.transition-duration(.4s);
@@ -83,7 +84,7 @@ and (min-width: 481px) {
 			
 		}
 		#ha-header.ha-header-small {
-
+			
 			#ha-header-brand {
 				height: auto;
 				#logo, #toolbar-nav {
@@ -117,9 +118,10 @@ and (min-width: 481px) {
 			padding-right: 20px;
 		}
 		p, li, blockquote, address {
-			font-size: 130%;
+			font-size: @baseFontSize * 1.3;
 			line-height: 150%;
 		}
+		
 
 		&.home {
 			background-position: 20% 90px;
@@ -149,6 +151,21 @@ and (min-width: 481px) {
 					}
 				}
 			}
+		}
+		.modal {
+			margin-left: 0;
+			background-color: transparent;
+			.box-shadow(none);
+			border: none;
+		}
+		.modal-body {
+			width: 380px;
+			padding:0;
+			max-height: auto !important;
+			background: transparent;
+		}
+		.videowrapper {
+			margin-bottom: 0;
 		}
 		&.pagename-speakers {
 			background-size: 480px auto;
@@ -183,6 +200,9 @@ and (min-width: 481px) {
 			li {
 				.photo img {
 					max-width: 100%;
+				}
+				h2 {
+					margin: 10px 0 30px;
 				}
 			}
 		}
@@ -417,6 +437,7 @@ and (min-width: 481px) {
 		}
 
 	}
+	
 	#main {
 		article.page {
 			header {
@@ -432,6 +453,12 @@ and (min-width: 481px) {
 				padding: 20px;
 				margin-left: -20px;
 				margin-right: -20px;
+				& > .row > .span3 .nav {
+					margin-left: 0;
+				}
+				p.more {
+					text-align: left;
+				}
 			}
 			section.post_content {
 				h1, h2, h3, h4 {

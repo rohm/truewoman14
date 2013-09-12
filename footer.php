@@ -1,4 +1,4 @@
-<a href="/register/" class="btn btn-cta btn-register btn-register-global">Register Now <b class="arrow-right">›</b><div class="info">Early Rates Through 5/1/14</div></a>
+<a href="/register/" class="btn btn-cta btn-register btn-register-global">Register Now <b class="arrow-right">›</b><div class="info">Pre-Event, Main Conference &amp; Volunteer Registration. Early Rates Through 5/1/14</div></a>
 	</div> <!-- end #container -->
 </div><!-- end page-wrap -->
 <div class="small-screen-hide" style="height: 94px;">&nbsp;</div>
@@ -59,17 +59,33 @@ jQuery( '.ha-waypoint' ).each( function(i) {
 		}, { offset: '100%' } );
 } );
 
+var $intro = jQuery('.tw14-logo-purple');
+jQuery('.ha-waypoint').each( function(i) {
+	var $el = jQuery( this ),
+			animClassDown = $el.data( 'animateDown' ),
+			animClassUp = $el.data( 'animateUp' );
+	
+	$el.waypoint( function( direction ) {
+			if( direction === 'down' && animClassDown ) {
+					$intro.attr('class', 'tw14-logo-purple ' + animClassDown);
+			}
+			else if( direction === 'up' && animClassUp ){
+					$intro.attr('class', 'tw14-logo-purple ' + animClassUp);
+			}
+	}, { offset: '100%' } );
+		
+});
 
 </script>
 <script type="text/javascript">
 		jQuery(function() {
 				var offset = jQuery("#sidebar").offset();
-				var topPadding = 220;
+				var topPadding = 353;
 				jQuery(window).scroll(function() {
             var topDistance = jQuery(window).scrollTop();
             // If the distance scrolled is <= to height of the container - the height of the sidebar
             // Previous check would never have happened as offset.top is constantly increasing
-						if (topDistance <= (jQuery('.paper').height() - jQuery("#sidebar").height())) {
+						if (topDistance <= (jQuery('.paper').height() - jQuery("#sidebar").height())  && (jQuery(".span3").css("float") == "left")) {
 						    // Animate the sidebar down to the position (follow me!)
 								jQuery("#sidebar").stop().animate({
 										marginTop: topDistance - offset.top + topPadding

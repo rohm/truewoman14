@@ -9,7 +9,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		
+		<meta name="google-site-verification" content="TNv2lZAQPh3hOwL1ntuVV0WiKSHIgGrBJZY8ZGxBRgU" />
 		<title><?php wp_title( '|', true, 'right' ); ?></title>
 				
 		<meta name="viewport" content="width=device-width">
@@ -68,10 +68,10 @@
 												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Share <i class="icon-share icon-white"></i></a>
 												<ul class="dropdown-menu">
 													<li id="menu-item-facebook" class="menu-item">
-														<div class="fb-like" data-href="http://staging.truewoman14.com" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+														<div class="fb-like" data-href="http://www.truewoman14.com" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>
 													</li>
 													<li id="menu-item-twitter" class="menu-item">
-														<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://staging.truewoman14.com" data-via="truewoman"  data-hashtags="truewoman14">Tweet</a>
+														<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.truewoman14.com" data-via="truewoman"  data-hashtags="truewoman14">Tweet</a>
 														<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 													</li>
 													<li id="menu-item-pinterest" class="menu-item">

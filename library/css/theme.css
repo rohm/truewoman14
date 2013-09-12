@@ -932,6 +932,7 @@ address h4 {
   font-size: 26px;
   font-weight: 500;
   text-transform: uppercase;
+  position: relative;
 }
 #main article.page section.post_content h3 span {
   position: absolute;
@@ -960,6 +961,38 @@ address h4 {
     background-position: 2px 6px;
   }
 }
+#main article.page section.post_content .speakers {
+  margin-left: 0;
+  margin-top: 0;
+  list-style: none;
+}
+#main article.page section.post_content .speakers li {
+  margin: 40px 0;
+}
+#main article.page section.post_content .speakers li:first-child {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+#main article.page section.post_content .speakers li h2 {
+  font-family: "futura-pt";
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#main article.page section.post_content .speakers li .photo img {
+  max-width: 90%;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+#main article.page section.post_content .speakers .bio h3 {
+  text-transform: none;
+  font-size: 30px;
+  color: #5d4775;
+}
+#main article.page section.post_content .speakers:first-child {
+  margin-top: 7px !important;
+}
 #main article.page footer {
   clear: both;
 }
@@ -979,6 +1012,7 @@ address h4 {
 }
 #main article.page .paper > .row > .span3 .nav li.break {
   padding: 20px;
+  text-align: center;
 }
 #main article.page .paper > .row > .span3 .nav li a {
   padding: 10px 0;
@@ -1104,30 +1138,6 @@ address h4 {
 #main article.page section.post_content .break h2 {
   font-size: 26px;
   font-weight: 700;
-}
-#main .speakers {
-  margin-left: 0;
-  list-style: none;
-}
-#main .speakers li {
-  margin: 60px 0;
-}
-#main .speakers li:first-child {
-  margin-top: 0;
-}
-#main .speakers li h2 {
-  font-family: "futura-pt";
-  margin-top: 0;
-}
-#main .speakers li .photo img {
-  max-width: 90%;
-  border-radius: 2px;
-  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
-}
-#main .speakers:first-child {
-  margin-top: 7px !important;
 }
 /* SCHEDULE WRAP */
 footer[role="contentinfo"] {
@@ -1376,6 +1386,9 @@ footer[role="contentinfo"] #sbi_camera_button {
   width: 56%;
   margin-bottom: 2%;
 }
+.home article.page #intro .tw14-logo-purple.ha-header-small {
+  margin-top: 40px;
+}
 .home article.page #intro .btn-cta {
   display: block;
   margin-left: auto;
@@ -1408,10 +1421,10 @@ footer[role="contentinfo"] #sbi_camera_button {
   margin-bottom: 40px;
 }
 .home article.page .paper #speakers h3 {
+  margin-bottom: 1.5em;
   line-height: 1;
   text-transform: none;
   font-size: 22px;
-  margin-bottom: 0;
   text-align: center;
 }
 .home article.page .paper #testimonials {
@@ -1676,7 +1689,7 @@ footer[role="contentinfo"] #sbi_camera_button {
   body li,
   body blockquote,
   body address {
-    font-size: 130%;
+    font-size: 20.8px;
     line-height: 150%;
   }
   body.home {
@@ -1702,6 +1715,23 @@ footer[role="contentinfo"] #sbi_camera_button {
   }
   body.home article.page .paper #speakers h3 {
     margin-bottom: 2em;
+  }
+  body .modal {
+    margin-left: 0;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: none;
+  }
+  body .modal-body {
+    width: 380px;
+    padding: 0;
+    max-height: auto !important;
+    background: transparent;
+  }
+  body .videowrapper {
+    margin-bottom: 0;
   }
   body.pagename-speakers {
     background-size: 480px auto;
@@ -1731,6 +1761,9 @@ footer[role="contentinfo"] #sbi_camera_button {
   }
   #main .speakers li .photo img {
     max-width: 100%;
+  }
+  #main .speakers li h2 {
+    margin: 10px 0 30px;
   }
   #main article.page .span3 .nav {
     background-image: none;
@@ -1951,6 +1984,12 @@ footer[role="contentinfo"] #sbi_camera_button {
     padding: 20px;
     margin-left: -20px;
     margin-right: -20px;
+  }
+  #main article.page .paper > .row > .span3 .nav {
+    margin-left: 0;
+  }
+  #main article.page .paper p.more {
+    text-align: left;
   }
   #main article.page section.post_content h1,
   #main article.page section.post_content h2,

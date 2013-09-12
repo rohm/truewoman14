@@ -22,12 +22,12 @@ Template Name: Volunteer
 						<div class="paper">
 							<div class="row">
 								<div class="span9">
-									<section class="post_content">
-                    <?php the_content(); ?>
-  							  </section> <!-- end article section -->
+                  <section class="post_content">
+                  <?php the_content(); ?>
+                  </section> <!-- end article section -->
                 </div>
                 <div class="span3">
-                  <ul class="nav nav-volunteers">
+                  <ul id="sidebar" class="nav nav-volunteers">
                   <li><a href="#service">Areas of Service</a></li>
                   <li><a href="#benefits">Benefits of Volunteering</a></li>
                   <li><a href="#successful">A Successful Volunteer</a></li>
@@ -36,7 +36,7 @@ Template Name: Volunteer
                   <li><a href="#faqs">FAQs</a></li>
                   </ul>
                 </div>
-  						</div>
+  						  </div>
 						</div>
 					</article> <!-- end article -->
 
