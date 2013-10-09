@@ -5,54 +5,53 @@ Template Name: Speakers
 ?>
 
 <?php get_header(); ?>
-			
+
 			<div id="content" class="clearfix row">
-			
+
 				<div id="main" class="span12 clearfix" role="main">
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-					
+
 					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
-						
-						<header>
-							
-							<div class="page-header"><h1><?php the_title(); ?></h1></div>
-						
-						</header> <!-- end article header -->
-            <div class="paper">
-            <div class="row">
-            <div class="span9">
-            <section class="post_content">
-            <?php the_content(); ?>
-            
-            </section> <!-- end article section -->
-            
-            </div><!-- end span9 -->
-            <div class="span3">
-            <ul id="sidebar" class="nav nav-speakers">
-            <li><a href="#nancy">Nancy Leigh DeMoss</a></li>
-            <li><a href="#mary">Mary Kassian</a></li>
-            <li><a href="#janet">Janet Parshall</a></li>
-            <li><a href="#joni">Joni Eareckson Tada</a></li>
-            <!-- li class="break">&nbsp;</li>-->
-            <li><a href="#jim">Jim Cymbala</a></li>
-            <li><a href="#blair">Blair Linne</a></li>
-            <li><a href="#jani">Jani Ortlund</a></li>
-            <li><a href="#gettys">Keith &amp; Kristyn Getty</a></li>
-            <li><a href="#chicago">Chicago Tabernacle Choir</a></li>
-            </ul>
-            </div><!-- end span3 -->
-            </div><!-- end row -->
-            </div>
-					
+
+                        <header>
+
+                            <div class="page-header"><h1><?php the_title(); ?></h1></div>
+
+                        </header> <!-- end article header -->
+                        <div class="paper">
+                            <div class="row">
+                                <div class="span9">
+                                    <section class="post_content">
+                                    <?php the_content(); ?>
+
+                                    </section> <!-- end article section -->
+
+                                </div><!-- end span9 -->
+                                 <div class="span3">
+                                    <ul id="sidebar" class="nav nav-speakers">
+                                        <li><a href="#nancy">Nancy Leigh DeMoss</a></li>
+                                        <li><a href="#mary">Mary Kassian</a></li>
+                                        <li><a href="#janet">Janet Parshall</a></li>
+                                        <li><a href="#joni">Joni Eareckson Tada</a></li>
+                                        <li><a href="#dannah">Dannah Gresh</a></li>
+                                        <li><a href="#erin">Erin Davis</a></li>
+                                        <li class="break"></li>
+                                        <li><a href="#gettys">Keith &amp; Kristyn Getty</a></li>
+                                        <li><a href="#blair">Blair Linne</a></li>
+
+                                    </ul>
+                                </div><!-- end span3 -->
+                            </div><!-- end row -->
+                        </div>
 					</article> <!-- end article -->
-					
+
 					<?php comments_template(); ?>
-					
-					<?php endwhile; ?>	
-					
+
+					<?php endwhile; ?>
+
 					<?php else : ?>
-					
+
 					<article id="post-not-found">
 					    <header>
 					    	<h1><?php _e("Not Found", "bonestheme"); ?></h1>
@@ -63,13 +62,13 @@ Template Name: Speakers
 					    <footer>
 					    </footer>
 					</article>
-					
+
 					<?php endif; ?>
-			
+
 				</div> <!-- end #main -->
-    
+
 				<?php //get_sidebar(); // sidebar 1 ?>
-    
+
 			</div> <!-- end #content -->
 
 <?php get_footer(); ?>
