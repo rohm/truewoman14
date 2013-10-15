@@ -30,16 +30,18 @@ Template Name: Speakers
                                 </div><!-- end span9 -->
                                  <div class="span3">
                                     <ul id="sidebar" class="nav nav-speakers">
-                                        <li><a href="#nancy">Nancy Leigh DeMoss</a></li>
-                                        <li><a href="#mary">Mary Kassian</a></li>
-                                        <li><a href="#janet">Janet Parshall</a></li>
-                                        <li><a href="#joni">Joni Eareckson Tada</a></li>
-                                        <li><a href="#dannah">Dannah Gresh</a></li>
-                                        <li><a href="#erin">Erin Davis</a></li>
-                                        <li class="break"></li>
-                                        <li><a href="#gettys">Keith &amp; Kristyn Getty</a></li>
-                                        <li><a href="#blair">Blair Linne</a></li>
-
+                                      <li><a href="#nancy">Nancy Leigh DeMoss</a></li>
+                                      <li><a href="#joni">Joni Eareckson Tada</a></li>
+                                      <li><a href="#janet">Janet Parshall</a></li>
+                                      <li><a href="#mary">Mary Kassian</a></li>
+                                      <li><a href="#jim">Jim Cymbala</a></li>
+                                      <li><a href="#gettys">Keith &amp; Kristyn Getty</a></li>
+                                      <li><a href="#blair">Blair Linne</a></li>
+                                      <li><a href="#chicago-tabernacle">Chicago Tabernacle Choir</a></li>
+                                      <li><a href="#dannah">Dannah Gresh</a></li>
+                                      <li><a href="#erin">Erin Davis</a></li>
+                                      <li><a href="#jani">Jani Ortlund</a></li>
+                                      <li><a href="#angie">Angie Smith</a></li>
                                     </ul>
                                 </div><!-- end span3 -->
                             </div><!-- end row -->

@@ -22,7 +22,7 @@ body {
   color: @grayDark;
   -webkit-font-smoothing: antialiased;
   height: 100%;
-  
+
 
   background-color: #F6F6F6;
   background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bg-art-grapes.jpg');
@@ -140,8 +140,8 @@ p.lead {
 }
 
 .more {
-  margin-top: 60px; 
-  text-align: center; 
+  margin-top: 60px;
+  text-align: center;
   font-size: 24px;
 }
 
@@ -199,7 +199,7 @@ address {
 
 .wpcf7-form {
   max-width: 600px;
-  
+
   input[type="text"],
   input[type="password"],
   input[type="datetime"],
@@ -389,9 +389,9 @@ address {
   padding: 25px 20px 25px;
   float: none;
   display: block;
-  
+
   .box-shadow2(5px 5px 0 rgba(144, 67, 154, .5), -5px -5px 0 rgba(67, 172, 214, .5)) !important;
-  
+
   i {
     font-family: @serifFontFamily;
     font-style: italic;
@@ -455,6 +455,43 @@ address {
   }
 }
 
+.banner {
+
+}
+
+article header {
+  position: relative;
+  .banner {
+    position: relative;
+    color: #fff;
+    float: right;
+    margin-top: -60px;
+    background: @green;
+    padding: 16px 20px;
+    font-size: 1.3em;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 2px;
+    strong {
+      background-color: darken(@green, 10%);
+      display: inline-block;
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+    .caret {
+      border-top-color: @green;
+      border-width: 20px;
+      position: absolute;
+      bottom: -18px;
+      left: 20px;
+    }
+    p {
+      font-family: @sansFontFamily;
+      line-height: 1.5em;
+      margin: 0;
+    }
+  }
+}
 
 
 /* Toolbar Nav */
@@ -488,7 +525,7 @@ address {
       min-width: 100px;
       left: auto;
       right: 10px;
-      
+
       &::before {
         left: auto !important;
         right: 9px !important;
@@ -509,7 +546,7 @@ address {
         .pipe {
           display: none;
         }
-        
+
       }
       &.tel {
         .pipe {
@@ -539,10 +576,10 @@ address {
         &:hover {
           color: @white;
         }
-        
+
       }
     }
-    
+
     .pipe {
       .retina-image('http://truewoman14.com.s3.amazonaws.com/library/img/pipe', 'png', no-repeat, 1px, 25px, 0, 0);
       margin: 0 4px 0 6px;
@@ -560,7 +597,7 @@ address {
       height: 32px;
       width: 32px;
       margin-top: -01px;
-      
+
       margin-right: -4px;
       position: relative;
     }
@@ -586,20 +623,20 @@ address {
     .retina-image('http://truewoman14.com.s3.amazonaws.com/library/img/logo','png', no-repeat, 218px, 52px, 0, 0);
     .hide-text();
   }
-  
+
   nav.main-nav {
     margin-top: 10px;
     position: relative;
     top:0;
     background: url("http://truewoman14.com.s3.amazonaws.com/library/img/exclusive_paper.png") repeat-x 0 2px;
-    background: 
+    background:
       url('http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal2.png') repeat-x 0 -2px,  /* top line */
       url("http://truewoman14.com.s3.amazonaws.com/library/img/exclusive_paper.png") repeat-x 0 2px; /* paper texture */
     //overflow: hidden;
-    
+
     ul.nav {
       width: 100%;
-      @media only screen 
+      @media only screen
         and (min-width: 481px) {
           & > li {
             &:last-child {
@@ -620,7 +657,7 @@ address {
         & > li.menu-item {
           text-transform: none;
           font-size: 110%;
-          
+
           & > a {
             font-family: @baseFontFamily;
             line-height: 25px;
@@ -634,7 +671,7 @@ address {
             }
           }
         }
-        
+
       }
       & > li {
         font-size: 22px;
@@ -659,8 +696,8 @@ address {
             margin-top: 10px;
           }
         }
-        
-        
+
+
         &.active {
           & > a, & > a:hover, & > a:focus {
             background-color: rgba(0,0,0,.05);
@@ -687,7 +724,7 @@ address {
             color: @purple;
           }
         }
-        
+
       }
     }
   }
@@ -708,7 +745,7 @@ address {
 
 #main {
   margin-bottom: 0;
-  
+
   article.page {
     //padding-top: 90px;
     border-bottom: none;
@@ -722,12 +759,12 @@ address {
           font-size: 36px;
           font-weight: 500;
           text-shadow: 0 0 20px @white;
-          
+
           .btn {
             margin-top: 4px;
           }
         }
-        
+
         span {
           color: @gray;
         }
@@ -758,7 +795,7 @@ address {
       .section {
         //background: url("http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal2.png") repeat-x center bottom;
         .retina-image("http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal2", "png", no-repeat, 690px, 3px, bottom, center);
-        
+
         padding-bottom: 50px;
         margin-bottom: 50px;
         &:last-child {
@@ -767,20 +804,33 @@ address {
           padding-bottom: 0;
         }
       }
-      
+
 
     }
     section.post_content {
-      
+
       h2 {
         font-size: 36px;
         font-weight: normal;
         position: relative;
-
+        a, a:visited {
+          color: @linkColor;
+        }
         span {
           position: absolute;
           top: -200px;
         }
+
+        &.border {
+          font-size: 32px;
+          font-weight: 500;
+          text-align: center;
+          text-transform: uppercase;
+          background: url(http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal.png) no-repeat left center, url(http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal.png) no-repeat right center;
+          background-size: 170px auto;
+          margin:0 0 50px;
+        }
+
 
       }
       a.btn-cta {
@@ -798,6 +848,9 @@ address {
         span {
           position: absolute;
           top: -200px;
+        }
+        a, a:visited {
+          color: @linkColor;
         }
       }
       p, ul, ol, blockquote {
@@ -822,7 +875,7 @@ address {
             margin-top: 0 !important;
             margin-bottom: 0 !important;
           }
-          
+
           h2 {
             font-family: @sansFontFamily;
             margin-top: 0;
@@ -833,22 +886,22 @@ address {
             border-radius: @baseBorderRadius;
             .box-shadow(@baseDropShadow);
           }
-          
+
         }
         .bio {
           h3 {
             text-transform: none;
             font-size: 30px;
-            color: @purple;
+            margin-top: 0;
           }
         }
         &:first-child {
           margin-top: 7px !important;
         }
       }
-      
+
     }
-    
+
     footer {
       clear: both;
     }
@@ -856,8 +909,8 @@ address {
       //background: @red;
       overflow: hidden;
       min-height: 300px;
-      
-      
+
+
       .nav {
         //background: @blue;
         min-width: 190px;
@@ -865,12 +918,12 @@ address {
         margin-top: 0;
         padding: 0 0 50px;
         margin-left: 30px;
-        
+
         //background: url("http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-vertical.png") repeat-y -2px;
         li {
           font-family: @baseFontFamily;
           font-size: 110%;
-          
+
           &.break {
             padding: 20px;
             text-align: center;
@@ -883,7 +936,7 @@ address {
             //background-size:200px 1px;
             .transition(background-color);
             .transition-duration(.3s);
-            
+
             &:hover {
               border-right: 6px solid @palePurple;
               //background: rgba(0,0,0,.05);
@@ -905,8 +958,8 @@ address {
         text-transform: uppercase;
         letter-spacing: 2px;
         position: relative;
-        
-        
+
+
       }
       h3 {
         text-align: center;
@@ -920,8 +973,8 @@ address {
         margin-bottom: @baseMargin;
         border-left: 0;
         border-right:0;
-  
-        tr > td:first-child, 
+
+        tr > td:first-child,
         tr > th:first-child {
           border-left: 0;
         }
@@ -951,7 +1004,7 @@ address {
         strong {
           color: @black;
         }
-  
+
       }
       table {
         background-color: rgba(189, 147, 192, .1);
@@ -987,9 +1040,9 @@ address {
       }
       table {
         background-color: rgba(146, 200, 221, .1);
-        
+
         th {
-          
+
           background-color: lighten(@blue, 25%);
         }
         td.darken {
@@ -997,7 +1050,7 @@ address {
         }
       }
     }
-  
+
     .break {
       padding: 20px 0;
       text-align: center;
@@ -1007,7 +1060,7 @@ address {
       }
     }
   }
-  
+
 }
 
 
@@ -1021,8 +1074,8 @@ footer[role="contentinfo"] {
   background: url("http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal.png") repeat-x 0 -2px, url("http://truewoman14.com.s3.amazonaws.com/library/img/exclusive_paper.png") repeat, #E6E3E1;
 
   color: @gray;
-  
-  
+
+
   p, li {
     font-family: @sansFontFamily;
     font-weight: 500;
@@ -1041,7 +1094,7 @@ footer[role="contentinfo"] {
   .footer-links {
     float: left;
     margin-left: 20px;
-    
+
   }
   .footer-social-nav {
     font-family: @altFontFamily;
@@ -1059,7 +1112,7 @@ footer[role="contentinfo"] {
         &.icon-pinterest { .retina-image('http://truewoman14.com.s3.amazonaws.com/library/img/icon-pinterest', 'png', no-repeat, 24px, 24px, 0, 0); }
         &.icon-vimeo { .retina-image('http://truewoman14.com.s3.amazonaws.com/library/img/icon-vimeo', 'png', no-repeat, 24px, 24px, 0, 0); }
       }
-      
+
     }
   }
   #menu-footer-nav {
@@ -1109,7 +1162,7 @@ footer[role="contentinfo"] {
       height: 100%;
     }
   }
-  
+
 }
 
 .modal {
@@ -1144,7 +1197,7 @@ footer[role="contentinfo"] {
     width: 320px;
     height: 210px;
     margin-left: -160px;
-    
+
     .modal-body {
       max-height: 210px !important;
     }
@@ -1159,9 +1212,7 @@ footer[role="contentinfo"] {
       text-transform: uppercase;
       font-weight: 500 !important;
       &.border {
-        background: url(http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal.png) no-repeat left center, url(http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal.png) no-repeat right center;
-        background-size: 300px auto;
-        margin:0;
+        background-size: 240px auto !important;
       }
     }
     @media (max-width: 979px) {
@@ -1187,7 +1238,7 @@ footer[role="contentinfo"] {
         }
       }
     }
-    
+
     #intro {
       //margin-top: 0%;
       margin-bottom: 30%;
@@ -1257,10 +1308,11 @@ footer[role="contentinfo"] {
           font-size: 22px;
           text-align: center;
         }
+
       } /* end Speakers */
-      
-      
-      
+
+
+
       #testimonials {
         padding: 50px 50px 50px;
         text-align: center;
@@ -1268,7 +1320,7 @@ footer[role="contentinfo"] {
         &.carousel.carousel-fade .item {
           opacity:0;
         }
-        
+
         &.carousel.carousel-fade .active.item {
             opacity:1;
         }
@@ -1281,7 +1333,7 @@ footer[role="contentinfo"] {
           border-left: none;
           margin-left: 15%;
           margin-right: 15%;
-          
+
           p {
             font-size: 200%;
             color: @grayDark;
@@ -1292,7 +1344,7 @@ footer[role="contentinfo"] {
           }
         }
       }
-      
+
       @media only screen
       and (max-width : 480px) {
         #testimonials {
@@ -1305,7 +1357,7 @@ footer[role="contentinfo"] {
           }
         }
       }
-      
+
       #topics {
         text-align: center;
         padding-top: 80px;
@@ -1326,7 +1378,7 @@ footer[role="contentinfo"] {
         }
       }
     }
-    
+
   }
 }
 
@@ -1348,14 +1400,14 @@ footer[role="contentinfo"] {
         .retina-image("http://truewoman14.com.s3.amazonaws.com/library/img/bullet-circle", "png", no-repeat, 8px, 8px, left, 11px);
         padding-left: 20px;
         display: block;
-        
+
         h3 {
           font-size: 130%;
           margin-bottom: 0;
           margin-top: 0;
           text-transform: none;
           line-height: 1.3;
-          
+
         }
         p.lead {
           margin:0;
@@ -1398,7 +1450,7 @@ footer[role="contentinfo"] {
       text-transform: uppercase;
     }
   }
-  
+
 }
 
 .promo-items {

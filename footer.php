@@ -4,7 +4,7 @@
 <div class="small-screen-hide" style="height: 94px;">&nbsp;</div>
 <footer role="contentinfo">
 	<div class="container">
-		
+
 		<div id="inner-footer" class="clearfix">
 		  <div class="row">
 			  <div class="span6">
@@ -20,7 +20,7 @@
 					</nav>
 				</div>
 			</div><!-- end .row -->
-			
+
 			<nav class="clearfix">
 				<p class="attribution pull-left"><a href="http://www.truewoman.com">True Woman</a> is a ministry of <em><a href="http://www.reviveourhearts.com">Revive Our Hearts</a></em>.</p>
 				<div class="footer-links-wrap">
@@ -31,7 +31,7 @@
 			</nav>
 
 
-		
+
 		</div> <!-- end #inner-footer -->
 	</div><!-- end .container -->
 </footer> <!-- end footer -->
@@ -64,7 +64,7 @@ jQuery('.ha-waypoint').each( function(i) {
 	var $el = jQuery( this ),
 			animClassDown = $el.data( 'animateDown' ),
 			animClassUp = $el.data( 'animateUp' );
-	
+
 	$el.waypoint( function( direction ) {
 			if( direction === 'down' && animClassDown ) {
 					$intro.attr('class', 'tw14-logo-purple ' + animClassDown);
@@ -73,11 +73,11 @@ jQuery('.ha-waypoint').each( function(i) {
 					$intro.attr('class', 'tw14-logo-purple ' + animClassUp);
 			}
 	}, { offset: '100%' } );
-		
+
 });
 
 </script>
-<script type="text/javascript">
+<!-- script type="text/javascript">
 		jQuery(function() {
 				var offset = jQuery("#sidebar").offset();
 				var topPadding = 353;
@@ -99,8 +99,8 @@ jQuery('.ha-waypoint').each( function(i) {
 						};
 				});
 		});
-</script>
-<script type="text/javascript"> // Google Analytics 
+</script-->
+<script type="text/javascript"> // Google Analytics
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
