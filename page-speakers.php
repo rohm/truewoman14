@@ -24,7 +24,6 @@ Template Name: Speakers
                                 <div class="span9">
                                     <section class="post_content">
                                     <?php the_content(); ?>
-
                                     </section> <!-- end article section -->
 
                                 </div><!-- end span9 -->
@@ -35,13 +34,13 @@ Template Name: Speakers
                                       <li><a href="#janet">Janet Parshall</a></li>
                                       <li><a href="#mary">Mary Kassian</a></li>
                                       <li><a href="#jim">Jim Cymbala</a></li>
-                                      <li><a href="#gettys">Keith &amp; Kristyn Getty</a></li>
-                                      <li><a href="#blair">Blair Linne</a></li>
-                                      <li><a href="#chicago-tabernacle">Chicago Tabernacle Choir</a></li>
                                       <li><a href="#dannah">Dannah Gresh</a></li>
                                       <li><a href="#erin">Erin Davis</a></li>
                                       <li><a href="#jani">Jani Ortlund</a></li>
                                       <li><a href="#angie">Angie Smith</a></li>
+                                      <li><a href="#gettys">Keith &amp; Kristyn Getty</a></li>
+                                      <li><a href="#blair">Blair Linne</a></li>
+                                      <li><a href="#chicago-tabernacle">Chicago Tabernacle Choir</a></li>
                                     </ul>
                                 </div><!-- end span3 -->
                             </div><!-- end row -->

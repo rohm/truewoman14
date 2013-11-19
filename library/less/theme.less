@@ -16,69 +16,21 @@ html, body {
 }
 body {
   background-color: #F6F6F6;
+  background-image: url('../img/bg-art-grapes.jpg');
+  background-position: center 05%;
+  background-repeat: no-repeat;
+  //background-attachment: fixed;
+
   font-family: @baseFontFamily;
   font-size: @baseFontSize;
   line-height: @baseLineHeight;
   color: @grayDark;
   -webkit-font-smoothing: antialiased;
   height: 100%;
+}
 
-
-  background-color: #F6F6F6;
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bg-art-grapes.jpg');
-  background-repeat: no-repeat;
-  background-size: 688px auto;
-  background-attachment: fixed;
-  background-position: center 200px;
-
-  &.pagename-speakers {
-    background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bg-art-tree.jpg');
-    background-position: left bottom;
-    background-attachment: fixed;
-    background-size: 725px auto;
-  }
-  &.pagename-location-travel {
-    background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bg-art-indoors.jpg');
-    background-size: 1400px auto;
-    background-position: center -140px;
-    background-attachment: fixed;
-  }
-  &.pagename-promote {
-    background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bg-art-birds.jpg');
-    background-size: 750px auto;
-    background-position: right -180px;
-    background-attachment: fixed;
-  }
-  &.pagename-faqs {
-    background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bg-art-branch.jpg');
-    background-size: 1400px auto;
-    background-position: center -100px;
-    background-attachment: fixed;
-  }
-  &.pagename-schedule {
-    background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bg-art-birds.jpg');
-    background-size: 750px auto;
-    background-position: right -180px;
-    background-attachment: fixed;
-  }
-  &.pagename-about {
-    background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bg-art-grapes.jpg');
-    background-size: 788px auto;
-    background-position: 490px 30%;
-    background-attachment: fixed;
-  }
-  &.pagename-contact {
-    background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bg-art-birds.jpg');
-    background-size: 750px auto;
-    background-position: right -180px;
-    background-attachment: fixed;
-  }
-  &.pagename-register {
-    background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bg-art-location.jpg');
-    background-size: 1400px auto;
-    background-position: center -200px;
-    background-attachment: fixed;
-  }
+.page-wrap {
+  /*.retina-image("../img/bg-art-tree", 'jpg', no-repeat, 1197px, auto, -150px, bottom);*/
 }
 
 a {
@@ -97,15 +49,6 @@ table {
   strong {
     font-weight: 500;
   }
-  .column-name {
-    width: 25%;
-  }
-  .column-session {
-    width: 50%;
-  }
-  .column-room {
-    width: 25%;
-  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -115,20 +58,17 @@ h1, h2, h3, h4, h5, h6 {
 
 p, li, blockquote, address {
   font-family: @altFontFamily;
-  font-size: 110%;
+  font-size: 102%;
 }
 hr {
   border:0;
-  //background: transparent url("http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal.png") repeat-x top;
-  .retina-image("http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal", "png", no-repeat, 376px, 3px, bottom, center);
+  background: transparent url("../img/pencil-line-horizontal.png") repeat-x top;
   height: 4px;
   margin: 60px 0;
 }
 p.lead {
   color: @gray;
-  line-height: 1.5em;
-  font-style: italic;
-  font-size: 1.7em;
+  line-height: 1.7em;
 }
 .highlight {
   background-color: lightyellow;
@@ -139,23 +79,13 @@ p.lead {
   text-shadow: 0 1px 16px @white;
 }
 
-.more {
-  margin-top: 60px;
-  text-align: center;
-  font-size: 24px;
-}
-
 .table {
   margin-bottom: @baseMargin;
-  tr.emphasize td {
-    font-weight: 700;
-    color: inherit;
-    background: lighten(@palePurple, 20%);
-  }
   th {
     font-weight: 700;
     color: @white;
     background: @purple; /* Pale Violet */
+
   }
   th, td {
     padding: 18px 15px;
@@ -177,29 +107,37 @@ address {
   font-weight: normal;
 }
 
-.arrow-down {
-  display: inline-block;
-  height: 24px;
-  width: 24px;
-  text-indent: -900em;
-  .retina-image('http://truewoman14.com.s3.amazonaws.com/library/img/arrow-down2', 'png', no-repeat, 24px, 24px, 0, 3px);
-}
-
 .well {
   margin-left: -20px;
   margin-right: -20px;
-  background-color: #fff;
-  background-color: rgba(255,255,255,.5);
   border:none;
   .border-radius(@borderRadiusSmall);
   .box-shadow(0 1px 2px rgba(0,0,0,.2));
-  padding: 40px;
-  .box-sizing(border-box);
 }
 
 .wpcf7-form {
   max-width: 600px;
-
+  select,
+  textarea,
+  input[type="text"],
+  input[type="password"],
+  input[type="datetime"],
+  input[type="datetime-local"],
+  input[type="date"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  input[type="number"],
+  input[type="email"],
+  input[type="url"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="color"] {
+    color: @grayDark;
+    width: 100%;
+    .box-sizing(border-box);
+    .placeholder(@color: @placeholderText);
+  }
   input[type="text"],
   input[type="password"],
   input[type="datetime"],
@@ -215,7 +153,6 @@ address {
   input[type="tel"],
   input[type="color"] {
     height: 34px;
-    margin-bottom: 0;
   }
   input[type="email"] {
     max-width: 250px;
@@ -224,19 +161,11 @@ address {
     max-width: 150px;
   }
   p {
-    margin: 0 !important;
+    margin: 12px 0 !important;
   }
   sup {
     color: @red;
     font-weight: bold;
-  }
-  legend {
-    margin: 10px 0 2px;
-  }
-  .info {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 90%;
   }
   .wpcf7-response-output.wpcf7-validation-errors {
     background-color: @warningBackground;
@@ -260,8 +189,7 @@ address {
     width: 130px;
   }
   .wpcf7-text#state {
-    width: 44px;
-    text-align: center;
+    width: 30px;
   }
 
   .wpcf7-radio {
@@ -272,40 +200,10 @@ address {
     label {
       display: inline-block;
       padding: 5px 10px 10px 0;
-      font-family: @baseFontFamily;
     }
     input {
       margin-top: -5px;
       margin-right: 2px;
-    }
-  }
-  select,
-  textarea,
-  input[type="text"],
-  input[type="password"],
-  input[type="datetime"],
-  input[type="datetime-local"],
-  input[type="date"],
-  input[type="month"],
-  input[type="time"],
-  input[type="week"],
-  input[type="number"],
-  input[type="email"],
-  input[type="url"],
-  input[type="search"],
-  input[type="tel"],
-  input[type="color"] {
-    color: @grayDark;
-    width: 100%;
-    .box-sizing(border-box);
-    &:-moz-placeholder {
-      color: #ccc;
-    }
-    &:-ms-input-placeholder {
-      color: #ccc;
-    }
-    &::-webkit-input-placeholder {
-      color: #ccc;
     }
   }
 }
@@ -327,57 +225,36 @@ address {
 
 /* Components */
 
-.btn,
-.form-actions input[type="submit"] {
+.btn {
   /*background: @palePurple;*/
-  //background-color: #F8F8F6;
+  
   background-image: none;
-  color: @grayDark;
-  text-shadow: @baseTextShadow;
   /*color: @white;
   text-shadow: none;*/
   font-family: @sansFontFamily;
   font-weight: 500;
   /*border: none;*/
   padding: 8px 15px;
-  #translucent > .background(@color: #E3E7D9, @alpha: .7);
-  .box-shadow(inset 0 1px 0 rgba(255,255,255,.4));
+  #translucent > .background(@color: @white, @alpha: .1);
+  .box-shadow(inset 0 1px 0 @white);
   .border-radius(4px);
   .transition(all);
   .transition-duration(.5s);
   &:hover {
     /*background: darken(@palePurple, 08%);
     color: @white;*/
-    background: @blue;
-    border-color: lighten(#6AA4A8, 10%);
+    border-color: lighten(@gray, 20%);
     background-image: none;
-    color: darken(@blue, 36%);
-    #translucent > .background(@color: #CDE3EE, @alpha: .8);
+    #translucent > .background(@color: @white, @alpha: .3);
   }
   &.btn-register {
     margin: 30px 0;
-  }
-  &.btn-register-global {
-    //margin-left: -45px;
-    //margin-right: -45px;
-  }
-  i {
-    font-style: normal;
-    margin-top:4px;
-
   }
 }
 
 /* Call to Action Button */
 .btn-cta,
-.pagename-home .li-cta > a,
-.pagename-speakers .li-cta > a,
-.pagename-schedule .li-cta > a,
-.pagename-location-travel .li-cta > a,
-.pagename-promote .li-cta > a,
-.pagename-about .li-cta > a,
-.pagename-faqs .li-cta > a,
-.pagename-contact .li-cta > a {
+.li-cta > a {
   background: @purple !important;
   border: none;
   color: @greenLight !important;
@@ -385,13 +262,12 @@ address {
   text-shadow: none !important;
   font-family: @sansFontFamily;
   text-transform: uppercase;
-  font-size: 26px !important;
+  font-size: 26px;
   padding: 25px 20px 25px;
   float: none;
   display: block;
-
   .box-shadow2(5px 5px 0 rgba(144, 67, 154, .5), -5px -5px 0 rgba(67, 172, 214, .5)) !important;
-
+  
   i {
     font-family: @serifFontFamily;
     font-style: italic;
@@ -412,85 +288,48 @@ address {
   &:hover {
     background: darken(@purple, 15%) !important;
     color: darken(@greenLight, 10%) !important;
-    .arrow-right {
-      .opacity(100);
-      .transition(opacity .5s);
-    }
-  }
-  .caret-right {
-    border-left-color: @greenLight;
-    border-width: 6px 0 6px 6px;
-  }
-  .arrow-right {
-    display: inline-block;
-    position: relative;
-    font-size: 130%;
-    margin-left: 3px;
-    .opacity(50);
   }
 }
 
-.input-append {
-  button[type="submit"] {
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-}
-.ie8 {
-  .btn-cta,
-  .pagename-home .li-cta > a,
-  .pagename-speakers .li-cta > a,
-  .pagename-schedule .li-cta > a,
-  .pagename-location-travel .li-cta > a,
-  .pagename-promote .li-cta > a,
-  .pagename-about .li-cta > a,
-  .pagename-faqs .li-cta > a,
-  .pagename-contact .li-cta > a {
-    border-style: solid;
-    border-width: 5px;
-    border-left-color: #9CD1E6;
-    border-top-color: #9CD1E6;
-    border-right-color: @palePurple;
-    border-bottom-color: @palePurple;
-  }
-}
-
-.banner {
-
-}
-
-article header {
-  position: relative;
-  .banner {
-    position: relative;
-    color: #fff;
-    float: right;
-    margin-top: -60px;
-    background: @green;
-    padding: 16px 20px;
-    font-size: 1.3em;
-    max-width: 400px;
-    text-align: center;
-    border-radius: 2px;
-    strong {
-      background-color: darken(@green, 10%);
-      display: inline-block;
-      padding-left: 4px;
-      padding-right: 4px;
-    }
-    .caret {
-      border-top-color: @green;
-      border-width: 20px;
-      position: absolute;
-      bottom: -18px;
-      left: 20px;
-    }
-    p {
-      font-family: @sansFontFamily;
-      line-height: 1.5em;
-      margin: 0;
+.home {
+  #ha-header {
+    .transition(all);
+    .transition-duration(.7s);
+    #ha-header-brand {
+      height: 0;
+      #logo, #toolbar-nav {
+        display: none;
+      }
     }
   }
+  #ha-header.ha-header-large {
+
+    margin-top: -22px;
+
+    #ha-header-brand {
+      height: 0;
+      #logo, #toolbar-nav {
+        display: none;
+      }
+    }
+    ul.nav li a {
+      padding: 40px 0;
+      margin-top: 0;
+    }
+    ul.nav .li-cta {
+      margin-top: 28px;
+    }
+  }
+  #ha-header.ha-header-small {
+
+    #ha-header-brand {
+      height: auto;
+      #logo, #toolbar-nav {
+        display: block;
+      }
+    }
+  }
+
 }
 
 
@@ -498,108 +337,42 @@ article header {
 
 #toolbar-nav {
   float: right;
-  #menu-share-nav {
-    float: right;
-    margin-top: -49px;
-    margin-left: 0px;
-    padding-left: 15px;
-    .retina-image('http://truewoman14.com.s3.amazonaws.com/library/img/pipe', 'png', no-repeat, 1px, 25px, 0, 11px);
-    li:last-child {
-      margin-right: 0px;
-      a {
-        padding-left: 0;
-      }
-    }
-  }
   .nav {
     margin-top: -47px;
     margin-right: -17px;
     color: @white;
     font-size: 20px;
     font-weight: 500;
-    .has-dropdown {
-      position: relative;
-    }
-    ul.dropdown-menu {
-      padding: 30px 30px 10px;
-      min-width: 100px;
-      left: auto;
-      right: 10px;
-
-      &::before {
-        left: auto !important;
-        right: 9px !important;
-      }
-      &::after {
-        left: auto !important;
-        right: 10px !important;
-      }
-      li {
-        height: 44px;
-      }
-      a {
-        .transition(none);
-      }
-    }
     li {
       &:first-child {
         .pipe {
           display: none;
         }
-
-      }
-      &.tel {
-        .pipe {
-          display: inline-block;
-        }
       }
       &.active {
         a {
           background-color: rgba(0,0,0,.05);
-          .box-shadow2(inset 0 2px 1px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.1));
           &:hover {
             background-color: rgba(0,0,0,.1);
           }
         }
       }
-      &:last-child {
-        margin-right: 18px;
-      }
-
-      & > a {
-        color: @white;
-        color: rgba(255,255,255,.87);
-        font-family: @sansFontFamily;
-        text-shadow: none;
-        display: inline-block;
-        border-radius: 2px;
-        &:hover {
-          color: @white;
-        }
-
-      }
     }
-
+    a {
+      color: @white;
+      font-family: @sansFontFamily;
+      text-shadow: none;
+      display: inline-block;
+      border-radius: 2px;
+    }
     .pipe {
-      .retina-image('http://truewoman14.com.s3.amazonaws.com/library/img/pipe', 'png', no-repeat, 1px, 25px, 0, 0);
+      .retina-image('../img/pipe', 'png', no-repeat, 1px, 25px, 0, 0);
       margin: 0 4px 0 6px;
       width: 2px;
       display: inline-block;
       height: 1em;
       margin-bottom: -3px;
       display: inline-block;
-    }
-    .icon-share {
-      .retina-image('../img/icon-share2','png', no-repeat, 32px, 32px, 0, 0);
-      background-image: url('../img/icon-share2.png') no-repeat /9;
-      //background: url(../img/icon-share2@2x.png);
-      //background-size: 32px 32px;
-      height: 32px;
-      width: 32px;
-      margin-top: -01px;
-
-      margin-right: -4px;
-      position: relative;
     }
   }
 }
@@ -608,7 +381,7 @@ article header {
 /* Main Navigation */
 
 .navbar {
-  background:  url('http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal2.png') repeat-x bottom !important;
+  background:  url('../img/pencil-line-horizontal2.png') repeat-x bottom !important;
   padding-bottom: 4px;
   .brand {
     position: relative;
@@ -619,99 +392,58 @@ article header {
     margin-left: 1px;
     margin-bottom: 0px;
     float: none;
-    .transition(none);
-    .retina-image('http://truewoman14.com.s3.amazonaws.com/library/img/logo','png', no-repeat, 218px, 52px, 0, 0);
+    .retina-image('../img/logo','png', no-repeat, 218px, 52px, 0, 0);
     .hide-text();
   }
-
+  
   nav.main-nav {
-    margin-top: 10px;
+    margin-top: 20px;
     position: relative;
     top:0;
-    background: url("http://truewoman14.com.s3.amazonaws.com/library/img/exclusive_paper.png") repeat-x 0 2px;
-    background:
-      url('http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal2.png') repeat-x 0 -2px,  /* top line */
-      url("http://truewoman14.com.s3.amazonaws.com/library/img/exclusive_paper.png") repeat-x 0 2px; /* paper texture */
-    //overflow: hidden;
-
+    background: 
+      url('../img/pencil-line-horizontal2.png') repeat-x 0 -2px,  /* top line */
+      url("../img/exclusive_paper.png") repeat-x 0 2px; /* paper texture */
+    overflow: hidden;
+    
     ul.nav {
       width: 100%;
-      @media only screen
-        and (min-width: 481px) {
-          & > li {
-            &:last-child {
-              float: right;
-              width: 23%;
-              margin-right: -0px;
-              a.btn-cta {
-                font-size: inherit !important;
-              }
-            }
-          }
-        }
-      ul.dropdown-menu {
-        border-radius: @baseBorderRadius;
-        margin-left: 0;
-        margin-right: 0;
-        padding: 20px 2px;
-        & > li.menu-item {
-          text-transform: none;
-          font-size: 110%;
-
-          & > a {
-            font-family: @baseFontFamily;
-            line-height: 25px;
-            padding-left: 30px !important;
-            font-weight: 400;
-            line-height: 44px;
-            border-radius: @baseBorderRadius;
-            //background: @red;
-            &:hover {
-              background: @red;
-            }
-          }
-        }
-
-      }
-      & > li {
+      li {
         font-size: 22px;
         text-transform: uppercase;
         font-family: "futura-pt";
-        min-width: 14%;
-        //width: auto \9;
-        margin-left: 1%;
-        margin-right: 1%;
-        white-space: nowrap \9;
+        width: 16%;
         &:first-child {
           margin-left: 1%;
         }
         &:nth-child(3) {
-          min-width: 25%;
-          //width: auto \9;
+          width: 25%;
         }
-        &.dropdown {
-
-          .caret {
-            margin-left: 5px;
-            margin-top: 10px;
+        &:last-child {
+          float: right;
+        }
+        &.li-cta { /* call to action */
+          float: right;
+          width: 23%;
+          
+          & > a {
+            padding-top: 12px !important;
+            padding-bottom: 12px !important;
+            margin-top: 18px;
+            margin-right: 1.5%;
+            font-size: 22px;
           }
         }
-
-
         &.active {
-          & > a, & > a:hover, & > a:focus {
+          a, a:hover, a:focus {
             background-color: rgba(0,0,0,.05);
-            .box-shadow2(inset 0 2px 1px rgba(0,0,0,.1), 0 1px 0 rgba(255,255,255,.6));
             color: @purple;
           }
         }
-        & > a {
+        a {
           color: @grayDark;
           font-weight: 500;
-          padding: 22px 0;
-          margin: 9px 0 5px;
+          padding: 30px 0;
           text-align: center;
-          border-radius: @baseBorderRadius;
           &.btn-large {
             padding: 14px 28px;
             margin-top: 19px;
@@ -720,11 +452,7 @@ article header {
             text-shadow: none;
             float: right;
           }
-          &:hover, &:active, &:focus {
-            color: @purple;
-          }
         }
-
       }
     }
   }
@@ -736,7 +464,6 @@ article header {
   /*.box-shadow(none) !important;*/
 }
 
-
 /* Secondary Nav */
 
 
@@ -745,9 +472,9 @@ article header {
 
 #main {
   margin-bottom: 0;
-
+  
   article.page {
-    //padding-top: 90px;
+    padding-top: 90px;
     border-bottom: none;
     header {
       .page-header {
@@ -758,13 +485,8 @@ article header {
           text-transform: uppercase;
           font-size: 36px;
           font-weight: 500;
-          text-shadow: 0 0 20px @white;
-
-          .btn {
-            margin-top: 4px;
-          }
         }
-
+        
         span {
           color: @gray;
         }
@@ -775,27 +497,15 @@ article header {
     }
     .paper {
       background-color: #fff;
-      background-color: rgba(255,255,255,.75);
+      background-color: rgba(255,255,255,.9);
       margin: 0 -50px 0 -50px;
-      padding: 50px 50px 60px;
-      .border-radius(@baseBorderRadius);
+      padding: 50px;
+      .border-radius(@borderRadiusSmall);
       .box-shadow(0 1px 2px rgba(0,0,0,.2));
       min-height: 600px;
-      &.paper-short {
-        min-height: 200px;
-      }
-      .page-hero {
-        background-color: #010103;
-        //background: url("http://truewoman14.com.s3.amazonaws.com/library/img/exclusive_paper.png") repeat;
-        text-align: center;
-        border-radius: @baseBorderRadius;
-        overflow: hidden;
-        margin-bottom: 30px;
-      }
+      
       .section {
-        //background: url("http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal2.png") repeat-x center bottom;
-        .retina-image("http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal2", "png", no-repeat, 690px, 3px, bottom, center);
-
+        background: url("../img/pencil-line-horizontal.png") repeat-x center bottom;
         padding-bottom: 50px;
         margin-bottom: 50px;
         &:last-child {
@@ -804,54 +514,19 @@ article header {
           padding-bottom: 0;
         }
       }
-
+      
 
     }
     section.post_content {
-
+      
       h2 {
         font-size: 36px;
         font-weight: normal;
-        position: relative;
-        a, a:visited {
-          color: @linkColor;
-        }
-        span {
-          position: absolute;
-          top: -200px;
-        }
-
-        &.border {
-          font-size: 32px;
-          font-weight: 500;
-          text-align: center;
-          text-transform: uppercase;
-          background: url(http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal.png) no-repeat left center, url(http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal.png) no-repeat right center;
-          background-size: 170px auto;
-          margin:0 0 50px;
-        }
-
-
-      }
-      a.btn-cta {
-        position: relative;
-        span {
-          position: absolute;
-          top: -200px;
-        }
       }
       h3 {
         font-size: 26px;
         font-weight: 500;
         text-transform: uppercase;
-        position: relative;
-        span {
-          position: absolute;
-          top: -200px;
-        }
-        a, a:visited {
-          color: @linkColor;
-        }
       }
       p, ul, ol, blockquote {
         margin: 1em 0;
@@ -864,84 +539,27 @@ article header {
           .retina-image("../img/bullet-circle", "png", no-repeat, 8px, 8px, 2px, 6px);
         }
       }
-      .speakers {
-        margin-left:0;
-        margin-top: 0;
-        list-style: none;
-
-        li {
-          margin: 40px 0;
-          &:first-child {
-            margin-top: 0 !important;
-            margin-bottom: 0 !important;
-          }
-
-          h2 {
-            font-family: @sansFontFamily;
-            margin-top: 0;
-            margin-bottom: 0;
-          }
-          .photo img {
-            max-width: 90%;
-            border-radius: @baseBorderRadius;
-            .box-shadow(@baseDropShadow);
-          }
-
-        }
-        .bio {
-          h3 {
-            text-transform: none;
-            font-size: 30px;
-            margin-top: 0;
-          }
-        }
-        &:first-child {
-          margin-top: 7px !important;
-        }
-      }
-
     }
-
+    
     footer {
       clear: both;
     }
-    .paper > .row > .span3 {
-      //background: @red;
-      overflow: hidden;
-      min-height: 300px;
-
-
+    .span3 {
       .nav {
-        //background: @blue;
-        min-width: 190px;
-        //position: fixed;
-        margin-top: 0;
-        padding: 0 0 50px;
-        margin-left: 30px;
-
-        //background: url("http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-vertical.png") repeat-y -2px;
+        margin-top: 10px;
+        padding: 30px 0 50px;
+        background: url("../img/pencil-line-vertical.png") repeat-y -2px;
         li {
           font-family: @baseFontFamily;
           font-size: 110%;
-
           &.break {
             padding: 20px;
-            text-align: center;
           }
           a {
-            padding: 10px 0;
-            //border-bottom: 1px dashed #ddd;
-            //background: url("http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal.png") repeat-x center bottom;
-            .retina-image("http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal2", "png", no-repeat, 390px, 2px, bottom, right);
-            //background-size:200px 1px;
-            .transition(background-color);
-            .transition-duration(.3s);
-
+            padding: 10px 30px;
+            border-bottom: 1px dashed #eee;
             &:hover {
-              border-right: 6px solid @palePurple;
-              //background: rgba(0,0,0,.05);
-              //background: #F1EEE3;
-              //background: rgba(241, 236, 224, .6) url("http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal.png") repeat-x center bottom;
+              background: rgba(0,0,0,.05);
             }
           }
         }
@@ -953,16 +571,12 @@ article header {
       line-height: 1.5;
       h2 {
         text-align: center;
-        font-size: 32px;
-        margin-bottom: 30px;
+        font-size: 22px;
         text-transform: uppercase;
         letter-spacing: 2px;
-        position: relative;
-
-
       }
       h3 {
-        text-align: center;
+        text-align: left !important;
         background-color: @purple;
         color: @white;
         padding: 15px;
@@ -973,17 +587,13 @@ article header {
         margin-bottom: @baseMargin;
         border-left: 0;
         border-right:0;
-
-        tr > td:first-child,
+  
+        tr > td:first-child, 
         tr > th:first-child {
           border-left: 0;
         }
         td.name {
           font-weight: 600;
-        }
-        td.indent,
-        th.indent {
-          padding-left: 3%;
         }
       }
     }
@@ -994,26 +604,21 @@ article header {
         color: @white;
         padding: 15px;
         margin-bottom: 0;
-        a {
-          color: @white;
-        }
       }
       .info {
+  
         color: @gray;
         padding: 10px 20px 15px;
         strong {
           color: @black;
         }
-
+  
       }
       table {
         background-color: rgba(189, 147, 192, .1);
         th {
           background-color: #BD93C0;
           background-color: rgb(189, 147, 192);
-          .dim {
-            font-weight: 300;
-          }
         }
         td.darken {
           background-color: rgba(189, 147, 192, .15);
@@ -1026,23 +631,12 @@ article header {
         color: @white;
         padding: 15px;
         margin-bottom: 0;
-        a {
-          color: @white;
-        }
-      }
-      .info-block {
-        background-color: lighten(@blue, 40%);
-        padding: 30px;
-        font-size: 22px;
-        text-align: center;
-        font-style: italic;
-        font-weight: 700;
       }
       table {
         background-color: rgba(146, 200, 221, .1);
-
+        
         th {
-
+          
           background-color: lighten(@blue, 25%);
         }
         td.darken {
@@ -1050,17 +644,33 @@ article header {
         }
       }
     }
-
+  
     .break {
       padding: 20px 0;
       text-align: center;
-      h2 {
-        font-size: 26px;
-        font-weight: 700;
-      }
     }
   }
+  .speakers {
+    margin-left:0;
 
+    list-style: none;
+    li {
+      margin: 60px 0;
+      &:first-child {
+        margin-top: 0;
+      }
+  
+      h2 {
+        font-family: @sansFontFamily;
+      }
+      .photo img {
+        max-width: 90%;
+      }
+    }
+    &:first-child {
+      margin-top: 7px !important;
+    }
+  }
 }
 
 
@@ -1070,12 +680,11 @@ article header {
 footer[role="contentinfo"] {
   padding: 46px 0 40px;
   margin-top: -0 0px;
-  background: #E6E3E1 url("http://truewoman14.com.s3.amazonaws.com/library/img/exclusive_paper.png") repeat;
-  background: url("http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal.png") repeat-x 0 -2px, url("http://truewoman14.com.s3.amazonaws.com/library/img/exclusive_paper.png") repeat, #E6E3E1;
-
+  background: url("../img/pencil-line-horizontal.png") repeat-x top, url("../img/exclusive_paper.png") repeat, #E6E3E1;
+  height: 210px;
+  .box-sizing(border-box);
   color: @gray;
-
-
+  
   p, li {
     font-family: @sansFontFamily;
     font-weight: 500;
@@ -1088,13 +697,9 @@ footer[role="contentinfo"] {
       }
     }
   }
-  .tel {
-    margin-left: 15px;
-  }
   .footer-links {
     float: left;
     margin-left: 20px;
-
   }
   .footer-social-nav {
     font-family: @altFontFamily;
@@ -1107,12 +712,12 @@ footer[role="contentinfo"] {
         height: 24px;
         width: 24px;
         text-indent: -900em;
-        &.icon-facebook { .retina-image('http://truewoman14.com.s3.amazonaws.com/library/img/icon-facebook', 'png', no-repeat, 24px, 24px, 0, 0); }
-        &.icon-twitter { .retina-image('http://truewoman14.com.s3.amazonaws.com/library/img/icon-twitter', 'png', no-repeat, 24px, 24px, 0, 0); }
-        &.icon-pinterest { .retina-image('http://truewoman14.com.s3.amazonaws.com/library/img/icon-pinterest', 'png', no-repeat, 24px, 24px, 0, 0); }
-        &.icon-vimeo { .retina-image('http://truewoman14.com.s3.amazonaws.com/library/img/icon-vimeo', 'png', no-repeat, 24px, 24px, 0, 0); }
+        &.icon-facebook { .retina-image('../img/icon-facebook', 'png', no-repeat, 24px, 24px, 0, 0); }
+        &.icon-twitter { .retina-image('../img/icon-twitter', 'png', no-repeat, 24px, 24px, 0, 0); }
+        &.icon-pinterest { .retina-image('../img/icon-pinterest', 'png', no-repeat, 24px, 24px, 0, 0); }
+        &.icon-vimeo { .retina-image('../img/icon-vimeo', 'png', no-repeat, 24px, 24px, 0, 0); }
       }
-
+      
     }
   }
   #menu-footer-nav {
@@ -1126,7 +731,7 @@ footer[role="contentinfo"] {
       }
     }
     .pipe {
-      .retina-image('http://truewoman14.com.s3.amazonaws.com/library/img/pipe', 'png', no-repeat, 1px, 25px, 0, 0);
+      .retina-image('../img/pipe', 'png', no-repeat, 1px, 25px, 0, 0);
       margin: 0 8px 0 10px;
       width: 2px;
       display: inline-block;
@@ -1146,63 +751,6 @@ footer[role="contentinfo"] {
   #sbi_camera_button { display: none !important; }
 }
 
-.video {
-  min-height: auto;
-  .videowrapper {
-    position: relative;
-    padding-bottom: 54.097%;
-    padding-top: 25px;
-    margin-bottom: 2.25em;
-    height: 0;
-    iframe {
-      position: absolute;
-      top:0;
-      left:0;
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-}
-
-.modal {
-  width: 1000px;
-  height: 600px;
-  margin-left: -500px;
-  .modal-body {
-    max-height: 700px !important;
-  }
-  .close {
-    top: 5px;
-    right: 5px;
-    position: absolute;
-    width: 30px;
-    z-index: 999999;
-  }
-}
-
-@media (max-width: 480px) {
-  .modal {
-    width: 480px;
-    height: 320px;
-    margin-left: -240px;
-    .modal-body {
-      max-height: 320px !important;
-    }
-  }
-}
-
-@media (max-width: 320px) {
-  .modal {
-    width: 320px;
-    height: 210px;
-    margin-left: -160px;
-
-    .modal-body {
-      max-height: 210px !important;
-    }
-  }
-}
 
 /* Home */
 
@@ -1212,38 +760,15 @@ footer[role="contentinfo"] {
       text-transform: uppercase;
       font-weight: 500 !important;
       &.border {
-        background-size: 240px auto !important;
+        background: url(../img/pencil-line-horizontal.png) no-repeat left center, url(../img/pencil-line-horizontal.png) no-repeat right center;
+        margin:0;
       }
     }
-    @media (max-width: 979px) {
-      h2 {
-        &.border {
-          background-size: 260px auto;
-        }
-      }
-    }
-    @media (max-width: 767px) {
-      h2 {
-        &.border {
-          background-size: 30% auto;
-        }
-      }
-    }
-    @media (max-width: 480px) {
-      h2 {
-        &.border {
-          background-position: center top;
-          background-size: 100% 0;
-          padding-top: 50px;
-        }
-      }
-    }
-
     #intro {
-      //margin-top: 0%;
-      margin-bottom: 30%;
+      margin-top: 15%;
+      margin-bottom: 20%;
       .location, .date {
-        padding-top: 24%;
+        padding-top: 16%;
         h2 {
           font-weight: 500;
           text-transform: uppercase;
@@ -1258,28 +783,22 @@ footer[role="contentinfo"] {
           margin:0;
         }
       }
-      .date .small-screen-only {
-        margin-bottom: 20px;
-      }
       .date {
         text-align: right;
       }
       img {
         .center-block();
-        width: 80%;
+        width: 75%;
       }
       .tw14-logo-purple {
         .center-block();
-        width: 56%;
-        margin-bottom: 2%;
-        &.ha-header-small {
-          margin-top: 40px;
-        }
+        width: 40%;
+        margin-top: 8%;
+        margin-bottom: 10%;
       }
       .btn-cta {
+        width: 50%;
         .center-block();
-        margin-top: 15%;
-        width: 70%;
       }
     }
     .paper {
@@ -1294,25 +813,39 @@ footer[role="contentinfo"] {
         margin: 80px 0 120px;
         img {
           margin-bottom: 10px;
-          border-radius: @baseBorderRadius;
-          .box-shadow(@baseDropShadow);
         }
         h2 {
           text-align: center;
           margin-bottom: 40px;
         }
         h3 {
-          margin-bottom: 1.5em;
+          margin-bottom: 0;
           line-height: 1;
           text-transform: none;
           font-size: 22px;
+          
+          margin-bottom: 0;
           text-align: center;
         }
-
       } /* end Speakers */
-
-
-
+      
+      #video {
+        min-height: auto;
+        .videowrapper {
+          position: relative;
+          padding-bottom: 54.25%;
+          padding-top: 25px;
+          height: 0;
+          iframe {
+            position: absolute;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+      
       #testimonials {
         padding: 50px 50px 50px;
         text-align: center;
@@ -1320,7 +853,7 @@ footer[role="contentinfo"] {
         &.carousel.carousel-fade .item {
           opacity:0;
         }
-
+        
         &.carousel.carousel-fade .active.item {
             opacity:1;
         }
@@ -1333,31 +866,18 @@ footer[role="contentinfo"] {
           border-left: none;
           margin-left: 15%;
           margin-right: 15%;
-
+          
           p {
             font-size: 200%;
             color: @grayDark;
           }
           cite {
             font-style: italic;
-            font-size: 100%;
+            font-size: 110%;
           }
         }
       }
-
-      @media only screen
-      and (max-width : 480px) {
-        #testimonials {
-          blockquote {
-            margin-left: 0;
-            margin-right: 0;
-            p {
-              font-size: 120%;
-            }
-          }
-        }
-      }
-
+      
       #topics {
         text-align: center;
         padding-top: 80px;
@@ -1367,47 +887,31 @@ footer[role="contentinfo"] {
           li {
             background: none !important;
             padding-left:0 !important;
-            font-size: 180%;
+            font-size: 26px;
             font-style: italic;
-            line-height: 1.8em;
+            line-height: 1.5em;
             margin-bottom: .4em;
-            //text-transform: lowercase;
-            padding-left: 20px;
-            .retina-image("http://truewoman14.com.s3.amazonaws.com/library/img/bullet-circle", "png", no-repeat, 8px, 8px, 2px, 6px);
           }
         }
       }
     }
-
+    
   }
 }
 
-.pagename-faqs,
-.pagename-volunteers {
+.pagename-faqs {
   #main {
     article.page {
-      .qa-faqs h2.faq-catname {
-        display: none;
-      }
-      .qa-faqs > form[role=search] {
-        background-color: lighten(#92CA9C, 24%);
-        padding: 20px;
-        .box-sizing(border-box);
-        border-radius: @baseBorderRadius;
-      }
       .qa-faq {
-        //background: url("http://truewoman14.com.s3.amazonaws.com/library/img/bullet-circle.png") no-repeat left 11px;
-        .retina-image("http://truewoman14.com.s3.amazonaws.com/library/img/bullet-circle", "png", no-repeat, 8px, 8px, left, 11px);
+        background: url("../img/bullet-circle.png") no-repeat left 20px;
         padding-left: 20px;
         display: block;
-
         h3 {
           font-size: 130%;
           margin-bottom: 0;
-          margin-top: 0;
           text-transform: none;
           line-height: 1.3;
-
+          
         }
         p.lead {
           margin:0;
@@ -1428,21 +932,18 @@ footer[role="contentinfo"] {
   }
 }
 
-.pagename-register,
-.pagename-volunteers,
-.pagename-exhibitors,
-.pagename-exhibitor-application,
-.pagename-thank-you {
-
-  .btn-register-global {
-    display: none;
+.pagename-register {
+  footer[role="contentinfo"] {
+    .btn-register {
+      display: none;
+    }
   }
-
 }
 
 .pagename-location-travel {
   #main {
     .btn {
+      float: right;
       font-size: 17px;
     }
     .btn strong {
@@ -1450,25 +951,6 @@ footer[role="contentinfo"] {
       text-transform: uppercase;
     }
   }
-
+  
 }
-
-.promo-items {
-  .info {
-    color: @green;
-    font-weight: 500;
-    margin-bottom: 2px;
-  }
-  img {
-    .box-shadow(@baseDropShadow);
-    .opacity(70);
-    .transition(opacity .5s);
-    &:hover {
-      .opacity(100);
-    }
-  }
-}
-
-@import "theme-responsive.less";
-
 

@@ -40,56 +40,56 @@ body {
   -webkit-font-smoothing: antialiased;
   height: 100%;
   background-color: #F6F6F6;
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bg-art-grapes.jpg');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-grapes.jpg');
   background-repeat: no-repeat;
   background-size: 688px auto;
   background-attachment: fixed;
   background-position: center 200px;
 }
 body.pagename-speakers {
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bg-art-tree.jpg');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-tree.jpg');
   background-position: left bottom;
   background-attachment: fixed;
   background-size: 725px auto;
 }
 body.pagename-location-travel {
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bg-art-indoors.jpg');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-indoors.jpg');
   background-size: 1400px auto;
   background-position: center -140px;
   background-attachment: fixed;
 }
 body.pagename-promote {
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bg-art-birds.jpg');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-birds.jpg');
   background-size: 750px auto;
   background-position: right -180px;
   background-attachment: fixed;
 }
 body.pagename-faqs {
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bg-art-branch.jpg');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-branch.jpg');
   background-size: 1400px auto;
   background-position: center -100px;
   background-attachment: fixed;
 }
 body.pagename-schedule {
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bg-art-birds.jpg');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-birds.jpg');
   background-size: 750px auto;
   background-position: right -180px;
   background-attachment: fixed;
 }
 body.pagename-about {
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bg-art-grapes.jpg');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-grapes.jpg');
   background-size: 788px auto;
   background-position: 490px 30%;
   background-attachment: fixed;
 }
 body.pagename-contact {
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bg-art-birds.jpg');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-birds.jpg');
   background-size: 750px auto;
   background-position: right -180px;
   background-attachment: fixed;
 }
 body.pagename-register {
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bg-art-location.jpg');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-location.jpg');
   background-size: 1400px auto;
   background-position: center -200px;
   background-attachment: fixed;
@@ -137,7 +137,7 @@ address {
 }
 hr {
   border: 0;
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal.png');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/pencil-line-horizontal.png');
   background-repeat: no-repeat;
   background-position: bottom center;
   height: 4px;
@@ -146,7 +146,7 @@ hr {
 @media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 1.25/1), (min--moz-device-pixel-ratio: 1.25), (-moz-min-device-pixel-ratio: 1.25), (-ms-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
   hr {
     background-size: 376px 3px;
-    background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal@2x.png');
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/pencil-line-horizontal@2x.png');
     background-position: bottom center;
   }
 }
@@ -181,7 +181,6 @@ p.lead {
   color: #ffffff;
   background: #5d4775;
   /* Pale Violet */
-
 }
 .table th,
 .table td {
@@ -205,14 +204,14 @@ address h4 {
   height: 24px;
   width: 24px;
   text-indent: -900em;
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/arrow-down2.png');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/arrow-down2.png');
   background-repeat: no-repeat;
   background-position: 0 3px;
 }
 @media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 1.25/1), (min--moz-device-pixel-ratio: 1.25), (-moz-min-device-pixel-ratio: 1.25), (-ms-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
   .arrow-down {
     background-size: 24px 24px;
-    background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/arrow-down2@2x.png');
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/arrow-down2@2x.png');
     background-position: 0 3px;
   }
 }
@@ -402,17 +401,14 @@ address h4 {
 .btn,
 .form-actions input[type="submit"] {
   /*background: @palePurple;*/
-
   background-image: none;
   color: #333333;
   text-shadow: 0 1px 0 #ffffff;
   /*color: @white;
   text-shadow: none;*/
-
   font-family: "futura-pt";
   font-weight: 500;
   /*border: none;*/
-
   padding: 8px 15px;
   background-color: rgba(227, 231, 217, 0.7);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
@@ -434,7 +430,6 @@ address h4 {
 .form-actions input[type="submit"]:hover {
   /*background: darken(@palePurple, 08%);
     color: @white;*/
-
   background: #44acd6;
   border-color: #8ab8bb;
   background-image: none;
@@ -628,14 +623,14 @@ article header .banner p {
   margin-top: -49px;
   margin-left: 0px;
   padding-left: 15px;
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/pipe.png');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/pipe.png');
   background-repeat: no-repeat;
   background-position: 0 11px;
 }
 @media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 1.25/1), (min--moz-device-pixel-ratio: 1.25), (-moz-min-device-pixel-ratio: 1.25), (-ms-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
   #toolbar-nav #menu-share-nav {
     background-size: 1px 25px;
-    background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/pipe@2x.png');
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/pipe@2x.png');
     background-position: 0 11px;
   }
 }
@@ -708,7 +703,7 @@ article header .banner p {
   color: #ffffff;
 }
 #toolbar-nav .nav .pipe {
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/pipe.png');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/pipe.png');
   background-repeat: no-repeat;
   background-position: 0 0;
   margin: 0 4px 0 6px;
@@ -720,7 +715,7 @@ article header .banner p {
 @media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 1.25/1), (min--moz-device-pixel-ratio: 1.25), (-moz-min-device-pixel-ratio: 1.25), (-ms-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
   #toolbar-nav .nav .pipe {
     background-size: 1px 25px;
-    background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/pipe@2x.png');
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/pipe@2x.png');
     background-position: 0 0;
   }
 }
@@ -744,7 +739,7 @@ article header .banner p {
 }
 /* Main Navigation */
 .navbar {
-  background: url('http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal2.png') repeat-x bottom !important;
+  background: url('http://truewoman14.s3.amazonaws.com/library/img/pencil-line-horizontal2.png') repeat-x bottom !important;
   padding-bottom: 4px;
 }
 .navbar .brand {
@@ -760,7 +755,7 @@ article header .banner p {
   -moz-transition: none;
   -o-transition: none;
   transition: none;
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/logo.png');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/logo.png');
   background-repeat: no-repeat;
   background-position: 0 0;
   font: 0/0 a;
@@ -772,7 +767,7 @@ article header .banner p {
 @media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 1.25/1), (min--moz-device-pixel-ratio: 1.25), (-moz-min-device-pixel-ratio: 1.25), (-ms-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
   .navbar .brand {
     background-size: 218px 52px;
-    background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/logo@2x.png');
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/logo@2x.png');
     background-position: 0 0;
   }
 }
@@ -780,11 +775,9 @@ article header .banner p {
   margin-top: 10px;
   position: relative;
   top: 0;
-  background: url("http://truewoman14.com.s3.amazonaws.com/library/img/exclusive_paper.png") repeat-x 0 2px;
-  background: url('http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal2.png') repeat-x 0 -2px, /* top line */
- url("http://truewoman14.com.s3.amazonaws.com/library/img/exclusive_paper.png") repeat-x 0 2px;
+  background: url("http://truewoman14.s3.amazonaws.com/library/img/exclusive_paper.png") repeat-x 0 2px;
+  background: url('http://truewoman14.s3.amazonaws.com/library/img/pencil-line-horizontal2.png') repeat-x 0 -2px, /* top line */ url("http://truewoman14.s3.amazonaws.com/library/img/exclusive_paper.png") repeat-x 0 2px;
   /* paper texture */
-
 }
 .navbar nav.main-nav ul.nav {
   width: 100%;
@@ -873,7 +866,6 @@ article header .banner p {
   background: #b22b4e;
   border: none;
   /*.box-shadow(none) !important;*/
-
 }
 /* Secondary Nav */
 /* Content Styling */
@@ -927,7 +919,7 @@ article header .banner p {
   margin-bottom: 30px;
 }
 #main article.page .paper .section {
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal2.png');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/pencil-line-horizontal2.png');
   background-repeat: no-repeat;
   background-position: bottom center;
   padding-bottom: 50px;
@@ -936,7 +928,7 @@ article header .banner p {
 @media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 1.25/1), (min--moz-device-pixel-ratio: 1.25), (-moz-min-device-pixel-ratio: 1.25), (-ms-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
   #main article.page .paper .section {
     background-size: 690px 3px;
-    background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal2@2x.png');
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/pencil-line-horizontal2@2x.png');
     background-position: bottom center;
   }
 }
@@ -963,7 +955,7 @@ article header .banner p {
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
-  background: url(http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal.png) no-repeat left center, url(http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal.png) no-repeat right center;
+  background: url(http://truewoman14.s3.amazonaws.com/library/img/pencil-line-horizontal.png) no-repeat left center, url(http://truewoman14.s3.amazonaws.com/library/img/pencil-line-horizontal.png) no-repeat right center;
   background-size: 170px auto;
   margin: 0 0 50px;
 }
@@ -1066,7 +1058,7 @@ article header .banner p {
 }
 #main article.page .paper > .row > .span3 .nav li a {
   padding: 10px 0;
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal2.png');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/pencil-line-horizontal2.png');
   background-repeat: no-repeat;
   background-position: bottom right;
   -webkit-transition: background-color;
@@ -1081,7 +1073,7 @@ article header .banner p {
 @media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 1.25/1), (min--moz-device-pixel-ratio: 1.25), (-moz-min-device-pixel-ratio: 1.25), (-ms-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
   #main article.page .paper > .row > .span3 .nav li a {
     background-size: 390px 2px;
-    background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal2@2x.png');
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/pencil-line-horizontal2@2x.png');
     background-position: bottom right;
   }
 }
@@ -1193,8 +1185,8 @@ article header .banner p {
 footer[role="contentinfo"] {
   padding: 46px 0 40px;
   margin-top: 0 0px;
-  background: #e6e3e1 url("http://truewoman14.com.s3.amazonaws.com/library/img/exclusive_paper.png") repeat;
-  background: url("http://truewoman14.com.s3.amazonaws.com/library/img/pencil-line-horizontal.png") repeat-x 0 -2px, url("http://truewoman14.com.s3.amazonaws.com/library/img/exclusive_paper.png") repeat, #e6e3e1;
+  background: #e6e3e1 url("http://truewoman14.s3.amazonaws.com/library/img/exclusive_paper.png") repeat;
+  background: url("http://truewoman14.s3.amazonaws.com/library/img/pencil-line-horizontal.png") repeat-x 0 -2px, url("http://truewoman14.s3.amazonaws.com/library/img/exclusive_paper.png") repeat, #e6e3e1;
   color: #808080;
 }
 footer[role="contentinfo"] p,
@@ -1232,50 +1224,50 @@ footer[role="contentinfo"] .footer-social-nav .btn i {
   text-indent: -900em;
 }
 footer[role="contentinfo"] .footer-social-nav .btn i.icon-facebook {
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/icon-facebook.png');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/icon-facebook.png');
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 @media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 1.25/1), (min--moz-device-pixel-ratio: 1.25), (-moz-min-device-pixel-ratio: 1.25), (-ms-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
   footer[role="contentinfo"] .footer-social-nav .btn i.icon-facebook {
     background-size: 24px 24px;
-    background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/icon-facebook@2x.png');
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/icon-facebook@2x.png');
     background-position: 0 0;
   }
 }
 footer[role="contentinfo"] .footer-social-nav .btn i.icon-twitter {
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/icon-twitter.png');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/icon-twitter.png');
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 @media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 1.25/1), (min--moz-device-pixel-ratio: 1.25), (-moz-min-device-pixel-ratio: 1.25), (-ms-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
   footer[role="contentinfo"] .footer-social-nav .btn i.icon-twitter {
     background-size: 24px 24px;
-    background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/icon-twitter@2x.png');
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/icon-twitter@2x.png');
     background-position: 0 0;
   }
 }
 footer[role="contentinfo"] .footer-social-nav .btn i.icon-pinterest {
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/icon-pinterest.png');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/icon-pinterest.png');
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 @media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 1.25/1), (min--moz-device-pixel-ratio: 1.25), (-moz-min-device-pixel-ratio: 1.25), (-ms-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
   footer[role="contentinfo"] .footer-social-nav .btn i.icon-pinterest {
     background-size: 24px 24px;
-    background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/icon-pinterest@2x.png');
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/icon-pinterest@2x.png');
     background-position: 0 0;
   }
 }
 footer[role="contentinfo"] .footer-social-nav .btn i.icon-vimeo {
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/icon-vimeo.png');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/icon-vimeo.png');
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 @media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 1.25/1), (min--moz-device-pixel-ratio: 1.25), (-moz-min-device-pixel-ratio: 1.25), (-ms-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
   footer[role="contentinfo"] .footer-social-nav .btn i.icon-vimeo {
     background-size: 24px 24px;
-    background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/icon-vimeo@2x.png');
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/icon-vimeo@2x.png');
     background-position: 0 0;
   }
 }
@@ -1289,7 +1281,7 @@ footer[role="contentinfo"] #menu-footer-nav li:first-child .pipe {
   display: none;
 }
 footer[role="contentinfo"] #menu-footer-nav .pipe {
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/pipe.png');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/pipe.png');
   background-repeat: no-repeat;
   background-position: 0 0;
   margin: 0 8px 0 10px;
@@ -1301,7 +1293,7 @@ footer[role="contentinfo"] #menu-footer-nav .pipe {
 @media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 1.25/1), (min--moz-device-pixel-ratio: 1.25), (-moz-min-device-pixel-ratio: 1.25), (-ms-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
   footer[role="contentinfo"] #menu-footer-nav .pipe {
     background-size: 1px 25px;
-    background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/pipe@2x.png');
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/pipe@2x.png');
     background-position: 0 0;
   }
 }
@@ -1446,7 +1438,6 @@ footer[role="contentinfo"] #sbi_camera_button {
 }
 .home article.page .paper {
   /* end Speakers */
-
 }
 .home article.page .paper h2 {
   font-size: 260% !important;
@@ -1527,14 +1518,14 @@ footer[role="contentinfo"] #sbi_camera_button {
   line-height: 1.8em;
   margin-bottom: .4em;
   padding-left: 20px;
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bullet-circle.png');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bullet-circle.png');
   background-repeat: no-repeat;
   background-position: 2px 6px;
 }
 @media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 1.25/1), (min--moz-device-pixel-ratio: 1.25), (-moz-min-device-pixel-ratio: 1.25), (-ms-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
   .home article.page .paper #topics ul li {
     background-size: 8px 8px;
-    background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bullet-circle@2x.png');
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bullet-circle@2x.png');
     background-position: 2px 6px;
   }
 }
@@ -1553,7 +1544,7 @@ footer[role="contentinfo"] #sbi_camera_button {
 }
 .pagename-faqs #main article.page .qa-faq,
 .pagename-volunteers #main article.page .qa-faq {
-  background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bullet-circle.png');
+  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bullet-circle.png');
   background-repeat: no-repeat;
   background-position: left 11px;
   padding-left: 20px;
@@ -1563,7 +1554,7 @@ footer[role="contentinfo"] #sbi_camera_button {
   .pagename-faqs #main article.page .qa-faq,
   .pagename-volunteers #main article.page .qa-faq {
     background-size: 8px 8px;
-    background-image: url('http://truewoman14.com.s3.amazonaws.com/library/img/bullet-circle@2x.png');
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bullet-circle@2x.png');
     background-position: left 11px;
   }
 }
@@ -1846,7 +1837,6 @@ footer[role="contentinfo"] #sbi_camera_button {
   }
   .navbar {
     /* Main Nav */
-  
   }
   .navbar .btn-navbar-main {
     position: absolute;

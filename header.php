@@ -13,10 +13,10 @@
 		<title><?php wp_title( '|', true, 'right' ); ?></title>
 
 		<meta name="viewport" content="width=device-width">
-		<meta property="og:title" content="<?php wp_title( '|', true, 'right' ); ?>"/>
-		<meta property="og:image" content="http://truewoman14.com.s3.amazonaws.com/library/img/facebook-og.jpg"/>
+		<meta property="og:title" content="Register for True Woman &rsquo;14"/>
+		<meta property="og:image" content="http://truewoman14.s3.amazonaws.com/library/img/facebook-og.jpg"/>
 		<meta property="og:site_name" content="<?php bloginfo('name'); ?>"/>
-		<meta property="og:description" content="<?php bloginfo('description'); ?>" />
+		<meta property="og:description" content="I’m registering for True Woman ’14 for only $99, and you can, too—until November 25.  Register today, and I’ll see you there!" />
 		<script type="text/javascript" src="//use.typekit.net/xmt6rje.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
@@ -75,7 +75,7 @@
 														<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 													</li>
 													<li id="menu-item-pinterest" class="menu-item">
-														<a href="//pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.truewoman14.com&media=http%3A%2F%2Ftruewoman14.com.s3.amazonaws.com%2Flibrary%2Fimg%2Ffacebook-og.jpg&description=True%20Woman%20%26rsquo%3B14%20%7C%20Finding%20Freedom%2C%20Fullness%20%26amp%3B%20Fruitfullness%20in%20Christ" data-pin-do="buttonPin" data-pin-config="none"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>
+														<a href="//pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.truewoman14.com&media=http%3A%2F%2Ftruewoman14.s3.amazonaws.com%2Flibrary%2Fimg%2Ffacebook-og.jpg&description=True%20Woman%20%26rsquo%3B14%20%7C%20Finding%20Freedom%2C%20Fullness%20%26amp%3B%20Fruitfullness%20in%20Christ" data-pin-do="buttonPin" data-pin-config="none"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>
 													</li>
 												</ul>
 											</li>
