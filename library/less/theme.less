@@ -92,7 +92,9 @@ a {
 strong {
   font-weight: 700;
 }
-
+.highlight {
+  background-color: #eeffb6;
+}
 table {
   strong {
     font-weight: 500;
@@ -199,7 +201,22 @@ address {
 
 .wpcf7-form {
   max-width: 600px;
-
+  em.highlight {
+    display: inline-block;
+    padding: 5px;
+  }
+  .well.well-primary {
+    .box-shadow(inset 0 1px 0 rgba(255,255,255,.4));
+    margin: 50px 0;
+    padding: 40px 50px;
+    background-color: lighten(@green, 50%);
+    legend {
+      line-height: 30px;
+    }
+    input[type="text"].amount {
+      width: 80px;
+    }
+  }
   input[type="text"],
   input[type="password"],
   input[type="datetime"],
@@ -233,6 +250,7 @@ address {
   legend {
     margin: 10px 0 2px;
   }
+
   .info {
     margin-top: 0;
     margin-bottom: 10px;

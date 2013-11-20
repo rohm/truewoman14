@@ -107,6 +107,9 @@ a:hover {
 strong {
   font-weight: 700;
 }
+.highlight {
+  background-color: #eeffb6;
+}
 table strong {
   font-weight: 500;
 }
@@ -234,6 +237,24 @@ address h4 {
 }
 .wpcf7-form {
   max-width: 600px;
+}
+.wpcf7-form em.highlight {
+  display: inline-block;
+  padding: 5px;
+}
+.wpcf7-form .well.well-primary {
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  margin: 50px 0;
+  padding: 40px 50px;
+  background-color: #f1f9f1;
+}
+.wpcf7-form .well.well-primary legend {
+  line-height: 30px;
+}
+.wpcf7-form .well.well-primary input[type="text"].amount {
+  width: 80px;
 }
 .wpcf7-form input[type="text"],
 .wpcf7-form input[type="password"],
