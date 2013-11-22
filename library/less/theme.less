@@ -432,7 +432,7 @@ address {
     margin-top: 10px;
     display: block;
   }
-  &:hover {
+  &:hover, &:active {
     background: darken(@purple, 15%) !important;
     color: darken(@greenLight, 10%) !important;
     .arrow-right {
@@ -478,8 +478,11 @@ address {
   }
 }
 
-.banner {
-
+.navbar .nav li.dropdown.li-cta > .dropdown-toggle .caret {
+  border-top-color: @greenLight;
+}
+.navbar .nav li.dropdown.li-cta.open > .dropdown-toggle .caret {
+  border-top-color: @greenLight;
 }
 
 article header {
@@ -676,7 +679,7 @@ article header {
         border-radius: @baseBorderRadius;
         margin-left: 0;
         margin-right: 0;
-        padding: 20px 2px;
+        padding: 10px;
         & > li.menu-item {
           text-transform: none;
           font-size: 110%;
@@ -684,7 +687,7 @@ article header {
           & > a {
             font-family: @baseFontFamily;
             line-height: 25px;
-            padding-left: 30px !important;
+            //padding-left: 30px !important;
             font-weight: 400;
             line-height: 44px;
             border-radius: @baseBorderRadius;
@@ -827,13 +830,15 @@ article header {
           padding-bottom: 0;
         }
       }
-
-
     }
     section.post_content {
+      h1, h2, h3, h4, h5, h6 {
+        margin: 50px 0 .5em;
+      }
 
       h2 {
         font-size: 36px;
+        line-height: 1.1em;
         font-weight: normal;
         position: relative;
         a, a:visited {
@@ -972,6 +977,26 @@ article header {
     }
   }
   article.page section.post_content {
+    .style-guide-section {
+      > h2.section-title {
+        background: #5d4876;
+        .box-shadow2(5px 5px 0 rgba(144, 67, 154, .5), -5px -5px 0 rgba(67, 172, 214, .5)) !important;
+        color: #fff;
+        padding: 10px 50px;
+        margin-left: -50px;
+        margin-right: -50px;
+        margin-top: 100px;
+        margin-bottom: 40px;
+      }
+      > h3 {
+        background-color: #eee;
+        background-color: rgba(0,0,0,.07);
+        padding-left: 13px;
+        font-size: 18px;
+        margin-left: -13px;
+        margin-right: -13px;
+      }
+    }
     .table-schedule-wrap {
       line-height: 1.5;
       h2 {
@@ -1009,6 +1034,9 @@ article header {
           padding-left: 3%;
         }
       }
+    }
+    .table-condensed {
+      background-color: #FCFCFC;
     }
     .main-session {
       padding-bottom: 30px;

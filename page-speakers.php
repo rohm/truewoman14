@@ -13,38 +13,36 @@ Template Name: Speakers
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
+            <header>
 
-                        <header>
+              <div class="page-header"><h1><?php the_title(); ?></h1></div>
 
-                            <div class="page-header"><h1><?php the_title(); ?></h1></div>
-
-                        </header> <!-- end article header -->
-                        <div class="paper">
-                            <div class="row">
-                                <div class="span9">
-                                    <section class="post_content">
-                                    <?php the_content(); ?>
-                                    </section> <!-- end article section -->
-
-                                </div><!-- end span9 -->
-                                 <div class="span3">
-                                    <ul id="sidebar" class="nav nav-speakers">
-                                      <li><a href="#nancy">Nancy Leigh DeMoss</a></li>
-                                      <li><a href="#joni">Joni Eareckson Tada</a></li>
-                                      <li><a href="#janet">Janet Parshall</a></li>
-                                      <li><a href="#mary">Mary Kassian</a></li>
-                                      <li><a href="#jim">Jim Cymbala</a></li>
-                                      <li><a href="#dannah">Dannah Gresh</a></li>
-                                      <li><a href="#erin">Erin Davis</a></li>
-                                      <li><a href="#jani">Jani Ortlund</a></li>
-                                      <li><a href="#angie">Angie Smith</a></li>
-                                      <li><a href="#gettys">Keith &amp; Kristyn Getty</a></li>
-                                      <li><a href="#blair">Blair Linne</a></li>
-                                      <li><a href="#chicago-tabernacle">Chicago Tabernacle Choir</a></li>
-                                    </ul>
-                                </div><!-- end span3 -->
-                            </div><!-- end row -->
-                        </div>
+            </header> <!-- end article header -->
+            <div class="paper">
+                <div class="row">
+                    <div class="span9">
+                      <section class="post_content">
+                        <?php the_content(); ?>
+                      </section> <!-- end article section -->
+                    </div><!-- end span9 -->
+                     <div class="span3">
+                        <ul id="sidebar" class="nav nav-speakers">
+                          <li><a href="#nancy">Nancy Leigh DeMoss</a></li>
+                          <li><a href="#joni">Joni Eareckson Tada</a></li>
+                          <li><a href="#janet">Janet Parshall</a></li>
+                          <li><a href="#mary">Mary Kassian</a></li>
+                          <li><a href="#jim">Jim Cymbala</a></li>
+                          <li><a href="#dannah">Dannah Gresh</a></li>
+                          <li><a href="#erin">Erin Davis</a></li>
+                          <li><a href="#jani">Jani Ortlund</a></li>
+                          <li><a href="#angie">Angie Smith</a></li>
+                          <li><a href="#gettys">Keith &amp; Kristyn Getty</a></li>
+                          <li><a href="#blair">Blair Linne</a></li>
+                          <li><a href="#chicago-tabernacle">Chicago Tabernacle Choir</a></li>
+                        </ul>
+                    </div><!-- end span3 -->
+                </div><!-- end row -->
+            </div>
 					</article> <!-- end article -->
 
 					<?php comments_template(); ?>

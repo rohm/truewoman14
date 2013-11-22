@@ -63,7 +63,13 @@ table {
 .table-condensed {
   th,
   td {
-    padding: 4px 5px;
+    padding: 4px 5px !important;
+    vertical-align: middle;
+    h1, h2, h3, h4, h5, p {
+      &:last-child {
+        margin: 0 !important;
+      }
+    }
   }
 }
 
