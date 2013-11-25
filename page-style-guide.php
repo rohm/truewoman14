@@ -23,7 +23,7 @@ Template Name: Style Guide
 						  <div class="row">
 						      <div class="span9">
 						          <section class="post_content style_guide">
-  						            <h2><span id="#overview"></span>Overview</h2>
+  						            <h2 style="margin-top: 10px;"><span id="#overview"></span>Overview</h2>
   						            <p class="lead">This is a brief description of what the True Woman movement is and what the conferences are all about that should be written by Paula, Lindsay, Lindsey or someone of their caliber. It should include both the “message” and the “purpose” of the True Woman conferences. What is the need we are addressing? </p>
   						            <p><strong>Audience:</strong> All Christian women everywhere.</p>
 
@@ -59,7 +59,7 @@ Template Name: Style Guide
 
                         <section class="style-guide-section">
     						            <h2 class="section-title"><span id="#branding"></span>Branding</h2>
-    						            <p>We want to consistently brand True Woman as a ministry of Revive Our Hearts. Without limiting the possibilities, here are some branding suggestions: </p>
+    						            <p>Preamble instructions go here . . . morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
     						            <h3>Freedom, Fullness &amp; Fruitfulness</h3>
     						            <p>We are using three primary watercolor images to communicate the concept of freedom, fullness &amp; fruitfulness in Christ. We chose watercolor paintings because of its subtle, imperfect, work-in-progress sort of beauty that is both calming and making you want to see more.</p>
     						            <h4>Freedom - Birds flying in the clouds</h4>
@@ -183,7 +183,7 @@ Template Name: Style Guide
   						         </div><!-- end span9 -->
   						         <div class="span3">
   						          <ul class="nav" id="sidebar">
-    						          <li><a href="#overview">Overview</a></li>
+    						          <li><a href="/style-guide/#overview">Overview</a></li>
     						          <li><a href="#identity">Identity</a></li>
     						          <li><a href="#branding">Branding</a></li>
     						          <li><a href="#color">Color Palette</a></li>
