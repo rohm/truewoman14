@@ -50,8 +50,9 @@ Template Name: Style Guide
     						            <p><strong>The official tagline:</strong> True Woman ‘14 is a call for women to come together and find freedom, fullness, and fruitfulness&nbsp;in&nbsp;Christ. </p>
     						            <h3>Mark Usage</h3>
     						            <p>These are the variations that the TW'14 logo may appear:
-                          <img style="margin: 30px 0;" src="<?php echo get_template_directory_uri(); ?>/library/img/styleguide-logos-good.png" alt />
+                            <img style="margin: 30px 0;" src="<?php echo get_template_directory_uri(); ?>/library/img/styleguide-logos-good.png" alt />
                           <p>
+                          <p><a class="btn" href="http://truewoman14.s3.amazonaws.com/downloads/tw14-logo.ai"><i class="icon icon-download-alt"></i> Download Vector Logo (1.6MB)</a></p>
     						            <h3>Do&rsquo;s and Don&rsquo;ts</h3>
                           <img style="margin: 30px 0;" src="<?php echo get_template_directory_uri(); ?>/library/img/identity-dos-donts.png" alt />
                         </section>
