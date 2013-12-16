@@ -1446,6 +1446,9 @@ footer[role="contentinfo"] #sbi_camera_button {
 .home article.page h2.border {
   background-size: 240px auto !important;
 }
+.home article.page h3 {
+  margin-top: .3em !important;
+}
 @media (max-width: 979px) {
   .home article.page h2.border {
     background-size: 260px auto;
