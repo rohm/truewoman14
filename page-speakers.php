@@ -38,7 +38,7 @@ Template Name: Speakers
                     <li><a href="#erin">Erin Davis</a></li>
                     <li><a href="#jani">Jani Ortlund</a></li>
                     <li><a href="#angie">Angie Smith</a></li>
-                    <li><a href="#lauren-changler">Lauren Chandler</a></li>
+                    <li><a href="#lauren-chandler">Lauren Chandler</a></li>
                     <li><a href="#susan">Susan Hunt</a></li>
                     <li><a href="#scott">Scott Lindsey</a></li>
                     <li><a href="#gettys">Keith &amp; Kristyn Getty</a></li>
