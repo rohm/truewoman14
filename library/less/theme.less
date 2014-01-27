@@ -253,7 +253,8 @@ address {
     font-weight: bold;
   }
   legend {
-    margin: 10px 0 2px;
+    margin: 1em 0 .2em;
+    font-size: 1.2em;
   }
 
   .info {
@@ -286,11 +287,20 @@ address {
     width: 44px;
     text-align: center;
   }
-
+  .contact-position {
+    margin: 10px 0;
+    display: block;
+    span.wpcf7-list-item {
+      display: block;
+    }
+    //background-color: red;
+  }
   .wpcf7-radio {
+
     span.wpcf7-list-item {
       margin-left: 0;
       margin-right: .5em;
+      margin-bottom: .5em;
     }
     label {
       display: inline-block;
@@ -334,7 +344,7 @@ address {
 }
 
 input[type="password"] {
-  font-family: @font-family-secondary;
+  font-family: @altFontFamily;
 }
 
 /* Structure */

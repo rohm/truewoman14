@@ -289,7 +289,8 @@ address h4 {
   font-weight: bold;
 }
 .wpcf7-form legend {
-  margin: 10px 0 2px;
+  margin: 1em 0 .2em;
+  font-size: 1.2em;
 }
 .wpcf7-form .info {
   margin-top: 0;
@@ -321,9 +322,17 @@ address h4 {
   width: 44px;
   text-align: center;
 }
+.wpcf7-form .contact-position {
+  margin: 10px 0;
+  display: block;
+}
+.wpcf7-form .contact-position span.wpcf7-list-item {
+  display: block;
+}
 .wpcf7-form .wpcf7-radio span.wpcf7-list-item {
   margin-left: 0;
   margin-right: .5em;
+  margin-bottom: .5em;
 }
 .wpcf7-form .wpcf7-radio label {
   display: inline-block;
@@ -409,6 +418,9 @@ address h4 {
 .wpcf7-form input[type="tel"]::-webkit-input-placeholder,
 .wpcf7-form input[type="color"]::-webkit-input-placeholder {
   color: #ccc;
+}
+input[type="password"] {
+  font-family: "Adobe Caslon Pro", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", Times, serif;
 }
 /* Structure */
 .page-wrap {
