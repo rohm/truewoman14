@@ -166,6 +166,50 @@ p.lead {
 .text-glow {
   text-shadow: 0 1px 16px #ffffff;
 }
+.oval-quotes {
+  position: relative;
+  padding: 15px;
+  margin: 1em 0 3em;
+  color: #000;
+  background: #9CD1E6;
+  background: rgba(156, 209, 230, 0.4);
+  border-radius: 10px;
+  border-left: none;
+  /* background: linear-gradient(top, #f9d835, #f3961c); */
+}
+.oval-quotes p {
+  /* height: 250px; */
+  padding: 0 15px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+}
+.oval-quotes p:after {
+  content: "";
+  display: block;
+  /* reduce the damage in FF3.0 */
+  position: absolute;
+  bottom: -15px;
+  left: 50px;
+  width: 0;
+  border-width: 15px 15px 0;
+  border-style: solid;
+  border-color: #9CD1E6 transparent;
+  border-color: rgba(156, 209, 230, 0.4) transparent;
+}
+.oval-quotes-cite {
+  display: block;
+  padding-left: 50px;
+  padding-top: 10px;
+  font-size: 13px;
+  line-height: 1rem;
+}
+.oval-quotes-cite strong {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: .3rem;
+}
 .more {
   margin-top: 60px;
   text-align: center;
@@ -234,6 +278,17 @@ address h4 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+.pagename-leaders .paper .well {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background-color: #F5F0F4;
+  background-color: rgba(144, 67, 154, 0.06);
+  margin: 50px 0 0;
+}
+.pagename-leaders .paper .well h3 {
+  margin-top: 0 !important;
 }
 .wpcf7-form {
   max-width: 600px;
