@@ -44,6 +44,7 @@ Template Name: Speakers
                     <li><a href="#gettys">Keith &amp; Kristyn Getty</a></li>
                     <li><a href="#blair">Blair Linne</a></li>
                     <li><a href="#chicago-tabernacle">Chicago Tabernacle Choir</a></li>
+                    <li><a href="#chrissy">Chrissy Toledo</a></li>
                     <li><a href="#stephanie">Stephanie Martinez</a></li>
                   </ul>
                 </div><!-- end span3 -->
