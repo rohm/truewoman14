@@ -16,7 +16,7 @@ Template Name: Leaders
 
 						<header>
 
-							<div class="page-header"><h1><?php the_title(); ?> <!-- a class="pull-right btn" href="#">Download Schedule <i class="icon-pdf"></i></a--></h1></div>
+							<div class="page-header"><h1><!-- <?php the_title(); ?> --> <!-- a class="pull-right btn" href="#">Download Schedule <i class="icon-pdf"></i></a--></h1></div>
 
 						</header> <!-- end article header -->
 						<div class="paper">
@@ -27,44 +27,59 @@ Template Name: Leaders
           							 <iframe src="http://player.vimeo.com/video/73405109" autoplay="autoplay" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
       							 </div><!-- end .videowrapper -->
   							 </div><!-- end #video -->
+  							 <h2 class="text-center">Build a Community of True Women in Your Church</h2>
+  							 <p class="lead text-center">Find out what will God do when your church group attends True Woman &rsquo;14!<br />We&rsquo;ll seek the Lord to:</p>
   							 <div class="row">
-  							   <div class="span8">
-      							   <h2>Your Women Will Grow Deeper at True&nbsp;Woman&nbsp;&rsquo;14</h2>
-                                    <p>What is the contemporary significance of Situationist political theory? Early street sweepers sometimes believed that Situationist political theory was not different from post-revolutionary semantics! Consider the two terms. "Situationist" comes from a Latin word meaning &ldquo;optimistic variations&rdquo;.</p>
-                                    <ul>
-                                        <li>Bring your group</li>
-                                        <li>Get your women deeper into the Word</li>
-                                        <li>Make connections</li>
-                                    </ul>
-                                    <p><a href="#" class="btn btn-cta">Register Your Group Now</a></p>
-                                    <div class="well">
-                                        <h3>Specifically for Leaders</h3>
-                                        <p>We call it the True Woman '14 Pre-event. This pre-event is designed specifically for women who are in ministry to other women. Be part of this event so that you can get encouragement and new energy as you serve your women.</p>
-                                        <a href="#" class="btn">Learn More</a>
-                                    </div>
-                                </div>
-                                <div class="span4">
-                                    <blockquote class="oval-quotes">
-                                        <p>I brought eighteen women with me to True Woman ’12. It was like Christmas watching them catch the vision of what true biblical womanhood is all about.</p>
-                                    </blockquote>
-                                    <cite class="oval-quotes-cite">
-                                        <strong>Leslie</strong>
-                                        Women&rsquo;s Ministry Director<br>
-                                        First Baptist Church,
-                                        Indianapolis, IN
-                                    </cite>
-                                    <blockquote class="oval-quotes">
-                                        <p>Twenty ladies from our church unified in a way that I couldn&rsquo;t even imagine! We had a precious prayer time together. We all put a foot in a circle and cried out to the Lord. I did not know that our ladies could pray the way they did!</p>
-                                    </blockquote>
-                                    <cite class="oval-quotes-cite">
-                                        <strong>Sara</strong>
-                                        Pastor&rsquo;s Wife<br>
-                                        Second Baptist Church,
-                                        South Bend, IN
-                                    </cite>
-                                </div>
+  							   <div class="span6 offset3">
+
+
+                    <ul>
+                        <li>discover and embrace His design and mission for our lives</li>
+                        <li>reflect the beauty and heart of Jesus Christ to their world</li>
+                        <li>pass the baton of Truth to the next generation</li>
+                        <li>pray for an outpouring of God's Spirit</li>
+                    </ul>
+                    <p>Freedom, fullness, and fruitfulness await you in Indianapolis!</p>
+                    <p><a href="#" class="btn btn-cta">Register Your Group Now</a></p>
+
+                </div>
+
   							 </div>
-    						</section>
+  							 <div class="row">
+    							 <div class="span7">
+
+        						 <blockquote class="oval-quotes">
+        						     <p>I brought eighteen women with me to True Woman &rsquo;12. It was like Christmas watching them catch the vision of what true biblical womanhood is all about.</p>
+        						 </blockquote>
+        						 <cite class="oval-quotes-cite">
+        						     <strong>Sara Quick</strong>
+        						     Women&rsquo;s Ministry Director<br>
+        						     Ostrander, Ohio
+        						 </cite>
+        						 <blockquote class="oval-quotes">
+        						     <p>Twenty ladies from our church unified in a way that I couldn&rsquo;t even imagine! We had a precious prayer time together. We all put a foot in a circle and cried out to the Lord. I did not know that our ladies could pray the way they did!</p>
+        						 </blockquote>
+        						 <cite class="oval-quotes-cite">
+        						     <strong>April Workman</strong>
+        						     Peotone, IL
+        						 </cite>
+        						 <blockquote class="oval-quotes">
+        						     <p>On our way home, the ladies traveling with me wept with repentance. Women were confessing years of bitterness, lust, pride, jealousy, fear, etc. It was incredible. Praise God for forgiveness of sin!</p>
+        						 </blockquote>
+        						 <cite class="oval-quotes-cite">
+        						     <strong>Shirley</strong>
+        						 </cite>
+                  </div>
+                  <div class="span5">
+                    <div class="well">
+                      <h3>Specifically for Leaders</h3>
+                      <p>We call it the True Woman &rsquo;14 Pre-event. This pre-event is designed specifically for women who are in ministry to other women. Be part of this event so that you can get encouragement and new energy as you serve your women.</p>
+                      <a href="#" class="btn">Learn More</a>
+                    </div>
+
+                  </div>
+      					 </div>
+    					</section>
 
 		    		</div><!-- /paper -->
 

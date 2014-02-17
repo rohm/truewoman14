@@ -36,7 +36,9 @@
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
 		<link href="<?php echo get_template_directory_uri(); ?>/library/css/theme.css" rel="stylesheet" type="text/css">
-
+		<!--[if lte IE 10]>
+			<link href="<?php echo get_template_directory_uri(); ?>/library/css/ie.css" rel="stylesheet" type="text/css"></link>
+		<![endif]-->
 		<!-- typeahead plugin - if top nav search bar enabled -->
 		<!-- ?php require_once('library/typeahead.php'); ?-->
 
