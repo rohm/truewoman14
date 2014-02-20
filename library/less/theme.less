@@ -148,7 +148,8 @@ p.lead {
   color: #000;
   /* background: #9CD1E6;
   background: rgba(156, 209, 230, .4); */
-  background-color: #eee;
+  background-color: #E5D5E7;
+  background-color: rgba(144, 67, 154, .2);
   border-radius: 10px;
   border-left: none;
   /* background: linear-gradient(top, #f9d835, #f3961c); */
@@ -170,7 +171,8 @@ p.lead {
       border-style: solid;
       /* border-color: #9CD1E6 transparent;
       border-color: rgba(156, 209, 230, .4) transparent; */
-      border-color: #eee transparent;
+      border-color: #E5D5E7 transparent;
+      border-color: rgba(144, 67, 154, .2) transparent;
     }
   }
 }
@@ -247,7 +249,33 @@ address {
   .box-sizing(border-box);
 }
 
+#menu-back,
+.special-page-title {
+  display: none;
+}
+
+.special-page-title {
+  margin-bottom: 0 !important;
+}
+
 .pagename-leaders {
+
+  #menu-back,
+  .special-page-title {
+    display: block;
+  }
+
+  .special-page-title {
+    position: absolute;
+    font-weight: 300;
+    margin-top: 16px;
+  }
+  .navbar nav.main-nav ul.nav > li:last-child{
+    &:last-child {
+      width: 38%;
+      margin-bottom: 13px;
+    }
+  }
   .paper {
     .well {
       /* .box-shadow(none);
@@ -499,7 +527,8 @@ input[type="password"] {
 .pagename-promote .li-cta > a,
 .pagename-about .li-cta > a,
 .pagename-faqs .li-cta > a,
-.pagename-contact .li-cta > a {
+.pagename-contact .li-cta > a,
+.pagename-leaders .li-cta > a {
   background: @purple !important;
   border: none;
   color: @greenLight !important;
@@ -567,7 +596,8 @@ input[type="password"] {
   .pagename-promote .li-cta > a,
   .pagename-about .li-cta > a,
   .pagename-faqs .li-cta > a,
-  .pagename-contact .li-cta > a {
+  .pagename-contact .li-cta > a,
+  .page-name-leaders .li-cta > a {
     border-style: solid;
     border-width: 5px;
     border-left-color: #9CD1E6;
@@ -841,7 +871,7 @@ article header {
           margin: 9px 0 5px;
           text-align: center;
           border-radius: @baseBorderRadius;
-          &.btn-large {
+          &.li-cta {
             padding: 14px 28px;
             margin-top: 19px;
             margin-left: 10px;

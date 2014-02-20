@@ -173,7 +173,8 @@ p.lead {
   color: #000;
   /* background: #9CD1E6;
   background: rgba(156, 209, 230, .4); */
-  background-color: #eee;
+  background-color: #E5D5E7;
+  background-color: rgba(144, 67, 154, 0.2);
   border-radius: 10px;
   border-left: none;
   /* background: linear-gradient(top, #f9d835, #f3961c); */
@@ -197,7 +198,8 @@ p.lead {
   border-style: solid;
   /* border-color: #9CD1E6 transparent;
       border-color: rgba(156, 209, 230, .4) transparent; */
-  border-color: #eee transparent;
+  border-color: #E5D5E7 transparent;
+  border-color: rgba(144, 67, 154, 0.2) transparent;
 }
 .oval-quotes-cite {
   display: block;
@@ -281,6 +283,26 @@ address h4 {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+#menu-back,
+.special-page-title {
+  display: none;
+}
+.special-page-title {
+  margin-bottom: 0 !important;
+}
+.pagename-leaders #menu-back,
+.pagename-leaders .special-page-title {
+  display: block;
+}
+.pagename-leaders .special-page-title {
+  position: absolute;
+  font-weight: 300;
+  margin-top: 16px;
+}
+.pagename-leaders .navbar nav.main-nav ul.nav > li:last-child:last-child {
+  width: 38%;
+  margin-bottom: 13px;
 }
 .pagename-leaders .paper .well {
   /* .box-shadow(none);
@@ -569,7 +591,8 @@ input[type="password"] {
 .pagename-promote .li-cta > a,
 .pagename-about .li-cta > a,
 .pagename-faqs .li-cta > a,
-.pagename-contact .li-cta > a {
+.pagename-contact .li-cta > a,
+.pagename-leaders .li-cta > a {
   background: #5d4775 !important;
   border: none;
   color: #c8ee95 !important;
@@ -595,7 +618,8 @@ input[type="password"] {
 .pagename-promote .li-cta > a i,
 .pagename-about .li-cta > a i,
 .pagename-faqs .li-cta > a i,
-.pagename-contact .li-cta > a i {
+.pagename-contact .li-cta > a i,
+.pagename-leaders .li-cta > a i {
   font-family: "Adobe Caslon Pro", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: normal;
@@ -609,7 +633,8 @@ input[type="password"] {
 .pagename-promote .li-cta > a .info,
 .pagename-about .li-cta > a .info,
 .pagename-faqs .li-cta > a .info,
-.pagename-contact .li-cta > a .info {
+.pagename-contact .li-cta > a .info,
+.pagename-leaders .li-cta > a .info {
   font-family: "futura-pt";
   font-weight: 500;
   font-style: normal;
@@ -629,6 +654,7 @@ input[type="password"] {
 .pagename-about .li-cta > a:hover,
 .pagename-faqs .li-cta > a:hover,
 .pagename-contact .li-cta > a:hover,
+.pagename-leaders .li-cta > a:hover,
 .btn-cta:active,
 .pagename-home .li-cta > a:active,
 .pagename-speakers .li-cta > a:active,
@@ -637,7 +663,8 @@ input[type="password"] {
 .pagename-promote .li-cta > a:active,
 .pagename-about .li-cta > a:active,
 .pagename-faqs .li-cta > a:active,
-.pagename-contact .li-cta > a:active {
+.pagename-contact .li-cta > a:active,
+.pagename-leaders .li-cta > a:active {
   background: #372a45 !important;
   color: #b1e769 !important;
 }
@@ -650,6 +677,7 @@ input[type="password"] {
 .pagename-about .li-cta > a:hover .arrow-right,
 .pagename-faqs .li-cta > a:hover .arrow-right,
 .pagename-contact .li-cta > a:hover .arrow-right,
+.pagename-leaders .li-cta > a:hover .arrow-right,
 .btn-cta:active .arrow-right,
 .pagename-home .li-cta > a:active .arrow-right,
 .pagename-speakers .li-cta > a:active .arrow-right,
@@ -658,7 +686,8 @@ input[type="password"] {
 .pagename-promote .li-cta > a:active .arrow-right,
 .pagename-about .li-cta > a:active .arrow-right,
 .pagename-faqs .li-cta > a:active .arrow-right,
-.pagename-contact .li-cta > a:active .arrow-right {
+.pagename-contact .li-cta > a:active .arrow-right,
+.pagename-leaders .li-cta > a:active .arrow-right {
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transition: opacity 0.5s;
@@ -674,7 +703,8 @@ input[type="password"] {
 .pagename-promote .li-cta > a .caret-right,
 .pagename-about .li-cta > a .caret-right,
 .pagename-faqs .li-cta > a .caret-right,
-.pagename-contact .li-cta > a .caret-right {
+.pagename-contact .li-cta > a .caret-right,
+.pagename-leaders .li-cta > a .caret-right {
   border-left-color: #c8ee95;
   border-width: 6px 0 6px 6px;
 }
@@ -686,7 +716,8 @@ input[type="password"] {
 .pagename-promote .li-cta > a .arrow-right,
 .pagename-about .li-cta > a .arrow-right,
 .pagename-faqs .li-cta > a .arrow-right,
-.pagename-contact .li-cta > a .arrow-right {
+.pagename-contact .li-cta > a .arrow-right,
+.pagename-leaders .li-cta > a .arrow-right {
   display: inline-block;
   position: relative;
   font-size: 130%;
@@ -706,7 +737,8 @@ input[type="password"] {
 .ie8 .pagename-promote .li-cta > a,
 .ie8 .pagename-about .li-cta > a,
 .ie8 .pagename-faqs .li-cta > a,
-.ie8 .pagename-contact .li-cta > a {
+.ie8 .pagename-contact .li-cta > a,
+.ie8 .page-name-leaders .li-cta > a {
   border-style: solid;
   border-width: 5px;
   border-left-color: #9CD1E6;
@@ -991,7 +1023,7 @@ article header .banner p {
   text-align: center;
   border-radius: 2px;
 }
-.navbar nav.main-nav ul.nav > li > a.btn-large {
+.navbar nav.main-nav ul.nav > li > a.li-cta {
   padding: 14px 28px;
   margin-top: 19px;
   margin-left: 10px;
@@ -1809,7 +1841,8 @@ footer[role="contentinfo"] #sbi_camera_button {
   .pagename-promote .navbar nav.main-nav ul.nav li.li-cta,
   .pagename-about .navbar nav.main-nav ul.nav li.li-cta,
   .pagename-faqs .navbar nav.main-nav ul.nav li.li-cta,
-  .pagename-contact .navbar nav.main-nav ul.nav li.li-cta {
+  .pagename-contact .navbar nav.main-nav ul.nav li.li-cta,
+  .pagenmae-leaders .navbar nav.main-nav ul.nav li.li-cta {
     float: right;
     min-width: 23%;
   }
@@ -1820,7 +1853,8 @@ footer[role="contentinfo"] #sbi_camera_button {
   .pagename-promote .navbar nav.main-nav ul.nav li.li-cta > a,
   .pagename-about .navbar nav.main-nav ul.nav li.li-cta > a,
   .pagename-faqs .navbar nav.main-nav ul.nav li.li-cta > a,
-  .pagename-contact .navbar nav.main-nav ul.nav li.li-cta > a {
+  .pagename-contact .navbar nav.main-nav ul.nav li.li-cta > a,
+  .pagename-leaders .navbar nav.main-nav ul.nav li.li-cta > a {
     padding-top: 12px !important;
     padding-top: 6px !important \9;
     padding-bottom: 12px !important;

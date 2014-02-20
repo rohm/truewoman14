@@ -4,7 +4,7 @@ Template Name: Leaders
 */
 ?>
 
-<?php get_header(); ?>
+<?php get_header('special'); ?>
 
 			<div id="content" class="clearfix row schedule">
 
@@ -57,18 +57,21 @@ Template Name: Leaders
         						     Ostrander, Ohio
         						 </cite>
         						 <blockquote class="oval-quotes">
+        						     <p>On our way home, the ladies traveling with me wept with repentance. Women were confessing years of bitterness, lust, pride, jealousy, fear, etc. It was incredible. Praise God for forgiveness of sin!</p>
+        						 </blockquote>
+        						 <cite class="oval-quotes-cite">
+        						     <strong>Shirley</strong>
+        						     Women&rsquo;s Ministry Leader<br>
+        						     New Philadelphia, Ohio
+        						 </cite>
+        						 <blockquote class="oval-quotes">
         						     <p>Twenty ladies from our church unified in a way that I couldn&rsquo;t even imagine! We had a precious prayer time together. We all put a foot in a circle and cried out to the Lord. I did not know that our ladies could pray the way they did!</p>
         						 </blockquote>
         						 <cite class="oval-quotes-cite">
         						     <strong>April Workman</strong>
         						     Peotone, IL
         						 </cite>
-        						 <blockquote class="oval-quotes">
-        						     <p>On our way home, the ladies traveling with me wept with repentance. Women were confessing years of bitterness, lust, pride, jealousy, fear, etc. It was incredible. Praise God for forgiveness of sin!</p>
-        						 </blockquote>
-        						 <cite class="oval-quotes-cite">
-        						     <strong>Shirley</strong>
-        						 </cite>
+
                   </div>
                   <div class="span5">
                     <div class="well">
