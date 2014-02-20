@@ -61,7 +61,7 @@
 									if(of_get_option('site_name','1')) bloginfo('name'); ?></a>
 								<div id="toolbar-nav">
 									<div class="nav-collapse toolbar-nav-collapse">
-										<ul id="menu-back" class="nav"><li class="menu-item"><a href="/">Back to the Homepage</a></li></ul>
+										<ul id="menu-back" class="nav"><li class="menu-item"><a href="/">&larr; Back to the Homepage</a></li></ul>
 										<ul id="menu-share-nav" class="nav">
 
 											<li class="menu-item has-dropdown">

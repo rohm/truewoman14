@@ -332,7 +332,7 @@ address h4 {
   margin: 2rem 0 3rem;
 }
 .pagename-leaders .paper .oval-quotes {
-  margin-left: 30px !important;
+  /*  margin-left: 30px !important; */
 }
 .pagename-leaders .btn-register-global {
   display: none;
