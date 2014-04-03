@@ -140,8 +140,9 @@ Template Name: Leadership Pre-Event
 						<header>
               <div class="page-hero photo jumbotron">
                 <div class="container">
-                  <h1><?php bloginfo($name) ?> <?php the_title(); ?></h1>
 									<p class="event-date">Thursday, October 9, 2014</p>
+                  <h1><?php bloginfo($name) ?> <?php the_title(); ?></h1>
+									
                   <h2>Be Equipped, Encouraged <i>&amp;</i> Energized</h2>
                   <a class="btn btn-cta" href="https://www.reviveourhearts.com/event-registration/true-woman-14-pre-event/">Register Today $55</a>
                 </div>
@@ -214,7 +215,7 @@ Template Name: Leadership Pre-Event
   							 <tr class="emphasize">
   							 <td class="column-time">12:15 p.m.</td>
   							 <td class="column-session">Nancy Leigh DeMoss</td>
-  							 <td class="column-topic">TBD</td>
+  							 <td class="column-topic"></td>
   							 </tr>
   							 <tr class="">
   							 <td class="column-time">1:00 p.m.</td>
@@ -223,7 +224,7 @@ Template Name: Leadership Pre-Event
   							 <tr class="emphasize">
   							 <td class="column-time">1:30 p.m.</td>
   							 <td class="column-session">Panel</td>
-  							 <td class="column-topic">TBD</td>
+  							 <td class="column-topic"></td>
   							 </tr>
   							 <tr class="">
   							 <td class="column-time">2:10 p.m.</td>
