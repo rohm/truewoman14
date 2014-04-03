@@ -40,47 +40,51 @@ Template Name: Leaders
                         <li>pray for an outpouring of God's Spirit</li>
                     </ul>
                     <p>Freedom, fullness, and fruitfulness await you in Indianapolis!</p>
-                    <p><a href="#" class="btn btn-cta">Register Your Group Now</a></p>
+                    <p><a href="/register/" class="btn btn-cta">Register Your Group Now</a></p>
 
                 </div>
 
   							 </div>
+
   							 <div class="row">
-    							 <div class="span7">
-
-        						 <blockquote class="oval-quotes">
-        						     <p>I brought eighteen women with me to True Woman &rsquo;12. It was like Christmas watching them catch the vision of what true biblical womanhood is all about.</p>
-        						 </blockquote>
-        						 <cite class="oval-quotes-cite">
-        						     <strong>Sara Quick</strong>
-        						     Women&rsquo;s Ministry Director<br>
-        						     Ostrander, Ohio
-        						 </cite>
-        						 <blockquote class="oval-quotes">
-        						     <p>On our way home, the ladies traveling with me wept with repentance. Women were confessing years of bitterness, lust, pride, jealousy, fear, etc. It was incredible. Praise God for forgiveness of sin!</p>
-        						 </blockquote>
-        						 <cite class="oval-quotes-cite">
-        						     <strong>Shirley</strong>
-        						     Women&rsquo;s Ministry Leader<br>
-        						     New Philadelphia, Ohio
-        						 </cite>
-        						 <blockquote class="oval-quotes">
-        						     <p>Twenty ladies from our church unified in a way that I couldn&rsquo;t even imagine! We had a precious prayer time together. We all put a foot in a circle and cried out to the Lord. I did not know that our ladies could pray the way they did!</p>
-        						 </blockquote>
-        						 <cite class="oval-quotes-cite">
-        						     <strong>April Workman</strong>
-        						     Peotone, IL
-        						 </cite>
-
+                  <div class="span5 offset1">
+                    <img src="http://truewoman14.s3.amazonaws.com/library/img/leaders-photo-hands.jpg" class="photo leaders-photo-left img-responsive" alt="" />
                   </div>
                   <div class="span5">
-                    <div class="well">
-                      <h3>Specifically for Leaders</h3>
-                      <p>We call it the True Woman &rsquo;14 Pre-event. This pre-event is designed specifically for women who are in ministry to other women. Be part of this event so that you can get encouragement and new energy as you serve your women.</p>
-                      <a href="#" class="btn">Learn More</a>
-                    </div>
+                    <img src="http://truewoman14.s3.amazonaws.com/library/img/leaders-photo-praying2.jpg" class="photo leaders-photo-right img-responsive" alt="" />
+                  </div>
+                  <div class="span8 offset2">
+                  <div id="specifically-for-leaders" class="text-center">
+                    <h3>Specifically for Leaders</h3>
+                    <p>We call it the <em>True Woman &rsquo;14 Pre-event</em>. This pre-event is designed specifically for women who are in ministry to other women. Be part of this event so that you can get encouragement and new energy as you serve your women. <strong><a href="/register/">Learn More</a></strong></p>
+                  </div>
+
+                  <blockquote class="oval-quotes">
+                    <p>I brought eighteen women with me to True Woman &rsquo;12. It was like Christmas watching them catch the vision of what true biblical womanhood is all about.</p>
+                  </blockquote>
+                  <cite class="oval-quotes-cite">
+                    <strong>Sara Quick</strong>
+                    Women&rsquo;s Ministry Director<br>
+                    Ostrander, Ohio
+                  </cite>
+                  <blockquote class="oval-quotes">
+                    <p>On our way home, the ladies traveling with me wept with repentance. Women were confessing years of bitterness, lust, pride, jealousy, fear, etc. It was incredible. Praise God for forgiveness of sin!</p>
+                  </blockquote>
+                  <cite class="oval-quotes-cite">
+                    <strong>Shirley</strong>
+                    Women&rsquo;s Ministry Leader<br>
+                    New Philadelphia, Ohio
+                  </cite>
+                  <blockquote class="oval-quotes">
+                    <p>Twenty ladies from our church unified in a way that I couldn&rsquo;t even imagine! We had a precious prayer time together. We all put a foot in a circle and cried out to the Lord. I did not know that our ladies could pray the way they did!</p>
+                  </blockquote>
+                  <cite class="oval-quotes-cite">
+                    <strong>April Workman</strong>
+                    Peotone, IL
+                  </cite>
 
                   </div>
+
       					 </div>
     					</section>
 

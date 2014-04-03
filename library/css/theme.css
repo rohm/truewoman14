@@ -337,6 +337,35 @@ address h4 {
 .pagename-leaders .btn-register-global {
   display: none;
 }
+.pagename-leaders .photo {
+  padding: 10px;
+  background-color: white;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3), 0 0 3px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3), 0 0 3px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3), 0 0 3px rgba(0, 0, 0, 0.09);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-top: 2em;
+}
+.pagename-leaders .leaders-photo-left {
+  -webkit-transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+  -ms-transform: rotate(-4deg);
+  -o-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+}
+.pagename-leaders .leaders-photo-right {
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  -ms-transform: rotate(4deg);
+  -o-transform: rotate(4deg);
+  transform: rotate(4deg);
+}
+.pagename-leaders #specifically-for-leaders {
+  margin-bottom: 5em;
+}
 .wpcf7-form {
   max-width: 600px;
 }
