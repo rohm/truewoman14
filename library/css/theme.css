@@ -1373,6 +1373,9 @@ article header .banner p {
 #main article.page section.post_content .pre-session table {
   background-color: rgba(146, 200, 221, 0.1);
 }
+#main article.page section.post_content .pre-session table tr.emphasize td {
+  background: #c1e4f2;
+}
 #main article.page section.post_content .pre-session table th {
   background-color: #addaed;
 }
@@ -1803,6 +1806,109 @@ footer[role="contentinfo"] #sbi_camera_button {
 .pagename-location-travel #main .btn strong {
   display: block;
   text-transform: uppercase;
+}
+.pagename-leadership-pre-event .jumbotron {
+  background-color: #F1DCBD;
+  background: #160b09 url("../img/bg-leaders-hero7.jpg") no-repeat center top;
+  position: relative;
+  margin-top: -2em;
+  padding: 1.4em 50px;
+  text-align: center;
+  color: #F4FAFC;
+}
+.pagename-leadership-pre-event .jumbotron h1 {
+  font-size: 1.9em;
+  margin: .6em 0 .2em;
+  color: white;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+}
+.pagename-leadership-pre-event .jumbotron .event-date {
+  margin: 1em 0;
+  font-size: 1.3em;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4), 0 0 30px #2d1410;
+}
+.pagename-leadership-pre-event .jumbotron h2 {
+  font-size: 3.1em;
+  margin: .3em 0 .6em;
+  font-family: "Adobe Caslon Pro", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", Times, serif;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.4), 0 0 30px #2d1410;
+  line-height: 1.2em;
+}
+.pagename-leadership-pre-event .jumbotron .btn-cta {
+  width: 30%;
+  min-width: 230px;
+  float: none;
+  display: inline-block;
+  margin-bottom: 1.8em;
+}
+.pagename-leadership-pre-event .topic-list li {
+  list-style: none;
+  padding-left: 0 !important;
+  background: none !important;
+  font-style: italic;
+  font-size: 1.3em;
+  margin-bottom: .5em;
+}
+.pagename-leadership-pre-event .also-featuring p {
+  font-family: "futura-pt" !important;
+  line-height: 2em;
+}
+.pagename-leadership-pre-event .who-what-where {
+  margin-bottom: 2em;
+}
+.pagename-leadership-pre-event .who-what-where .title {
+  clear: both;
+}
+.pagename-leadership-pre-event .who-what-where .title h3 {
+  text-align: center;
+  color: #b22b4e;
+  font-size: 1.4em;
+  line-height: 1.75em;
+}
+.pagename-leadership-pre-event .who-what-where .description p {
+  font-size: 1.4em;
+  font-family: "futura-pt";
+}
+.pagename-leadership-pre-event .who-what-where .text-large {
+  padding-left: 40px;
+}
+.pagename-leadership-pre-event .who-what-where .text-large li {
+  margin-bottom: .5em;
+  color: #808080;
+}
+.pagename-leadership-pre-event .who-what-where .text-large li em {
+  color: #0b0b0b;
+  font-weight: 600;
+}
+.pagename-leadership-pre-event .who-what-where .text-large .fa {
+  color: #e591a7;
+  font-size: .7em;
+  margin-right: 5px;
+}
+.pagename-leadership-pre-event .faq-catname {
+  display: none;
+}
+.pagename-leadership-pre-event #featuring {
+  text-align: center;
+  margin-bottom: 3em;
+}
+.pagename-leadership-pre-event #featuring img {
+  border-radius: 300px;
+  -webkit-box-shadow: 5px 5px 0 rgba(144, 67, 154, 0.5), -5px -5px 0 rgba(67, 172, 214, 0.5) !important;
+  -moz-box-shadow: 5px 5px 0 rgba(144, 67, 154, 0.5), -5px -5px 0 rgba(67, 172, 214, 0.5) !important;
+  box-shadow: 5px 5px 0 rgba(144, 67, 154, 0.5), -5px -5px 0 rgba(67, 172, 214, 0.5) !important;
+}
+.pagename-leadership-pre-event .paper {
+  top: -20px;
+  position: relative;
+  background-color: #fff !important;
+}
+.pagename-leadership-pre-event table .column-topic {
+  width: 50%;
+}
+.pagename-leadership-pre-event table .column-time {
+  white-space: nowrap;
+  text-align: right;
 }
 .promo-items .info {
   color: #46a546;
@@ -2378,5 +2484,13 @@ footer[role="contentinfo"] #sbi_camera_button {
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   body {
     max-width: 480px;
+  }
+}
+@media (max-width: 760px) {
+  .page-template-page-leadership-pre-event-php .jumbotron {
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: 0;
+    background-size: auto 100%;
   }
 }

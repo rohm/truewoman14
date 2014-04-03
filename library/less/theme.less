@@ -1224,7 +1224,11 @@ article header {
       }
       table {
         background-color: rgba(146, 200, 221, .1);
-
+				tr.emphasize {
+					td {
+						background: lighten(@blue, 30%);
+					}
+				}
         th {
 
           background-color: lighten(@blue, 25%);
@@ -1639,6 +1643,121 @@ footer[role="contentinfo"] {
   }
 
 }
+
+.pagename-leadership-pre-event {
+  .jumbotron {
+    background-color: #F1DCBD;
+    background: #160b09 url("../img/bg-leaders-hero7.jpg") no-repeat center top;
+    position: relative;
+    margin-top: -2em;
+    padding: 1.4em 50px;
+    text-align: center;
+    color: #F4FAFC;
+    h1 {
+        font-size: 1.9em;
+        margin: .6em 0 .2em;
+        color: white;
+        text-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+    }
+    .event-date {
+        margin: 1em 0;
+        font-size: 1.3em;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4), 0 0 30px #2d1410;
+    }
+    h2 {
+        font-size: 3.1em;
+        margin: .3em 0 .6em;
+        font-family: "Adobe Caslon Pro", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", Times, serif;
+        text-shadow: 0 2px 0 rgba(0, 0, 0, 0.4), 0 0 30px #2d1410;
+        line-height: 1.2em;
+    }
+    .btn-cta {
+        width: 30%;
+        min-width: 230px;
+        float: none;
+        display: inline-block;
+        margin-bottom: 1.8em;
+    }
+  }
+  .topic-list {
+    li {
+        list-style: none;
+        padding-left: 0 !important;
+        background: none !important;
+        font-style: italic;
+        font-size: 1.3em;
+        margin-bottom: .5em;
+    }
+  }
+  .also-featuring {
+    p {
+        font-family: "futura-pt" !important;
+        line-height: 2em;
+    }
+  }
+  .who-what-where {
+    margin-bottom: 2em;
+    .title {
+      clear: both;
+      h3 {
+          text-align: center;
+          color: #b22b4e;
+          font-size: 1.4em;
+          line-height: 1.75em;
+      }
+    }
+    .description {
+      p {
+          font-size: 1.4em;
+          font-family: "futura-pt";
+      }
+    }
+    .text-large {
+			padding-left: 40px;
+			li {
+			    margin-bottom: .5em;
+			    color: #808080;
+			    em {
+			        color: #0b0b0b;
+			        font-weight: 600;
+			    }
+			}
+			.fa {
+			    color: #e591a7;
+			    font-size: .7em;
+			    margin-right: 5px;
+			}
+    }
+  }
+  .faq-catname {
+      display: none;
+  }
+  #featuring {
+      text-align: center;
+      margin-bottom: 3em;
+      img {
+          border-radius: 300px;
+          -webkit-box-shadow: 5px 5px 0 rgba(144, 67, 154, 0.5), -5px -5px 0 rgba(67, 172, 214, 0.5) !important;
+          -moz-box-shadow: 5px 5px 0 rgba(144, 67, 154, 0.5), -5px -5px 0 rgba(67, 172, 214, 0.5) !important;
+          box-shadow: 5px 5px 0 rgba(144, 67, 154, 0.5), -5px -5px 0 rgba(67, 172, 214, 0.5) !important;
+      }
+  }
+  .paper {
+      top: -20px;
+      position: relative;
+      background-color: #fff !important;
+  }
+  table {
+      .column-topic {
+          width: 50%;
+      }
+      .column-time {
+          white-space: nowrap;
+          text-align: right;
+      }
+  }
+}
+
 
 .promo-items {
   .info {
