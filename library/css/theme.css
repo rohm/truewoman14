@@ -34,7 +34,7 @@ body {
 }
 body {
   font-family: "futura-pt";
-  font-size: 17px;
+  font-size: 18px;
   line-height: 25px;
   color: #0b0b0b;
   -webkit-font-smoothing: antialiased;
@@ -1862,7 +1862,7 @@ footer[role="contentinfo"] #sbi_camera_button {
   font-size: 3.1em;
   margin: 2em 0 .8em;
   font-family: "Adobe Caslon Pro", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", Times, serif;
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.4), 0 0 30px #2d1410;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.5);
   line-height: 1.2em;
 }
 .pagename-leadership-pre-event .jumbotron .btn-cta {
@@ -2079,7 +2079,7 @@ footer[role="contentinfo"] #sbi_camera_button {
   body li,
   body blockquote,
   body address {
-    font-size: 22.1px;
+    font-size: 23.400000000000002px;
     line-height: 150%;
   }
   body.home {
