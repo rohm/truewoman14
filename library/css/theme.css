@@ -34,7 +34,7 @@ body {
 }
 body {
   font-family: "futura-pt";
-  font-size: 16px;
+  font-size: 17px;
   line-height: 25px;
   color: #0b0b0b;
   -webkit-font-smoothing: antialiased;
@@ -2077,7 +2077,7 @@ footer[role="contentinfo"] #sbi_camera_button {
   body li,
   body blockquote,
   body address {
-    font-size: 20.8px;
+    font-size: 22.1px;
     line-height: 150%;
   }
   body.home {
