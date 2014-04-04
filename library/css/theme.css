@@ -1840,7 +1840,6 @@ footer[role="contentinfo"] #sbi_camera_button {
   background-color: #F1DCBD;
   background: #160b09 url("../img/bg-leaders-hero7.jpg") no-repeat center top;
   position: relative;
-  margin-top: -2em;
   padding: 1.4em 50px;
   text-align: center;
   color: #F4FAFC;
@@ -2003,7 +2002,7 @@ footer[role="contentinfo"] #sbi_camera_button {
     margin-bottom: 0;
   }
   #main article.page {
-    padding-top: 90px;
+    padding-top: 50px;
   }
   #main article.page .paper #speakers .span3.offset1 {
     margin-left: 140px;
@@ -2518,7 +2517,7 @@ footer[role="contentinfo"] #sbi_camera_button {
   }
 }
 @media (max-width: 760px) {
-  .page-template-page-leadership-pre-event-php .jumbotron {
+  .pagename-leadership-pre-event .jumbotron {
     margin-left: -20px;
     margin-right: -20px;
     margin-top: 0;
