@@ -1378,6 +1378,8 @@ article header .banner p {
 }
 #main article.page section.post_content .main-session table th .dim {
   font-weight: 300;
+  display: block;
+  font-size: .86em;
 }
 #main article.page section.post_content .main-session table td.darken {
   background-color: rgba(189, 147, 192, 0.15);
