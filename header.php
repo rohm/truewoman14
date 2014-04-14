@@ -31,7 +31,8 @@
 		<![endif]-->
 
   		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
+		
+		
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
@@ -40,18 +41,25 @@
 			<link href="<?php echo get_template_directory_uri(); ?>/library/css/ie.css" rel="stylesheet" type="text/css"></link>
 		<![endif]-->
 		<!-- typeahead plugin - if top nav search bar enabled -->
-		<!-- ?php require_once('library/typeahead.php'); ?-->
+		<!-- ?php require_once('library/typeahead.php'); ?-->	
 
 	</head>
 
 	<body <?php body_class(); ?> data-type="background" data-speed="20">
+		
 	<div id="fb-root"></div>
 	<div class="page-wrap" data-type="background" data-speed="10">
+		
 		<header role="banner">
 
 			<div id="inner-header" class="clearfix">
 
 				<div class="navbar navbar-fixed-top">
+					<div class="adsliver">
+						<p>
+							True Woman &rsquo;14 <strong>early pricing ends</strong> in: <span id="defaultCountdown"></span> <a href="http://www.truewoman14.com/register" class="btn">Register Now</a>
+						</p>
+					</div>
 					<div id="ha-header" class="navbar-inner ha-header-large">
 						<div id="ha-header-brand" class="container">
 							<a class="brand" id="logo" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>">
@@ -120,3 +128,4 @@
 		</header> <!-- end header -->
 
 		<div class="container">
+			<div id="defaultCountdown">Blah blah blh</div>

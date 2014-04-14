@@ -1796,6 +1796,55 @@ footer[role="contentinfo"] {
   }
 }
 
+.adsliver {
+  background-color: #A02747;
+	color:#E1BBC5;
+	color: rgba(255,255,255,.8);
+  text-align: center;
+  padding: 7px 0 3px;
+	
+	
+	.box-shadow(0 2px solid rgba(0,0,0,.75));
+  p {
+    margin-bottom: 0;
+    // font-family: @FontFamilySerif;
+    font-size: 17px;
+		font-family: @sansFontFamily;
+    strong {
+      font-weight: bold;
+			color: white;
+    }
+  }
+	.countdown-amount {
+		font-weight: bold;
+		margin: 0 2px 0 10px;
+		color: white;
+	}
+	.countdown-period {
+		font-size: .8em;
+		text-transform: none;
+	}
+  .btn {
+		background-color: @purple;
+		color: @greenLight !important;
+    padding: 0 10px;
+    position: relative;
+    top: -3px;
+    margin-bottom: 0;
+		margin-left: 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+		text-shadow: none;
+		color: #fff;
+		border-color: darken(@red, 10%);
+		border: 1px solid lighten(@blue, 1%);
+		.box-shadow(none);
+  }
+	br {
+		display: none;
+	}
+}
+
 @import "theme-responsive.less";
 
 

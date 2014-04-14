@@ -40,7 +40,8 @@
   	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
   	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
 <![endif]-->
-
+<script src="<?php echo get_template_directory_uri(); ?>/library/js/jquery.plugin.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/library/js/jquery.countdown.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/library/js/waypoints.min.js"></script>
 <script type="text/javascript">
 var $head = jQuery( '#ha-header' );
@@ -75,7 +76,11 @@ jQuery('.ha-waypoint').each( function(i) {
 	}, { offset: '100%' } );
 
 });
-
+jQuery(function () {
+	var fullPriceDate = new Date();
+	fullPriceDate = new Date(2014, 5 - 1, 2);
+	jQuery('#defaultCountdown').countdown({until: fullPriceDate, format: 'DHm'});
+});
 </script>
 <!-- script type="text/javascript">
 		jQuery(function() {
@@ -119,6 +124,7 @@ jQuery('.ha-waypoint').each( function(i) {
 }(document, 'script', 'facebook-jssdk'));</script>
 <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
 <?php wp_footer(); // js scripts are inserted using this function ?>
+
 
 </body>
 
