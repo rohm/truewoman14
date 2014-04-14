@@ -2575,3 +2575,8 @@ footer[role="contentinfo"] #sbi_camera_button {
     background-size: auto 100%;
   }
 }
+@media only screen and (min-width: 641px) {
+  body {
+    padding-top: 110px;
+  }
+}
