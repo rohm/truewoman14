@@ -128,4 +128,4 @@
 		</header> <!-- end header -->
 
 		<div class="container">
-			<div id="defaultCountdown">Blah blah blh</div>
+			

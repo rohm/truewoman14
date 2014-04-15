@@ -2579,4 +2579,7 @@ footer[role="contentinfo"] #sbi_camera_button {
   body {
     padding-top: 110px;
   }
+  body.home {
+    padding-top: 130px;
+  }
 }
