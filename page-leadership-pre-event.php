@@ -135,14 +135,14 @@ Template Name: Leadership Pre-Event
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" style="margin-top: -4px;">
+					<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" style="margin-top: -14px;">
 
 						<header>
               <div class="page-hero photo jumbotron">
                 <div class="container">
 									<p class="event-date">Thursday, October 9, 2014</p>
                   <h1><?php bloginfo($name) ?> <?php the_title(); ?></h1>
-									
+
                   <h2>Be Equipped, Encouraged <i>&amp;</i> Energized</h2>
                   <a class="btn btn-cta" href="https://www.reviveourhearts.com/event-registration/true-woman-14-pre-event/">Register Today $55</a>
                 </div>
@@ -195,7 +195,9 @@ Template Name: Leadership Pre-Event
                     </div> -->
                   </div>
                 </div>
-                <p class="text-center"><em>This is a &ldquo;pre-conference&rdquo; leading up to True Woman &rsquo;14, October 9&ndash;11.</p><p class="text-center"><strong>Space is limited so register early.</strong></em></p>
+                <p class="text-center"><em>This is a &ldquo;pre-conference&rdquo; leading up to True Woman &rsquo;14, October 9&ndash;11.</p>
+                  <p class="text-center"><strong>Space is limited so register early.</strong></em></p>
+                  <p class="text-center">All times are Eastern Standard Time.</p>
                	<!-- Schedule -->
   							 <div class="table-schedule-wrap pre-session">
   							 <h3>Schedule</h3>
