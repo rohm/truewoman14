@@ -33,12 +33,15 @@ Template Name: Speakers
                     <li><a href="#joni">Joni Eareckson Tada</a></li>
                     <li><a href="#janet">Janet Parshall</a></li>
                     <li><a href="#mary">Mary Kassian</a></li>
+										
+                    <li><a href="#leslie">Leslie Bennett</a></li>
                     <li><a href="#jim">Jim Cymbala</a></li>
                     <li><a href="#dannah">Dannah Gresh</a></li>
                     <li><a href="#erin">Erin Davis</a></li>
                     <li><a href="#jani">Jani Ortlund</a></li>
                     <li><a href="#angie">Angie Smith</a></li>
                     <li><a href="#lauren-chandler">Lauren Chandler</a></li>
+										<li><a href="#trillia">Trillia Newbell</a></li>
                     <li><a href="#susan">Susan Hunt</a></li>
                     <li><a href="#scott">Scott Lindsey</a></li>
                     <li><a href="#gettys">Keith &amp; Kristyn Getty</a></li>
