@@ -24,11 +24,11 @@ Template Name: Leaders
   							 <!-- <?php the_content(); ?> -->
   							 <div id="video" class="video ha-waypoint" data-animate-down="ha-header-small" data-animate-up="ha-header-large">
       							 <div class="videowrapper">
-          							 <iframe src="http://player.vimeo.com/video/73405109" autoplay="autoplay" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+          							 <iframe src="http://player.vimeo.com/video/91661038" autoplay="autoplay" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
       							 </div><!-- end .videowrapper -->
   							 </div><!-- end #video -->
   							 <h2 class="text-center">Build a Community of True Women in Your Church</h2>
-  							 <p class="lead text-center">Find out what will God do when your church group attends True Woman &rsquo;14!<br />We&rsquo;ll seek the Lord to:</p>
+  							 <p class="lead text-center">Find out what God will do when your church group attends True Woman &rsquo;14!<br />We&rsquo;ll seek the Lord to:</p>
   							 <div class="row">
   							   <div class="span6 offset3">
 
