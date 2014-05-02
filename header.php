@@ -55,11 +55,13 @@
 			<div id="inner-header" class="clearfix">
 
 				<div class="navbar navbar-fixed-top">
+				    <!--
 					<div class="adsliver">
 						<p>
 							True Woman &rsquo;14 <strong>early pricing ends</strong> in: <span id="defaultCountdown"></span> <a href="http://www.truewoman14.com/register" class="btn">Register Now</a>
 						</p>
 					</div>
+					-->
 					<div id="ha-header" class="navbar-inner ha-header-large">
 						<div id="ha-header-brand" class="container">
 							<a class="brand" id="logo" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>">
