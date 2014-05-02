@@ -55,7 +55,7 @@
 			<div id="inner-header" class="clearfix">
 
 				<div class="navbar navbar-fixed-top">
-				    <!--
+				    <!-- 
 					<div class="adsliver">
 						<p>
 							True Woman &rsquo;14 <strong>early pricing ends</strong> in: <span id="defaultCountdown"></span> <a href="http://www.truewoman14.com/register" class="btn">Register Now</a>
