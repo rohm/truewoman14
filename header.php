@@ -31,8 +31,8 @@
 		<![endif]-->
 
   		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-		
-		
+
+
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
@@ -41,15 +41,15 @@
 			<link href="<?php echo get_template_directory_uri(); ?>/library/css/ie.css" rel="stylesheet" type="text/css"></link>
 		<![endif]-->
 		<!-- typeahead plugin - if top nav search bar enabled -->
-		<!-- ?php require_once('library/typeahead.php'); ?-->	
+		<!-- ?php require_once('library/typeahead.php'); ?-->
 
 	</head>
 
 	<body <?php body_class(); ?> data-type="background" data-speed="20">
-		
+
 	<div id="fb-root"></div>
 	<div class="page-wrap" data-type="background" data-speed="10">
-		
+
 		<header role="banner">
 
 			<div id="inner-header" class="clearfix">
@@ -107,7 +107,7 @@
 								    <b class="caret"></b>
 									</a>
 
-									<div class="nav-collapse">
+									<div class="nav-collapse"> 
 
 										<?php bones_main_nav(); // Adjust using Menus in Wordpress Admin ?>
 
@@ -130,4 +130,3 @@
 		</header> <!-- end header -->
 
 		<div class="container">
-			
