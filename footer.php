@@ -1,4 +1,4 @@
-<a href="/register/" class="btn btn-cta btn-register btn-register-global">Register Now <b class="arrow-right">›</b><div class="info">Pre-Event, Main Conference &amp; Volunteer Registration. Early Rates Through 5/1/14</div></a>
+<a href="/register/" class="btn btn-cta btn-register btn-register-global">Register Now <b class="arrow-right">›</b></a>
 	</div> <!-- end #container -->
 </div><!-- end page-wrap -->
 <div class="small-screen-hide" style="height: 94px;">&nbsp;</div>
@@ -76,11 +76,11 @@ jQuery('.ha-waypoint').each( function(i) {
 	}, { offset: '100%' } );
 
 });
-jQuery(function () {
-	var fullPriceDate = new Date();
-	fullPriceDate = new Date(2014, 5 - 1, 2);
-	jQuery('#defaultCountdown').countdown({until: fullPriceDate, format: 'DHm'});
-});
+// jQuery(function () {
+// 	var fullPriceDate = new Date();
+// 	fullPriceDate = new Date(2014, 5 - 1, 2);
+// 	jQuery('#defaultCountdown').countdown({until: fullPriceDate, format: 'DHm'});
+// });
 </script>
 <!-- script type="text/javascript">
 		jQuery(function() {

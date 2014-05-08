@@ -11,7 +11,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="google-site-verification" content="TNv2lZAQPh3hOwL1ntuVV0WiKSHIgGrBJZY8ZGxBRgU" />
 		<title><?php wp_title( '|', true, 'right' ); ?></title>
-
 		<meta name="viewport" content="width=device-width">
 		<meta property="og:title" content="Register for True Woman &rsquo;14"/>
 		<meta property="og:image" content="http://truewoman14.s3.amazonaws.com/library/img/facebook-og.jpg"/>
