@@ -33,21 +33,20 @@ Template Name: Speakers
                     <li><a href="#joni">Joni Eareckson Tada</a></li>
                     <li><a href="#janet">Janet Parshall</a></li>
                     <li><a href="#mary">Mary Kassian</a></li>
-										
-                    <li><a href="#leslie">Leslie Bennett</a></li>
                     <li><a href="#jim">Jim Cymbala</a></li>
-                    <li><a href="#dannah">Dannah Gresh</a></li>
-                    <li><a href="#erin">Erin Davis</a></li>
+                    <li><a href="#leslie">Leslie Bennett</a></li>
+                    <li><a href="#gettys">Keith &amp; Kristyn Getty</a></li>
+                    <li><a href="#chicago-tabernacle">Chicago Tabernacle Choir</a></li>
+                    <li><a href="#blair">Blair Linne</a></li>
                     <li><a href="#jani">Jani Ortlund</a></li>
                     <li><a href="#angie">Angie Smith</a></li>
                     <li><a href="#lauren-chandler">Lauren Chandler</a></li>
-										<li><a href="#trillia">Trillia Newbell</a></li>
+                    <li><a href="#trillia">Trillia Newbell</a></li>
                     <li><a href="#susan">Susan Hunt</a></li>
-                    <li><a href="#scott">Scott Lindsey</a></li>
-                    <li><a href="#gettys">Keith &amp; Kristyn Getty</a></li>
-                    <li><a href="#blair">Blair Linne</a></li>
-                    <li><a href="#chicago-tabernacle">Chicago Tabernacle Choir</a></li>
                     <li><a href="#chrissy">Chrissy Toledo</a></li>
+                    <li><a href="#scott">Scott Lindsey</a></li>
+                    <li><a href="#dannah">Dannah Gresh</a></li>
+                    <li><a href="#erin">Erin Davis</a></li>
                     <li><a href="#stephanie">Stephanie Martinez</a></li>
                   </ul>
                 </div><!-- end span3 -->
