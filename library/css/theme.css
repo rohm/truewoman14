@@ -1679,6 +1679,10 @@ footer[role="contentinfo"] #sbi_camera_button {
   margin-top: 15%;
   width: 70%;
 }
+.home article.page #intro .hashtag {
+  margin-top: 2em;
+  text-shadow: 0 0px 20px  white;
+}
 .home article.page .paper {
   /* end Speakers */
 }
