@@ -35,7 +35,7 @@
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
-
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href="<?php echo get_template_directory_uri(); ?>/library/css/theme.css" rel="stylesheet" type="text/css">
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<!--[if lte IE 10]>
@@ -51,12 +51,13 @@
 	<div id="fb-root"></div>
 	<div class="page-wrap" data-type="background" data-speed="10">
 
+		<!-- Header -->
 		<header role="banner">
 
 			<div id="inner-header" class="clearfix">
 
-				<div class="navbar navbar-fixed-top">
-				    <!--
+				<div class="navbar navbar-fixed-top" role="navigation">
+						<!--
 					<div class="adsliver">
 						<p>
 							True Woman &rsquo;14 <strong>early pricing ends</strong> in: <span id="defaultCountdown"></span> <a href="http://www.truewoman14.com/register" class="btn">Register Now</a>
@@ -70,33 +71,36 @@
 								<?php if(of_get_option('branding_logo','')!='') { ?>
 									<img src="<?php echo of_get_option('branding_logo'); ?>" alt="<?php echo get_bloginfo('description'); ?>">
 									<?php }
-									if(of_get_option('site_name','1')) bloginfo('name'); ?></a>
+									if(of_get_option('site_name','1')) bloginfo('name'); ?>
+
+							</a>
 							<div id="toolbar-nav">
-									<div class="nav-collapse toolbar-nav-collapse">
-										<?php bones_toolbar_nav(); // Adjust using Menus in Wordpress Admin ?>
+								<div class="collapse navbar-collapse toolbar-nav-collapse navbar-right">
+									<?php bones_toolbar_nav(); // Adjust using Menus in Wordpress Admin ?>
 
-										<ul id="menu-share-nav" class="nav">
+									<ul id="menu-share-nav" class="nav navbar-nav navbar-right" role="menu">
 
-											<li class="menu-item has-dropdown">
+										<li class="menu-item has-dropdown">
 
-												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Share <i class="icon-share icon-white"></i></a>
-												<ul class="dropdown-menu">
-													<li id="menu-item-facebook" class="menu-item">
-														<div class="fb-like" data-href="http://www.truewoman14.com" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>
-													</li>
-													<li id="menu-item-twitter" class="menu-item">
-														<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.truewoman14.com" data-via="truewoman"  data-hashtags="truewoman14">Tweet</a>
-														<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-													</li>
-													<li id="menu-item-pinterest" class="menu-item">
-														<a href="//pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.truewoman14.com&media=http%3A%2F%2Ftruewoman14.com.s3.amazonaws.com%2Flibrary%2Fimg%2Ffacebook-og.jpg&description=True%20Woman%20%26rsquo%3B14%20%7C%20Finding%20Freedom%2C%20Fullness%20%26amp%3B%20Fruitfullness%20in%20Christ" data-pin-do="buttonPin" data-pin-config="none"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>
-													</li>
-												</ul>
-											</li>
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Share <i class="fa fa-share"></i></a>
+											<ul class="dropdown-menu" role="menu">
+												<li id="menu-item-hashtag" class="menu-item"><a href="https://twitter.com/hashtag/truewoman14">#truewoman14</a></li>
+												<li id="menu-item-facebook" class="menu-item">
+													<div class="fb-like" data-href="http://www.truewoman14.com" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+												</li>
+												<li id="menu-item-twitter" class="menu-item">
+													<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.truewoman14.com" data-via="truewoman"  data-hashtags="truewoman14">Tweet</a>
+													<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+												</li>
+												<li id="menu-item-pinterest" class="menu-item">
+													<a href="//pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.truewoman14.com&media=http%3A%2F%2Ftruewoman14.com.s3.amazonaws.com%2Flibrary%2Fimg%2Ffacebook-og.jpg&description=True%20Woman%20%26rsquo%3B14%20%7C%20Finding%20Freedom%2C%20Fullness%20%26amp%3B%20Fruitfullness%20in%20Christ" data-pin-do="buttonPin" data-pin-config="none"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>
+												</li>
+											</ul>
+										</li>
 
-										</ul>
+									</ul>
 
-									</div>
+								</div>
 
 							</div>
 						</div>
@@ -108,11 +112,11 @@
 
 
 									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-									        <span class="sr-only">Toggle navigation</span>
-									        <span class="icon-bar"></span>
-									        <span class="icon-bar"></span>
-									        <span class="icon-bar"></span>
-									      </button>
+													<span class="sr-only">Toggle navigation</span>
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+												</button>
 
 									<div class="nav-collapse">
 

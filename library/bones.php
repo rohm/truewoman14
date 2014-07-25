@@ -113,7 +113,7 @@ function bones_toolbar_nav() {
 				'menu_class' => 'nav navbar-nav',
 				'theme_location' => 'toolbar_nav', /* where in the theme it's assigned */
 				'container' => 'false', /* container class */
-				'before' => '<i class="pipe"></i>',
+				// 'before' => '<i class="pipe"></i>',
 				'fallback_cb' => 'bones_toolbar_nav_fallback', /* menu fallback */
 				'depth' => '3', /* suppress lower levels for now */
 				'walker' => new Bootstrap_Walker()
@@ -143,7 +143,7 @@ function bones_footer_links() {
     		'menu' => 'footer_links', /* menu name */
     		'theme_location' => 'footer_links', /* where in the theme it's assigned */
     		'container_class' => 'footer-links clearfix', /* container class */
-    		'before' => '<i class="pipe"></i>',
+    		// 'before' => '<i class="pipe"></i>',
     		'fallback_cb' => 'bones_footer_links_fallback' /* menu fallback */
     	)
 	);

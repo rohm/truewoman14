@@ -3123,11 +3123,11 @@ tbody.collapse.in {
   font-size: 18px;
   text-align: left;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solid #dddddd;
+  border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  -webkit-box-shadow: 0 3px 0px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 3px 0px rgba(0, 0, 0, 0.075);
   background-clip: padding-box;
 }
 .dropdown-menu.pull-right {
@@ -6836,6 +6836,18 @@ input[type="password"] {
   font-weight: normal;
   text-transform: none;
 }
+.btn-cta i.fa,
+.pagename-home .li-cta > a i.fa,
+.pagename-speakers .li-cta > a i.fa,
+.pagename-schedule .li-cta > a i.fa,
+.pagename-location-travel .li-cta > a i.fa,
+.pagename-promote .li-cta > a i.fa,
+.pagename-about .li-cta > a i.fa,
+.pagename-faqs .li-cta > a i.fa,
+.pagename-contact .li-cta > a i.fa,
+.pagename-leaders .li-cta > a i.fa {
+  font-family: "FontAwesome";
+}
 .btn-cta .info,
 .pagename-home .li-cta > a .info,
 .pagename-speakers .li-cta > a .info,
@@ -6997,27 +7009,15 @@ article header .banner p {
 }
 /* Toolbar Nav */
 #toolbar-nav {
-  float: right;
+  margin-top: .65em;
 }
-#toolbar-nav #menu-toolbar-nav {
-  float: left;
-}
-#toolbar-nav #menu-share-nav {
-  float: right;
-  /* background: yellow; */
-  margin-top: -49px;
-  margin-left: 0px;
-  padding-left: 15px;
-  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/pipe.png');
-  background-repeat: no-repeat;
-  background-position: 0 11px;
-}
-@media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 1.25/1), (min--moz-device-pixel-ratio: 1.25), (-moz-min-device-pixel-ratio: 1.25), (-ms-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
-  #toolbar-nav #menu-share-nav {
-    background-size: 1px 25px;
-    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/pipe@2x.png');
-    background-position: 0 11px;
-  }
+#toolbar-nav .navbar-nav > li > a:after {
+  content: " | ";
+  font-size: .8em;
+  color: rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: -10px;
 }
 #toolbar-nav #menu-share-nav li:last-child {
   margin-right: 0px;
@@ -7025,85 +7025,60 @@ article header .banner p {
 #toolbar-nav #menu-share-nav li:last-child a {
   padding-left: 0;
 }
-#toolbar-nav .nav {
-  margin-top: -47px;
-  margin-right: -17px;
+#toolbar-nav .navbar-nav {
   color: #ffffff;
   font-size: 20px;
   font-weight: 500;
 }
-#toolbar-nav .nav .has-dropdown {
+#toolbar-nav .navbar-nav .has-dropdown {
   position: relative;
 }
-#toolbar-nav .nav ul.dropdown-menu {
-  padding: 30px 30px 10px;
-  min-width: 100px;
-  left: auto;
-  right: 10px;
-}
-#toolbar-nav .nav ul.dropdown-menu::before {
-  left: auto !important;
-  right: 9px !important;
-}
-#toolbar-nav .nav ul.dropdown-menu::after {
-  left: auto !important;
-  right: 10px !important;
-}
-#toolbar-nav .nav ul.dropdown-menu li {
-  height: 44px;
-}
-#toolbar-nav .nav ul.dropdown-menu a {
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
-}
-#toolbar-nav .nav li:first-child .pipe {
-  display: none;
-}
-#toolbar-nav .nav li.tel .pipe {
-  display: inline-block;
-}
-#toolbar-nav .nav li.active a {
+#toolbar-nav .navbar-nav > li.active a {
   background-color: rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   -moz-box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
 }
-#toolbar-nav .nav li.active a:hover {
+#toolbar-nav .navbar-nav > li.active a:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
-#toolbar-nav .nav li:last-child {
+#toolbar-nav .navbar-nav > li:last-child {
   margin-right: 18px;
 }
-#toolbar-nav .nav li > a {
+#toolbar-nav .navbar-nav > li > a {
   color: #ffffff;
-  color: rgba(255, 255, 255, 0.87);
+  color: rgba(255, 255, 255, 0.77);
+  background-color: transparent;
   font-family: "futura-pt";
   text-shadow: none;
-  display: inline-block;
   border-radius: 2px;
 }
-#toolbar-nav .nav li > a:hover {
+#toolbar-nav .navbar-nav > li > a:hover {
   color: #ffffff;
 }
-#toolbar-nav .nav .pipe {
-  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/pipe.png');
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  margin: 0 4px 0 6px;
-  width: 2px;
-  height: 1em;
-  margin-bottom: -3px;
-  display: inline-block;
+#toolbar-nav .navbar-nav ul.dropdown-menu {
+  padding: 30px 30px 10px;
+  min-width: 100px;
+  left: auto;
+  right: 10px;
 }
-@media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 1.25/1), (min--moz-device-pixel-ratio: 1.25), (-moz-min-device-pixel-ratio: 1.25), (-ms-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
-  #toolbar-nav .nav .pipe {
-    background-size: 1px 25px;
-    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/pipe@2x.png');
-    background-position: 0 0;
-  }
+#toolbar-nav .navbar-nav ul.dropdown-menu::before {
+  left: auto !important;
+  right: 9px !important;
 }
-#toolbar-nav .nav .icon-share {
+#toolbar-nav .navbar-nav ul.dropdown-menu::after {
+  left: auto !important;
+  right: 10px !important;
+}
+#toolbar-nav .navbar-nav ul.dropdown-menu li {
+  height: 44px;
+}
+#toolbar-nav .navbar-nav ul.dropdown-menu a {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+#toolbar-nav .navbar-nav .icon-share {
   background-image: url('../img/icon-share2.png');
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -7115,7 +7090,7 @@ article header .banner p {
   position: relative;
 }
 @media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 1.25/1), (min--moz-device-pixel-ratio: 1.25), (-moz-min-device-pixel-ratio: 1.25), (-ms-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
-  #toolbar-nav .nav .icon-share {
+  #toolbar-nav .navbar-nav .icon-share {
     background-size: 32px 32px;
     background-image: url('../img/icon-share2@2x.png');
     background-position: 0 0;
@@ -7127,6 +7102,8 @@ article header .banner p {
   padding-bottom: 4px;
 }
 .navbar .navbar-brand {
+  margin-top: 8px;
+  margin-bottom: 8px;
   width: 218px;
   height: 52px;
   -webkit-transition: none;
@@ -7156,41 +7133,41 @@ article header .banner p {
   background: url('http://truewoman14.s3.amazonaws.com/library/img/pencil-line-horizontal2.png') repeat-x 0 -2px, /* top line */ url("http://truewoman14.s3.amazonaws.com/library/img/exclusive_paper.png") repeat-x 0 2px;
   /* paper texture */
 }
-.navbar nav.main-nav ul.nav {
+.navbar nav.main-nav ul.navbar-nav {
   width: 100%;
 }
 @media only screen and (min-width: 481px) {
-  .navbar nav.main-nav ul.nav > li:last-child {
+  .navbar nav.main-nav ul.navbar-nav > li:last-child {
     float: right;
     width: 18%;
     margin-right: 0px;
   }
-  .navbar nav.main-nav ul.nav > li:last-child a.btn-cta {
+  .navbar nav.main-nav ul.navbar-nav > li:last-child a.btn-cta {
     font-size: inherit !important;
   }
 }
-.navbar nav.main-nav ul.nav ul.dropdown-menu {
+.navbar nav.main-nav ul.navbar-nav ul.dropdown-menu {
   border-radius: 4px;
   margin-left: 0;
   margin-right: 0;
   padding: 10px;
 }
-.navbar nav.main-nav ul.nav ul.dropdown-menu > li.menu-item {
+.navbar nav.main-nav ul.navbar-nav ul.dropdown-menu > li.menu-item {
   text-transform: none;
   font-size: 110%;
 }
-.navbar nav.main-nav ul.nav ul.dropdown-menu > li.menu-item > a {
+.navbar nav.main-nav ul.navbar-nav ul.dropdown-menu > li.menu-item > a {
   font-family: "futura-pt";
   line-height: 25px;
   font-weight: 400;
   line-height: 44px;
   border-radius: 4px;
 }
-.navbar nav.main-nav ul.nav ul.dropdown-menu > li.menu-item > a:hover {
+.navbar nav.main-nav ul.navbar-nav ul.dropdown-menu > li.menu-item > a:hover {
   background: #b22b4e;
   color: #ffffff;
 }
-.navbar nav.main-nav ul.nav > li {
+.navbar nav.main-nav ul.navbar-nav > li {
   font-size: 22px;
   text-transform: uppercase;
   font-family: "futura-pt";
@@ -7199,26 +7176,26 @@ article header .banner p {
   margin-right: 1%;
   white-space: nowrap \9;
 }
-.navbar nav.main-nav ul.nav > li:first-child {
+.navbar nav.main-nav ul.navbar-nav > li:first-child {
   margin-left: 1%;
 }
-.navbar nav.main-nav ul.nav > li:nth-child(3) {
+.navbar nav.main-nav ul.navbar-nav > li:nth-child(3) {
   min-width: 25%;
 }
-.navbar nav.main-nav ul.nav > li.dropdown .caret {
+.navbar nav.main-nav ul.navbar-nav > li.dropdown .caret {
   margin-left: 5px;
   margin-top: 10px;
 }
-.navbar nav.main-nav ul.nav > li.active > a,
-.navbar nav.main-nav ul.nav > li.active > a:hover,
-.navbar nav.main-nav ul.nav > li.active > a:focus {
+.navbar nav.main-nav ul.navbar-nav > li.active > a,
+.navbar nav.main-nav ul.navbar-nav > li.active > a:hover,
+.navbar nav.main-nav ul.navbar-nav > li.active > a:focus {
   background-color: rgba(0, 0, 0, 0.05);
   -webkit-box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.6);
   -moz-box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.6);
   box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.6);
   color: #5d4775;
 }
-.navbar nav.main-nav ul.nav > li > a {
+.navbar nav.main-nav ul.navbar-nav > li > a {
   color: #333333;
   font-weight: 500;
   padding: 22px 0;
@@ -7226,17 +7203,24 @@ article header .banner p {
   text-align: center;
   border-radius: 4px;
 }
-.navbar nav.main-nav ul.nav > li > a.li-cta {
-  padding: 14px 28px;
+.navbar nav.main-nav ul.navbar-nav > li > a > .fa {
+  font-size: .8em;
+  top: -4px;
+  position: relative;
+  margin-left: 4px;
+  font-style: normal;
+}
+.navbar nav.main-nav ul.navbar-nav > li.li-cta > a {
+  padding: 14px 28px !important;
   margin-top: 19px;
   margin-left: 10px;
   color: #c8ee95;
   text-shadow: none;
   float: right;
 }
-.navbar nav.main-nav ul.nav > li > a:hover,
-.navbar nav.main-nav ul.nav > li > a:active,
-.navbar nav.main-nav ul.nav > li > a:focus {
+.navbar nav.main-nav ul.navbar-nav > li.li-cta > a:hover,
+.navbar nav.main-nav ul.navbar-nav > li.li-cta > a:active,
+.navbar nav.main-nav ul.navbar-nav > li.li-cta > a:focus {
   color: #5d4775;
 }
 .navbar-inner {
@@ -7835,8 +7819,9 @@ footer[role="contentinfo"] #sbi_camera_button {
   margin-right: auto;
   width: 56%;
   margin-bottom: 2%;
+  margin-top: 5em;
 }
-.home article.page #intro .tw14-logo-purple.ha-header-small {
+.home article.page #intro .tw14-logo-purple#h-small {
   margin-top: 40px;
 }
 .home article.page #intro .btn-cta {
@@ -7891,7 +7876,7 @@ footer[role="contentinfo"] #sbi_camera_button {
   opacity: 1;
 }
 .home article.page .paper #testimonials .carousel-control {
-  background-color: transparent;
+  background: transparent;
   color: #aaa;
   border: none;
 }
@@ -8176,4 +8161,9 @@ footer[role="contentinfo"] #sbi_camera_button {
 }
 .adsliver br {
   display: none;
+}
+@media (min-width: 768px) {
+  .small-screen-only {
+    display: none;
+  }
 }
