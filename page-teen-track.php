@@ -8,7 +8,7 @@ Template Name: Teen Track
 
 			<div id="content" class="clearfix row schedule">
 
-				<div id="main" class="span12 clearfix" role="main">
+				<div id="main" class="col-sm-12 clearfix" role="main">
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

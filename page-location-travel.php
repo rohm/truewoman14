@@ -8,7 +8,7 @@ Template Name: Location &amp; Travel
 			
 			<div id="content" class="clearfix row">
 			
-				<div id="main" class="span12 clearfix" role="main">
+				<div id="main" class="col-sm-12 clearfix" role="main">
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
@@ -21,14 +21,14 @@ Template Name: Location &amp; Travel
 						</header> <!-- /article header -->
 						<div class="paper">
 							<div class="row">
-								<div class="span9">
+								<div class="col-sm-9">
     					    		<section class="post_content">
     		    						<?php the_content(); ?>
     		    												    		
     		    					</section> <!-- /article section -->
     		    				</div>
 		    				
-    		    				<div class="span3">
+    		    				<div class="col-sm-3">
     			    				<ul id="sidebar" class="nav nav-location">
     			    					<li><a href="#flying">Flying Info</a></li>
     			    					<li><a href="#driving">Driving Info</a></li>

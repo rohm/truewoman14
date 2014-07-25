@@ -8,7 +8,7 @@ Template Name: Style Guide
 
 			<div id="content" class="clearfix row">
 
-				<div id="main" class="span12 clearfix" role="main">
+				<div id="main" class="col-sm-12 clearfix" role="main">
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -21,7 +21,7 @@ Template Name: Style Guide
 						</header> <!-- /article header -->
 						<div class="paper">
 						  <div class="row">
-						      <div class="span9">
+						      <div class="col-sm-9">
 						          <section class="post_content style_guide">
   						            <h2 style="margin-top: 10px;"><span id="#overview"></span>Overview</h2>
   						            <p class="lead">This is a brief description of what the True Woman movement is and what the conferences are all about that should be written by Paula, Lindsay, Lindsey or someone of their caliber. It should include both the “message” and the “purpose” of the True Woman conferences. What is the need we are addressing? </p>
@@ -72,7 +72,7 @@ Template Name: Style Guide
 
                           <h3 style="margin-top: 50px;">Use of imagery (Do's and Don'ts)</h3>
                           <div class="row">
-                            <div class="span4">
+                            <div class="col-sm-4">
                               <h4>Do</h4>
                               <ul>
                                 <li>Get all images approved before publishing</li>
@@ -83,7 +83,7 @@ Template Name: Style Guide
 
                               </ul>
                             </div>
-                            <div class="span5">
+                            <div class="col-sm-5">
                               <h4>Don&rsquo;t</h4>
                               <ul>
                                 <li>When using imagery for backgrounds, use watercolors. Do not use clip art or photography unless approved.</li>
@@ -181,8 +181,8 @@ Template Name: Style Guide
   						            <?php the_content(); ?>
   						          </section> <!-- end article section -->
 
-  						         </div><!-- end span9 -->
-  						         <div class="span3">
+  						         </div><!-- end col-sm-9 -->
+  						         <div class="col-sm-3">
   						          <ul class="nav" id="sidebar">
     						          <li><a href="/style-guide/#overview">Overview</a></li>
     						          <li><a href="#identity">Identity</a></li>
@@ -190,7 +190,7 @@ Template Name: Style Guide
     						          <li><a href="#color">Color Palette</a></li>
     						          <li><a href="#typography">Typography</a></li>
     						        </ul>
-  						        </div><!-- end span3 -->
+  						        </div><!-- end col-sm-3 -->
   						    </div><!-- end row -->
   						</div>
 

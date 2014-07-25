@@ -8,7 +8,7 @@ Template Name: Speakers
 
 			<div id="content" class="clearfix row">
 
-				<div id="main" class="span12 clearfix" role="main">
+				<div id="main" class="col-sm-12 clearfix" role="main">
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -21,13 +21,13 @@ Template Name: Speakers
             </header> <!-- end article header -->
             <div class="paper">
               <div class="row">
-                <div class="span9">
+                <div class="col-sm-9">
                   <section class="post_content">
                   <?php the_content(); ?>
                   </section> <!-- end article section -->
 
-                </div><!-- end span9 -->
-                 <div class="span3">
+                </div><!-- end col-sm-9 -->
+                 <div class="col-sm-3">
                   <ul id="sidebar" class="nav nav-speakers">
                     <li><a href="#nancy">Nancy Leigh DeMoss</a></li>
                     <li><a href="#joni">Joni Eareckson Tada</a></li>
@@ -36,6 +36,8 @@ Template Name: Speakers
                     <li><a href="#jim">Jim Cymbala</a></li>
                     <li><a href="#leslie">Leslie Bennett</a></li>
                     <li><a href="#gettys">Keith &amp; Kristyn Getty</a></li>
+                    <li><a href="#bob">Bob Lepine</a></li>
+                    <li><a href="#naghmeh">Naghmeh Abedini</a></li>
                     <li><a href="#chicago-tabernacle">Chicago Tabernacle Choir</a></li>
                     <li><a href="#blair">Blair Linne</a></li>
                     <li><a href="#jani">Jani Ortlund</a></li>
@@ -49,7 +51,7 @@ Template Name: Speakers
                     <li><a href="#erin">Erin Davis</a></li>
                     <li><a href="#stephanie">Stephanie Martinez</a></li>
                   </ul>
-                </div><!-- end span3 -->
+                </div><!-- end col-sm-3 -->
               </div><!-- end row -->
             </div>
 					</article> <!-- end article -->

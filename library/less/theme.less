@@ -2,11 +2,17 @@
 // Layouts
 // --------------------------------------------------
 
-
-
-@import "variables.less"; // Modify this for custom colors, font-sizes, etc
-@import "mixins.less";
+@import "bootstrap.less";
 @import "mixins-custom.less";
+
+// Grid
+// -----------------------------------
+
+@media (min-width: @screen-lg) {
+	.container {
+		width: @container-large-desktop; 
+	}
+}
 
 * {
   margin: 0;
@@ -16,10 +22,10 @@ html, body {
 }
 body {
   background-color: #F6F6F6;
-  font-family: @baseFontFamily;
-  font-size: @baseFontSize;
-  line-height: @baseLineHeight;
-  color: @grayDark;
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  color: @gray-dark;
   -webkit-font-smoothing: antialiased;
   height: 100%;
 
@@ -81,8 +87,15 @@ body {
   }
 }
 
+@media (min-width: @screen-lg) {
+	body.pagename-home {
+		background-size: 900px auto;
+		background-position: center 200px;
+	}
+}
+
 a {
-  color: @linkColor;
+  color: @link-color;
   .transition-two(background, .5s, color, .5s);
   &:hover {
     text-decoration: none;
@@ -111,12 +124,12 @@ table {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: @headingsFontFamily;
-  font-weight: @headingsFontWeight;
+  font-family: @headings-font-family;
+  font-weight: @headings-font-weight;
 }
 
 p, li, blockquote, address {
-  font-family: @altFontFamily;
+  font-family: @font-family-secondary;
   font-size: 110%;
 }
 hr {
@@ -182,12 +195,12 @@ p.lead {
   padding-top: 10px;
   font-size: .9rem;
   line-height: 1rem;
-  font-family: @altFontFamily;
+  font-family: @font-family-secondary;
   strong {
     font-size: 1.1rem;
     display: block;
     margin-bottom: .5rem;
-    font-family: @baseFontFamily;
+    font-family: @font-family-base;
   }
 }
 
@@ -198,11 +211,11 @@ p.lead {
 }
 
 .table {
-  margin-bottom: @baseMargin;
+  margin-bottom: @grid-gutter-width;
   tr.emphasize td {
     font-weight: 700;
     color: inherit;
-    background: lighten(@palePurple, 20%);
+    background: lighten(@purple-pale, 20%);
   }
   th {
     font-weight: 700;
@@ -212,19 +225,19 @@ p.lead {
   th, td {
     padding: 18px 15px;
     font-size: 110%;
-    font-family: @sansFontFamily;
+    font-family: @font-family-sans-serif;
   }
 }
 
 address {
-  font-family: @altFontFamily;
+  font-family: @font-family-secondary;
   h4 {
     margin-bottom: 5px;
   }
 }
 
 .amp {
-  font-family: @serifFontFamily;
+  font-family: @font-family-serif;
   font-style: italic;
   font-weight: normal;
 }
@@ -243,7 +256,7 @@ address {
   background-color: #fff;
   background-color: rgba(255,255,255,.5);
   border:none;
-  .border-radius(@borderRadiusSmall);
+  border-radius: @border-radius-small;
   .box-shadow(0 1px 2px rgba(0,0,0,.2));
   padding: 40px;
   .box-sizing(border-box);
@@ -256,6 +269,30 @@ address {
 
 .special-page-title {
   margin-bottom: 0 !important;
+}
+
+.pagename-speakers {
+	.speaker-wrap {
+		.make-row();
+	}
+	.photo {
+		.make-sm-column(4);
+	}
+	.bio {
+		.make-sm-column(8);
+	}
+	#main {
+		article.page {
+			section.post_content {
+				h2.border {
+					text-align: left;
+					.make-sm-column(8);
+					.make-sm-column-offset(4);
+					padding-left: @grid-gutter-width*1.25;
+				}
+			}
+		}
+	}
 }
 
 .pagename-leaders {
@@ -393,19 +430,19 @@ address {
     font-size: 90%;
   }
   .wpcf7-response-output.wpcf7-validation-errors {
-    background-color: @warningBackground;
-    border-color: @warningBorder;
-    color: @warningText;
+    background-color: @state-warning-bg;
+    border-color: @state-warning-border;
+    color: @state-warning-text;
   }
   .wpcf7-not-valid-tip {
-    background-color: @errorBackground;
-    color: @errorText;
-    border-color: @errorBorder;
+    background-color: @state-danger-bg;
+    color: @state-danger-text;
+    border-color: @state-danger-border;
   }
   .wpcf7-mail-sent-ok {
-    background-color: @successBackground;
-    color: @successText;
-    border-color: @successBorder;
+    background-color: @state-success-bg;
+    color: @state-success-text;
+    border-color: @state-success-border;
   }
   .wpcf7-text#city {
     width: 208px;
@@ -435,7 +472,7 @@ address {
     label {
       display: inline-block;
       padding: 5px 10px 10px 0;
-      font-family: @baseFontFamily;
+      font-family: @font-family-base;
     }
     input {
       margin-top: -5px;
@@ -458,7 +495,7 @@ address {
   input[type="search"],
   input[type="tel"],
   input[type="color"] {
-    color: @grayDark;
+    color: @gray-dark;
     width: 100%;
     .box-sizing(border-box);
     &:-moz-placeholder {
@@ -474,7 +511,7 @@ address {
 }
 
 input[type="password"] {
-  font-family: @altFontFamily;
+  font-family: @font-family-secondary;
 }
 
 /* Structure */
@@ -496,30 +533,30 @@ input[type="password"] {
 
 .btn,
 .form-actions input[type="submit"] {
-  /*background: @palePurple;*/
+  /*background: @purple-pale;*/
   //background-color: #F8F8F6;
   background-image: none;
-  color: @grayDark;
-  text-shadow: @baseTextShadow;
+  color: @gray-dark;
+  // text-shadow: @text-shadow-base;
   /*color: @white;
   text-shadow: none;*/
-  font-family: @sansFontFamily;
+  font-family: @font-family-sans-serif;
   font-weight: 500;
   /*border: none;*/
   padding: 8px 15px;
-  #translucent > .background(@color: #E3E7D9, @alpha: .7);
+  // #translucent > .background(@color: #E3E7D9, @alpha: .7);
   .box-shadow(inset 0 1px 0 rgba(255,255,255,.4));
-  .border-radius(4px);
+  border-radius: 4px;
   .transition(all);
   .transition-duration(.5s);
   &:hover {
-    /*background: darken(@palePurple, 08%);
+    /*background: darken(@purple-pale, 08%);
     color: @white;*/
     background: @blue;
     border-color: lighten(#6AA4A8, 10%);
     background-image: none;
     color: darken(@blue, 36%);
-    #translucent > .background(@color: #CDE3EE, @alpha: .8);
+    // #translucent > .background(@color: #CDE3EE, @alpha: .8);
   }
   &.btn-register {
     margin: 30px 0;
@@ -548,10 +585,10 @@ input[type="password"] {
 .pagename-leaders .li-cta > a {
   background: @purple !important;
   border: none;
-  color: @greenLight !important;
-  .border-radius(@baseBorderRadius);
+  color: @green-light !important;
+  border-radius: @border-radius-base;
   text-shadow: none !important;
-  font-family: @sansFontFamily;
+  font-family: @font-family-sans-serif;
   text-transform: uppercase;
   font-size: 26px !important;
   padding: 25px 20px 25px;
@@ -561,13 +598,13 @@ input[type="password"] {
   .box-shadow2(5px 5px 0 rgba(144, 67, 154, .5), -5px -5px 0 rgba(67, 172, 214, .5)) !important;
 
   i {
-    font-family: @serifFontFamily;
+    font-family: @font-family-serif;
     font-style: italic;
     font-weight: normal;
     text-transform: none;
   }
   .info {
-    font-family: @baseFontFamily;
+    font-family: @font-family-base;
     font-weight: 500;
     font-style: normal;
     text-transform: none;
@@ -579,14 +616,14 @@ input[type="password"] {
   }
   &:hover, &:active {
     background: darken(@purple, 15%) !important;
-    color: darken(@greenLight, 10%) !important;
+    color: darken(@green-light, 10%) !important;
     .arrow-right {
       .opacity(100);
       .transition(opacity .5s);
     }
   }
   .caret-right {
-    border-left-color: @greenLight;
+    border-left-color: @green-light;
     border-width: 6px 0 6px 6px;
   }
   .arrow-right {
@@ -619,16 +656,16 @@ input[type="password"] {
     border-width: 5px;
     border-left-color: #9CD1E6;
     border-top-color: #9CD1E6;
-    border-right-color: @palePurple;
-    border-bottom-color: @palePurple;
+    border-right-color: @purple-pale;
+    border-bottom-color: @purple-pale;
   }
 }
 
 .navbar .nav li.dropdown.li-cta > .dropdown-toggle .caret {
-  border-top-color: @greenLight;
+  border-top-color: @green-light;
 }
 .navbar .nav li.dropdown.li-cta.open > .dropdown-toggle .caret {
-  border-top-color: @greenLight;
+  border-top-color: @green-light;
 }
 
 article header {
@@ -658,7 +695,7 @@ article header {
       left: 20px;
     }
     p {
-      font-family: @sansFontFamily;
+      font-family: @font-family-sans-serif;
       line-height: 1.5em;
       margin: 0;
     }
@@ -745,7 +782,7 @@ article header {
       & > a {
         color: @white;
         color: rgba(255,255,255,.87);
-        font-family: @sansFontFamily;
+        font-family: @font-family-sans-serif;
         text-shadow: none;
         display: inline-block;
         border-radius: 2px;
@@ -786,15 +823,11 @@ article header {
 .navbar {
   background:  url('http://truewoman14.s3.amazonaws.com/library/img/pencil-line-horizontal2.png') repeat-x bottom !important;
   padding-bottom: 4px;
-  .brand {
-    position: relative;
-    left: 0;
-    top: 8px;
+  .navbar-brand {
+
     width: 218px;
     height: 52px;
-    margin-left: 1px;
-    margin-bottom: 0px;
-    float: none;
+  
     .transition(none);
     .retina-image('http://truewoman14.s3.amazonaws.com/library/img/logo','png', no-repeat, 218px, 52px, 0, 0);
     .hide-text();
@@ -817,7 +850,7 @@ article header {
           & > li {
             &:last-child {
               float: right;
-              width: 23%;
+              width: 18%;
               margin-right: -0px;
               a.btn-cta {
                 font-size: inherit !important;
@@ -826,7 +859,7 @@ article header {
           }
         }
       ul.dropdown-menu {
-        border-radius: @baseBorderRadius;
+        border-radius: @border-radius-base;
         margin-left: 0;
         margin-right: 0;
         padding: 10px;
@@ -835,15 +868,16 @@ article header {
           font-size: 110%;
 
           & > a {
-            font-family: @baseFontFamily;
+            font-family: @font-family-base;
             line-height: 25px;
             //padding-left: 30px !important;
             font-weight: 400;
             line-height: 44px;
-            border-radius: @baseBorderRadius;
+            border-radius: @border-radius-base;
             //background: @red;
             &:hover {
               background: @red;
+							color: @white;
             }
           }
         }
@@ -882,17 +916,17 @@ article header {
           }
         }
         & > a {
-          color: @grayDark;
+          color: @gray-dark;
           font-weight: 500;
           padding: 22px 0;
           margin: 9px 0 5px;
           text-align: center;
-          border-radius: @baseBorderRadius;
+          border-radius: @border-radius-base;
           &.li-cta {
             padding: 14px 28px;
             margin-top: 19px;
             margin-left: 10px;
-            color: @greenLight;
+            color: @green-light;
             text-shadow: none;
             float: right;
           }
@@ -954,7 +988,7 @@ article header {
       background-color: rgba(255,255,255,.75);
       margin: 0 -50px 0 -50px;
       padding: 50px 50px 60px;
-      .border-radius(@baseBorderRadius);
+      border-radius: @border-radius-base;
       .box-shadow(0 1px 2px rgba(0,0,0,.2));
       min-height: 600px;
       &.paper-short {
@@ -964,7 +998,7 @@ article header {
         background-color: #010103;
         //background: url("http://truewoman14.s3.amazonaws.com/library/img/exclusive_paper.png") repeat;
         text-align: center;
-        border-radius: @baseBorderRadius;
+        border-radius: @border-radius-base;
         overflow: hidden;
         margin-bottom: 30px;
       }
@@ -992,7 +1026,7 @@ article header {
         font-weight: normal;
         position: relative;
         a, a:visited {
-          color: @linkColor;
+          color: @link-color;
         }
         span {
           position: absolute;
@@ -1028,7 +1062,7 @@ article header {
           top: -200px;
         }
         a, a:visited {
-          color: @linkColor;
+          color: @link-color;
         }
       }
       p, ul, ol, blockquote {
@@ -1055,14 +1089,14 @@ article header {
           }
 
           h2 {
-            font-family: @sansFontFamily;
+            font-family: @font-family-sans-serif;
             margin-top: 0;
             margin-bottom: 0;
           }
           .photo img {
             max-width: 90%;
-            border-radius: @baseBorderRadius;
-            .box-shadow(@baseDropShadow);
+            border-radius: @border-radius-base;
+            .box-shadow(@dropshadow-base);
           }
 
         }
@@ -1083,7 +1117,7 @@ article header {
     footer {
       clear: both;
     }
-    .paper > .row > .span3 {
+    .paper > .row > .col-sm-3 {
       //background: @red;
       overflow: hidden;
       min-height: 300px;
@@ -1099,7 +1133,7 @@ article header {
 
         //background: url("http://truewoman14.s3.amazonaws.com/library/img/pencil-line-vertical.png") repeat-y -2px;
         li {
-          font-family: @baseFontFamily;
+          font-family: @font-family-base;
           font-size: 110%;
 
           &.break {
@@ -1116,7 +1150,7 @@ article header {
             .transition-duration(.3s);
 
             &:hover {
-              border-right: 6px solid @palePurple;
+              border-right: 6px solid @purple-pale;
               //background: rgba(0,0,0,.05);
               //background: #F1EEE3;
               //background: rgba(241, 236, 224, .6) url("http://truewoman14.s3.amazonaws.com/library/img/pencil-line-horizontal.png") repeat-x center bottom;
@@ -1168,7 +1202,7 @@ article header {
       }
       .table {
         margin-top:0;
-        margin-bottom: @baseMargin;
+        margin-bottom: @grid-gutter-width;
         border-left: 0;
         border-right:0;
 
@@ -1284,13 +1318,13 @@ footer[role="contentinfo"] {
 
 
   p, li {
-    font-family: @sansFontFamily;
+    font-family: @font-family-sans-serif;
     font-weight: 500;
     &.attribution {
       a {
         color: inherit;
         &:hover {
-          color: @linkColor;
+          color: @link-color;
         }
       }
     }
@@ -1304,7 +1338,7 @@ footer[role="contentinfo"] {
 
   }
   .footer-social-nav {
-    font-family: @altFontFamily;
+    font-family: @font-family-secondary;
     strong {
       margin-right: 7px;
     }
@@ -1462,7 +1496,7 @@ footer[role="contentinfo"] {
           line-height: 1.2;
         }
         p {
-          font-family: @baseFontFamily;
+          font-family: @font-family-base;
           font-weight: 500;
           color: @gray;
           margin:0;
@@ -1482,7 +1516,7 @@ footer[role="contentinfo"] {
         .center-block();
         width: 56%;
         margin-bottom: 2%;
-        &.ha-header-small {
+        &.#h-small {
           margin-top: 40px;
         }
       }
@@ -1504,12 +1538,12 @@ footer[role="contentinfo"] {
       }
       #speakers {
         min-height: auto;
-
+				
         margin: 80px 0 120px;
         img {
           margin-bottom: 10px;
-          border-radius: @baseBorderRadius;
-          .box-shadow(@baseDropShadow);
+          border-radius: @border-radius-base;
+          .box-shadow(@dropshadow-base);
         }
         h2 {
           text-align: center;
@@ -1550,7 +1584,7 @@ footer[role="contentinfo"] {
 
           p {
             font-size: 200%;
-            color: @grayDark;
+            color: @gray-dark;
           }
           cite {
             font-style: italic;
@@ -1607,7 +1641,7 @@ footer[role="contentinfo"] {
         background-color: lighten(#92CA9C, 24%);
         padding: 20px;
         .box-sizing(border-box);
-        border-radius: @baseBorderRadius;
+        border-radius: @border-radius-base;
       }
       .qa-faq {
         //background: url("http://truewoman14.s3.amazonaws.com/library/img/bullet-circle.png") no-repeat left 11px;
@@ -1791,7 +1825,7 @@ footer[role="contentinfo"] {
     margin-bottom: 2px;
   }
   img {
-    .box-shadow(@baseDropShadow);
+    .box-shadow(@dropshadow-base);
     .opacity(70);
     .transition(opacity .5s);
     &:hover {
@@ -1813,7 +1847,7 @@ footer[role="contentinfo"] {
     margin-bottom: 0;
     // font-family: @FontFamilySerif;
     font-size: 17px;
-		font-family: @sansFontFamily;
+		font-family: @font-family-sans-serif;
     strong {
       font-weight: bold;
 			color: white;
@@ -1830,7 +1864,7 @@ footer[role="contentinfo"] {
 	}
   .btn {
 		background-color: @purple;
-		color: @greenLight !important;
+		color: @green-light !important;
     padding: 0 10px;
     position: relative;
     top: -3px;
@@ -1849,6 +1883,5 @@ footer[role="contentinfo"] {
 	}
 }
 
-@import "theme-responsive.less";
 
 

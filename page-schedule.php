@@ -8,7 +8,7 @@ Template N a.m.e: Schedule
 			
 			<div id="content" class="clearfix row schedule">
 			
-				<div id="main" class="span12 clearfix" role="main">
+				<div id="main" class="col-sm-12 clearfix" role="main">
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
@@ -21,7 +21,7 @@ Template N a.m.e: Schedule
 						</header> <!-- end article header -->
 						<div class="paper">
 							<div class="row">
-								<div class="span12">
+								<div class="col-sm-12">
 							    <section class="post_content ">
 				    				<?php the_content(); ?>
 				    		    
@@ -134,7 +134,7 @@ Final Morning Session
 </div-->
 				    			</section> <!-- end article section -->
 				    		</div>
-				    		<!--<div class="span3">
+				    		<!--<div class="col-sm-3">
 				    			<ul class="nav">
 						    		<li><a href="#">Leadership Pre-Session</a></li>
 						    		<li><a href="#">Main Session</a></li>

@@ -31,11 +31,13 @@
 
   		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
-
+			<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"> -->
 		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
+
 		<link href="<?php echo get_template_directory_uri(); ?>/library/css/theme.css" rel="stylesheet" type="text/css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<!--[if lte IE 10]>
 			<link href="<?php echo get_template_directory_uri(); ?>/library/css/ie.css" rel="stylesheet" type="text/css"></link>
 		<![endif]-->
@@ -54,16 +56,17 @@
 			<div id="inner-header" class="clearfix">
 
 				<div class="navbar navbar-fixed-top">
-				    <!-- 
+				    <!--
 					<div class="adsliver">
 						<p>
 							True Woman &rsquo;14 <strong>early pricing ends</strong> in: <span id="defaultCountdown"></span> <a href="http://www.truewoman14.com/register" class="btn">Register Now</a>
 						</p>
 					</div>
 					-->
+
 					<div id="ha-header" class="navbar-inner ha-header-large">
 						<div id="ha-header-brand" class="container">
-							<a class="brand" id="logo" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>">
+							<a class="navbar-brand" id="logo" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>">
 								<?php if(of_get_option('branding_logo','')!='') { ?>
 									<img src="<?php echo of_get_option('branding_logo'); ?>" alt="<?php echo get_bloginfo('description'); ?>">
 									<?php }
@@ -102,11 +105,16 @@
 							<nav class="main-nav" role="navigation">
 								<div class="container">
 
-									<a class="btn btn-navbar btn-navbar-main" data-toggle="collapse" data-target=".nav-collapse">
-								    <b class="caret"></b>
-									</a>
 
-									<div class="nav-collapse"> 
+
+									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+									        <span class="sr-only">Toggle navigation</span>
+									        <span class="icon-bar"></span>
+									        <span class="icon-bar"></span>
+									        <span class="icon-bar"></span>
+									      </button>
+
+									<div class="nav-collapse">
 
 										<?php bones_main_nav(); // Adjust using Menus in Wordpress Admin ?>
 

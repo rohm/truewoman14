@@ -13,15 +13,15 @@
 						<div class="paper">
 							
 							<div class="row">
-								<div class="span9">
+								<div class="col-sm-9">
 									
 										<section class="post_content clearfix" itemprop="articleBody">
 											<?php the_content(); ?>
 									
 										</section> <!-- end article section -->
 									
-								</div><!-- end span9 -->
-								<div class="span3">
+								</div><!-- end col-sm-9 -->
+								<div class="col-sm-3">
 									<?php get_sidebar(); // sidebar 1 ?>
 								</div>
 							</div><!-- end row -->

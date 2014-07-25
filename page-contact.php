@@ -8,7 +8,7 @@ Template Name: Contact
 			
 			<div id="content" class="clearfix row">
 			
-				<div id="main" class="span12 clearfix" role="main">
+				<div id="main" class="col-sm-12 clearfix" role="main">
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
@@ -22,12 +22,12 @@ Template Name: Contact
 						<div class="paper">
 							<section class="post_content">
 								<div class="row">
-									<div class="span6">
+									<div class="col-sm-6">
 										<h2>Email</h2>
 										<p class="info">Feel free to send us any feedback or questions using the form below. But first, we encourage you to see if your question is answered in our <a href="/faqs/">frequently asked questions.</a></p>
 										<?php the_content(); ?>
 									</div>
-									<div class="span5 offset1">
+									<div class="col-sm-5 offset1">
 										<div class="well">
 											<h3>More info</h3>
 											<p><strong>True Woman is an outreach of&nbsp;<em><a href="http://www.reviveourhearts.com">Revive&nbsp;Our&nbsp;Hearts</a></strong></em>.</p>

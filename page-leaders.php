@@ -8,7 +8,7 @@ Template Name: Leaders
 
 			<div id="content" class="clearfix row schedule">
 
-				<div id="main" class="span12 clearfix" role="main">
+				<div id="main" class="col-sm-12 clearfix" role="main">
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -30,7 +30,7 @@ Template Name: Leaders
   							 <h2 class="text-center">Build a Community of True Women in Your Church</h2>
   							 <p class="lead text-center">Find out what God will do when your church group attends True Woman &rsquo;14!<br />We&rsquo;ll seek the Lord to:</p>
   							 <div class="row">
-  							   <div class="span6 offset3">
+  							   <div class="col-sm-6 col-sm-offset-3">
 
 
                     <ul>
@@ -47,13 +47,13 @@ Template Name: Leaders
   							 </div>
 
   							 <div class="row">
-                  <div class="span5 offset1">
+                  <div class="col-sm-5 offset1">
                     <img src="http://truewoman14.s3.amazonaws.com/library/img/leaders-photo-hands.jpg" class="photo leaders-photo-left img-responsive" alt="" />
                   </div>
-                  <div class="span5">
+                  <div class="col-sm-5">
                     <img src="http://truewoman14.s3.amazonaws.com/library/img/leaders-photo-praying2.jpg" class="photo leaders-photo-right img-responsive" alt="" />
                   </div>
-                  <div class="span8 offset2">
+                  <div class="col-sm-8 col-sm-offset-2">
                   <div id="specifically-for-leaders" class="text-center">
                     <h3>Specifically for Leaders</h3>
                     <p>We call it the <em>True Woman &rsquo;14 Pre-event</em>. This pre-event is designed specifically for women who are in ministry to other women. Be part of this event so that you can get encouragement and new energy as you serve your women. <strong><a href="/register/">Learn More</a></strong></p>

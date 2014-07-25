@@ -7,10 +7,10 @@
 
 		<div id="inner-footer" class="clearfix">
 		  <div class="row">
-			  <div class="span6">
+			  <div class="col-sm-6">
 				  <img id="footer-branding" src="<?php echo get_template_directory_uri(); ?>/library/img/footer_branding@2x.png" alt="True Woman is a Ministry of Revive Our Hearts" />
 				</div>
-				<div class="span6">
+				<div class="col-sm-6">
 					<nav class="footer-social-nav pull-right">
 						<em><strong>Connect with us!</strong></em>
 						<a href="http://www.facebook.com/TrueWomanMovement" class="btn facebook"><i class="icon-facebook">Facebook</i></a>
@@ -44,38 +44,38 @@
 <script src="<?php echo get_template_directory_uri(); ?>/library/js/jquery.countdown.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/library/js/waypoints.min.js"></script>
 <script type="text/javascript">
-var $head = jQuery( '#ha-header' );
-jQuery( '.ha-waypoint' ).each( function(i) {
-		var $el = jQuery( this ),
-				animClassDown = $el.data( 'animateDown' ),
-				animClassUp = $el.data( 'animateUp' );
-
-		$el.waypoint( function( direction ) {
-				if( direction === 'down' && animClassDown ) {
-						$head.attr('class', 'navbar-inner ' + animClassDown);
-				}
-				else if( direction === 'up' && animClassUp ){
-						$head.attr('class', 'navbar-inner ' + animClassUp);
-				}
-		}, { offset: '100%' } );
-} );
-
-var $intro = jQuery('.tw14-logo-purple');
-jQuery('.ha-waypoint').each( function(i) {
-	var $el = jQuery( this ),
-			animClassDown = $el.data( 'animateDown' ),
-			animClassUp = $el.data( 'animateUp' );
-
-	$el.waypoint( function( direction ) {
-			if( direction === 'down' && animClassDown ) {
-					$intro.attr('class', 'tw14-logo-purple ' + animClassDown);
-			}
-			else if( direction === 'up' && animClassUp ){
-					$intro.attr('class', 'tw14-logo-purple ' + animClassUp);
-			}
-	}, { offset: '100%' } );
-
-});
+// var $head = jQuery( '#ha-header' );
+// jQuery( '.ha-waypoint' ).each( function(i) {
+// 		var $el = jQuery( this ),
+// 				animClassDown = $el.data( 'animateDown' ),
+// 				animClassUp = $el.data( 'animateUp' );
+//
+// 		$el.waypoint( function( direction ) {
+// 				if( direction === 'down' && animClassDown ) {
+// 						$head.attr('class', 'navbar-inner ' + animClassDown);
+// 				}
+// 				else if( direction === 'up' && animClassUp ){
+// 						$head.attr('class', 'navbar-inner ' + animClassUp);
+// 				}
+// 		}, { offset: '100%' } );
+// } );
+//
+// var $intro = jQuery('.tw14-logo-purple');
+// jQuery('.ha-waypoint').each( function(i) {
+// 	var $el = jQuery( this ),
+// 			animClassDown = $el.data( 'animateDown' ),
+// 			animClassUp = $el.data( 'animateUp' );
+//
+// 	$el.waypoint( function( direction ) {
+// 			if( direction === 'down' && animClassDown ) {
+// 					$intro.attr('class', 'tw14-logo-purple ' + animClassDown);
+// 			}
+// 			else if( direction === 'up' && animClassUp ){
+// 					$intro.attr('class', 'tw14-logo-purple ' + animClassUp);
+// 			}
+// 	}, { offset: '100%' } );
+//
+// });
 // jQuery(function () {
 // 	var fullPriceDate = new Date();
 // 	fullPriceDate = new Date(2014, 5 - 1, 2);
@@ -90,7 +90,7 @@ jQuery('.ha-waypoint').each( function(i) {
             var topDistance = jQuery(window).scrollTop();
             // If the distance scrolled is <= to height of the container - the height of the sidebar
             // Previous check would never have happened as offset.top is constantly increasing
-						if (topDistance <= (jQuery('.paper').height() - jQuery("#sidebar").height())  && (jQuery(".span3").css("float") == "left")) {
+						if (topDistance <= (jQuery('.paper').height() - jQuery("#sidebar").height())  && (jQuery(".col-sm-3").css("float") == "left")) {
 						    // Animate the sidebar down to the position (follow me!)
 								jQuery("#sidebar").stop().animate({
 										marginTop: topDistance - offset.top + topPadding

@@ -155,12 +155,12 @@ Template Name: Leadership Pre-Event
 
 								<!-- Who What Where -->
 								<div class="row who-what-where">
-  								  <div class="span8 offset2">
+  								  <div class="col-sm-8 col-sm-offset-2">
     									<p class="lead">As a women&rsquo;s ministry leader, you are constantly pouring yourself into others.  The Leadership Pre-Event is an opportunity to get away and seek the Lord for a fresh season of ministry.</p>
 
     									<p>By interacting with other leaders and through Bible teaching designed to meet your needs, you&rsquo;ll . . .</p>
     									<div class="row">
-      									<div class="span8 offset2">
+      									<div class="col-sm-8 col-sm-offset-2">
         									<ul class="no-bullets text-large">
         									 <li><i class="fa fa-heart-o"></i> Be <em>encouraged</em></li>
         									 <li><i class="fa fa-heart-o"></i> Be <em>equipped</em></li>
@@ -174,7 +174,7 @@ Template Name: Leadership Pre-Event
                 <!-- Featuring -->
                 <div id="featuring">
                   <div class="row">
-                    <div class="span4 offset2">
+                    <div class="col-sm-4 col-sm-offset-2">
                       <a href="/speakers/#nancy"><img src="http://truewoman14.s3.amazonaws.com/library/img/leaders-speaker-nancy.jpg" alt="Nancy Leigh DeMoss" /></a>
                       <h3><a href="/speakers/#nancy">Nancy Leigh DeMoss</a></h3>
 											<!-- <ul class="topic-list">
@@ -182,7 +182,7 @@ Template Name: Leadership Pre-Event
 												<li>Halvah chocolate bar</li>
 											</ul> -->
                     </div>
-                    <div class="span4">
+                    <div class="col-sm-4">
                       <a href="/speakers/#leslie"><img src="http://truewoman14.s3.amazonaws.com/library/img/leaders-speaker-leslie.jpg" alt="Nancy Leigh DeMoss" /></a>
                       <h3><a href="/speakers/#leslie">Leslie Bennett</a></h3>
 											<!-- <ul class="topic-list">
@@ -190,7 +190,7 @@ Template Name: Leadership Pre-Event
 												<li>Sweet roll cotton candy</li>
 											</ul> -->
                     </div>
-                    <!-- <div class="span8 offset2 also-featuring">
+                    <!-- <div class="col-sm-8 col-sm-offset-2 also-featuring">
                       <p>Also, <a href="/speakers/#scott">Scott Lindsey</a> of <a href="http://www.logos.com">Logos</a> will offer helpful tips on the tools available that open the Word.</p>
                     </div> -->
                   </div>
@@ -302,10 +302,10 @@ Template Name: Leadership Pre-Event
 
     <div id="inner-footer" class="clearfix">
       <div class="row">
-        <div class="span6">
+        <div class="col-sm-6">
           <img id="footer-branding" src="<?php echo get_template_directory_uri(); ?>/library/img/footer_branding@2x.png" alt="True Woman is a Ministry of Revive Our Hearts" />
         </div>
-        <div class="span6">
+        <div class="col-sm-6">
           <nav class="footer-social-nav pull-right">
             <em><strong>Connect with us!</strong></em>
             <a href="http://www.facebook.com/TrueWomanMovement" class="btn facebook"><i class="icon-facebook">Facebook</i></a>
@@ -380,7 +380,7 @@ jQuery('.ha-waypoint').each( function(i) {
             var topDistance = jQuery(window).scrollTop();
             // If the distance scrolled is <= to height of the container - the height of the sidebar
             // Previous check would never have happened as offset.top is constantly increasing
-            if (topDistance <= (jQuery('.paper').height() - jQuery("#sidebar").height())  && (jQuery(".span3").css("float") == "left")) {
+            if (topDistance <= (jQuery('.paper').height() - jQuery("#sidebar").height())  && (jQuery(".col-sm-3").css("float") == "left")) {
                 // Animate the sidebar down to the position (follow me!)
                 jQuery("#sidebar").stop().animate({
                     marginTop: topDistance - offset.top + topPadding

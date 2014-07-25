@@ -8,7 +8,7 @@ Template Name: Volunteer
 
 			<div id="content" class="clearfix row">
 
-				<div id="main" class="span12 clearfix" role="main">
+				<div id="main" class="col-sm-12 clearfix" role="main">
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -21,12 +21,12 @@ Template Name: Volunteer
 						</header> <!-- end article header -->
 						<div class="paper">
 							<div class="row">
-								<div class="span9">
+								<div class="col-sm-9">
                   <section class="post_content">
                   <?php the_content(); ?>
                   </section> <!-- end article section -->
                 </div>
-                <div class="span3">
+                <div class="col-sm-3">
                   <ul id="sidebar" class="nav nav-volunteers">
                   <li><a href="#service">Areas of Service</a></li>
                   <li><a href="#benefits">Benefits of Volunteering</a></li>
