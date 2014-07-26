@@ -754,8 +754,6 @@ article header {
     }
   }
   .navbar-nav {
-
-
     color: @white;
     font-size: 20px;
     font-weight: 500;
@@ -951,7 +949,6 @@ article header {
             color: @purple;
           }
         }
-
       }
     }
   }
@@ -963,9 +960,16 @@ article header {
   /*.box-shadow(none) !important;*/
 }
 
+.navbar-default .navbar-collapse {
+  border: none;
+}
+
 #main-nav-xs {
   .navbar-brand {
     margin: 5px 15px 15px;
+  }
+  &.navbar {
+    border: none;
   }
   .navbar-toggle {
     border-color: darken(@red, 5%);
@@ -975,6 +979,67 @@ article header {
     }
     .icon-bar {
       background-color: @white;
+    }
+  }
+}
+
+#xs-menus {
+  background-color: darken(@red, 5%);
+  .navbar-nav {
+    font-size: 20px;
+    font-weight: 500;
+
+    > li {
+      font-size: 20px;
+      &.active {
+        a {
+          color: #fff;
+
+          &:hover {
+            background-color: rgba(0,0,0,.1);
+          }
+        }
+      }
+
+      & > a {
+        color: @white;
+        color: rgba(255,255,255,.77);
+        background-color: transparent;
+        font-family: @font-family-sans-serif;
+        text-shadow: none;
+        border-bottom: 1px dotted #C15470;
+        &:hover {
+          color: @white;
+        }
+        > .fa-sort-desc {
+          display: none;
+        }
+      }
+      > ul {
+        background-color: darken(@red, 9%);
+        margin: 0;
+        > li {
+          > a {
+            color: @white;
+            color: rgba(255,255,255,.77);
+            font-family: @font-family-sans-serif;
+            padding-left: 15px;
+            padding-right: 15px;
+            &:hover {
+              color: @white;
+              background-color: darken(@red, 12%);
+            }
+          }
+        }
+      }
+    }
+    .li-cta {
+      margin: 15px;
+      > a {
+        padding: 10px;
+        font-size: 18px !important;
+
+      }
     }
   }
 }
@@ -1557,10 +1622,16 @@ footer[role="contentinfo"] {
         .center-block();
         width: 80%;
       }
+      @media (max-width: @screen-xs) {
+        img {
+          margin-top: 5em;
+        }
+      }
       .tw14-logo-purple {
         .center-block();
         width: 56%;
         margin-bottom: 2%;
+        .hidden-xs();
       }
 
       .tw14-logo-purple#h-small {

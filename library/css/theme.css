@@ -7299,8 +7299,14 @@ article header .banner p {
   border: none;
   /*.box-shadow(none) !important;*/
 }
+.navbar-default .navbar-collapse {
+  border: none;
+}
 #main-nav-xs .navbar-brand {
   margin: 5px 15px 15px;
+}
+#main-nav-xs.navbar {
+  border: none;
 }
 #main-nav-xs .navbar-toggle {
   border-color: #9d2645;
@@ -7313,6 +7319,58 @@ article header .banner p {
 }
 #main-nav-xs .navbar-toggle .icon-bar {
   background-color: #ffffff;
+}
+#xs-menus {
+  background-color: #9d2645;
+}
+#xs-menus .navbar-nav {
+  font-size: 20px;
+  font-weight: 500;
+}
+#xs-menus .navbar-nav > li {
+  font-size: 20px;
+}
+#xs-menus .navbar-nav > li.active a {
+  color: #fff;
+}
+#xs-menus .navbar-nav > li.active a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#xs-menus .navbar-nav > li > a {
+  color: #ffffff;
+  color: rgba(255, 255, 255, 0.77);
+  background-color: transparent;
+  font-family: "futura-pt";
+  text-shadow: none;
+  border-bottom: 1px dotted #C15470;
+}
+#xs-menus .navbar-nav > li > a:hover {
+  color: #ffffff;
+}
+#xs-menus .navbar-nav > li > a > .fa-sort-desc {
+  display: none;
+}
+#xs-menus .navbar-nav > li > ul {
+  background-color: #8d223e;
+  margin: 0;
+}
+#xs-menus .navbar-nav > li > ul > li > a {
+  color: #ffffff;
+  color: rgba(255, 255, 255, 0.77);
+  font-family: "futura-pt";
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#xs-menus .navbar-nav > li > ul > li > a:hover {
+  color: #ffffff;
+  background-color: #811f38;
+}
+#xs-menus .navbar-nav .li-cta {
+  margin: 15px;
+}
+#xs-menus .navbar-nav .li-cta > a {
+  padding: 10px;
+  font-size: 18px !important;
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .navbar nav.main-nav ul.navbar-nav > li {
@@ -7865,12 +7923,22 @@ footer[role="contentinfo"] #sbi_camera_button {
   margin-right: auto;
   width: 80%;
 }
+@media (max-width: 480px) {
+  .home article.page #intro img {
+    margin-top: 5em;
+  }
+}
 .home article.page #intro .tw14-logo-purple {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 56%;
   margin-bottom: 2%;
+}
+@media (max-width: 767px) {
+  .home article.page #intro .tw14-logo-purple {
+    display: none !important;
+  }
 }
 .home article.page #intro .tw14-logo-purple#h-small {
   margin-top: 40px;
