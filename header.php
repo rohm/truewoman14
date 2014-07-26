@@ -31,8 +31,6 @@
 
   		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
-			<!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"> -->
-		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -50,13 +48,48 @@
 
 	<div id="fb-root"></div>
 	<div class="page-wrap" data-type="background" data-speed="10">
+		<nav id="main-nav-xs" class="navbar navbar-default visible-xs navbar-fixed-top" role="navigation">
+			<div class="navbar-inner">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">Brand</a>
+					</div>
 
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<?php bones_main_nav(); // Adjust using Menus in Wordpress Admin ?>
+						<?php bones_toolbar_nav(); // Adjust using Menus in Wordpress Admin ?>
+
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Link</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+									<li><a href="#">Something else here</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Separated link</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</div>
+		</nav>
 		<!-- Header -->
-		<header role="banner">
+		<header role="banner" class="visible-sm visible-md visible-lg">
 
 			<div id="inner-header" class="clearfix">
 
-				<div class="navbar navbar-fixed-top" role="navigation">
+				<div class="navbar navbar-fixed-top">
 						<!--
 					<div class="adsliver">
 						<p>
@@ -64,43 +97,39 @@
 						</p>
 					</div>
 					-->
-
 					<div id="ha-header" class="navbar-inner ha-header-large">
 						<div id="ha-header-brand" class="container">
 							<a class="navbar-brand" id="logo" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>">
 								<?php if(of_get_option('branding_logo','')!='') { ?>
 									<img src="<?php echo of_get_option('branding_logo'); ?>" alt="<?php echo get_bloginfo('description'); ?>">
 									<?php }
-									if(of_get_option('site_name','1')) bloginfo('name'); ?>
+									if(of_get_option('site_name','1')) bloginfo('name'); ?></a>
+							<div id="toolbar-nav" class="">
+									<div class="nav-collapse toolbar-nav-collapse navbar-right">
+										<?php bones_toolbar_nav(); // Adjust using Menus in Wordpress Admin ?>
 
-							</a>
-							<div id="toolbar-nav">
-								<div class="collapse navbar-collapse toolbar-nav-collapse navbar-right">
-									<?php bones_toolbar_nav(); // Adjust using Menus in Wordpress Admin ?>
+										<ul id="menu-share-nav" class="navbar-nav nav">
 
-									<ul id="menu-share-nav" class="nav navbar-nav navbar-right" role="menu">
+											<li class="menu-item has-dropdown">
 
-										<li class="menu-item has-dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Share <i class="fa fa-share"></i></a>
+												<ul class="dropdown-menu">
+													<li id="menu-item-facebook" class="menu-item">
+														<div class="fb-like" data-href="http://www.truewoman14.com" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+													</li>
+													<li id="menu-item-twitter" class="menu-item">
+														<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.truewoman14.com" data-via="truewoman"  data-hashtags="truewoman14">Tweet</a>
+														<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+													</li>
+													<li id="menu-item-pinterest" class="menu-item">
+														<a href="//pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.truewoman14.com&media=http%3A%2F%2Ftruewoman14.com.s3.amazonaws.com%2Flibrary%2Fimg%2Ffacebook-og.jpg&description=True%20Woman%20%26rsquo%3B14%20%7C%20Finding%20Freedom%2C%20Fullness%20%26amp%3B%20Fruitfullness%20in%20Christ" data-pin-do="buttonPin" data-pin-config="none"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>
+													</li>
+												</ul>
+											</li>
 
-											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Share <i class="fa fa-share"></i></a>
-											<ul class="dropdown-menu" role="menu">
-												<li id="menu-item-hashtag" class="menu-item"><a href="https://twitter.com/hashtag/truewoman14">#truewoman14</a></li>
-												<li id="menu-item-facebook" class="menu-item">
-													<div class="fb-like" data-href="http://www.truewoman14.com" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>
-												</li>
-												<li id="menu-item-twitter" class="menu-item">
-													<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.truewoman14.com" data-via="truewoman"  data-hashtags="truewoman14">Tweet</a>
-													<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-												</li>
-												<li id="menu-item-pinterest" class="menu-item">
-													<a href="//pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.truewoman14.com&media=http%3A%2F%2Ftruewoman14.com.s3.amazonaws.com%2Flibrary%2Fimg%2Ffacebook-og.jpg&description=True%20Woman%20%26rsquo%3B14%20%7C%20Finding%20Freedom%2C%20Fullness%20%26amp%3B%20Fruitfullness%20in%20Christ" data-pin-do="buttonPin" data-pin-config="none"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>
-												</li>
-											</ul>
-										</li>
+										</ul>
 
-									</ul>
-
-								</div>
+									</div>
 
 							</div>
 						</div>
@@ -109,14 +138,13 @@
 							<nav class="main-nav" role="navigation">
 								<div class="container">
 
+										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+											<span class="sr-only">Toggle navigation</span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+											<span class="icon-bar"></span>
+										</button>
 
-
-									<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-													<span class="sr-only">Toggle navigation</span>
-													<span class="icon-bar"></span>
-													<span class="icon-bar"></span>
-													<span class="icon-bar"></span>
-												</button>
 
 									<div class="nav-collapse">
 

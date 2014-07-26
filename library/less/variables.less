@@ -14,19 +14,19 @@
 @gray-light:             lighten(#000, 46.7%); // #777
 @gray-lighter:           lighten(#000, 93.5%); // #eee
 
-@brand-primary:         #428bca;
-@brand-success:         #5cb85c;
-@brand-info:            #5bc0de;
+@brand-primary:         @blue;
+@brand-success:         @green-light;
+@brand-info:            @blue-light;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
 
 // Accent colors
 // -------------------------
-@blue:                  #44acd6;
+@blue:                  #049cdb;
 @blue-light:             rgba(180, 237, 239, .9);
-@blue-facebook:          #35619D;
-@blue-twitter:           #00aced;
-@blue-vimeo:             #1ab7ea;
+@brand-facebook:          #35619D;
+@brand-twitter:           #55ACEE;
+@brand-vimeo:             #1ab7ea;
 @blue-dark:              #0064cd;
 @green:                 #46a546;
 @green-light:            #c8ee95;
@@ -163,8 +163,8 @@
 @btn-font-weight:                normal;
 
 @btn-default-color:              #333;
-@btn-default-bg:                 #fff;
-@btn-default-border:             #ccc;
+@btn-default-bg:                 rgba(156, 209, 230, .5);
+@btn-default-border:             darken(@btn-default-bg, 5%);
 
 @btn-primary-color:              #fff;
 @btn-primary-bg:                 @brand-primary;
@@ -871,4 +871,4 @@
 
 
 
-@dropshadow-base: 						0 2px 0 rgba(0, 0, 0, .1);
+@dropshadow-base: 						0 0px 1px rgba(0, 0, 0, .15), 0 3px 0 rgba(0,0,0,.07);

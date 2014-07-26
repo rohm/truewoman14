@@ -11,7 +11,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="google-site-verification" content="TNv2lZAQPh3hOwL1ntuVV0WiKSHIgGrBJZY8ZGxBRgU" />
 		<title><?php wp_title( '|', true, 'right' ); ?></title>
-
 		<meta name="viewport" content="width=device-width">
 		<meta property="og:title" content="Register for True Woman &rsquo;14"/>
 		<meta property="og:image" content="http://truewoman14.s3.amazonaws.com/library/img/facebook-og.jpg"/>
@@ -30,12 +29,13 @@
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 
-  		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+			<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
-		<!-- wordpress head functions -->
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href="<?php echo get_template_directory_uri(); ?>/library/css/theme.css" rel="stylesheet" type="text/css">
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<!--[if lte IE 10]>
 			<link href="<?php echo get_template_directory_uri(); ?>/library/css/ie.css" rel="stylesheet" type="text/css"></link>
 		<![endif]-->
@@ -43,6 +43,7 @@
 		<!-- ?php require_once('library/typeahead.php'); ?-->
 
 	</head>
+
 
 	<body <?php body_class(); ?> data-type="background" data-speed="20">
 	<div id="fb-root"></div>

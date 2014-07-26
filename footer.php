@@ -13,10 +13,10 @@
 				<div class="col-sm-6">
 					<nav class="footer-social-nav pull-right">
 						<em><strong>Connect with us!</strong></em>
-						<a href="http://www.facebook.com/TrueWomanMovement" class="btn facebook"><i class="icon-facebook">Facebook</i></a>
-						<a href="http://twitter.com/TrueWoman" class="btn twitter"><i class="icon-twitter">Twitter</i></a>
+						<a href="http://www.facebook.com/TrueWomanMovement" class="btn btn-default facebook"><i class="fa fa-facebook"></i></a>
+						<a href="http://twitter.com/TrueWoman" class="btn btn-default twitter"><i class="fa fa-twitter"></i></a>
 						<!--a href="http://www.pinterest.com/reviveourhearts/" class="btn pinterest"><i class="icon-pinterest">Pinterest</i></a-->
-						<a href="http://vimeo.com/truewoman101" class="btn vimeo"><i class="icon-vimeo">Vimeo</i></a>
+						<a href="http://vimeo.com/truewoman101" class="btn btn-default vimeo"><i class="fa fa-vimeo-square"></i></a>
 					</nav>
 				</div>
 			</div><!-- end .row -->
@@ -40,46 +40,46 @@
   	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
   	<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
 <![endif]-->
-<script src="<?php echo get_template_directory_uri(); ?>/library/js/jquery.plugin.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/library/js/jquery.countdown.min.js"></script>
+<!-- <script src="<?php echo get_template_directory_uri(); ?>/library/js/jquery.plugin.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/library/js/jquery.countdown.min.js"></script> -->
 <script src="<?php echo get_template_directory_uri(); ?>/library/js/waypoints.min.js"></script>
 <script type="text/javascript">
-// var $head = jQuery( '#ha-header' );
-// jQuery( '.ha-waypoint' ).each( function(i) {
-// 		var $el = jQuery( this ),
-// 				animClassDown = $el.data( 'animateDown' ),
-// 				animClassUp = $el.data( 'animateUp' );
-//
-// 		$el.waypoint( function( direction ) {
-// 				if( direction === 'down' && animClassDown ) {
-// 						$head.attr('class', 'navbar-inner ' + animClassDown);
-// 				}
-// 				else if( direction === 'up' && animClassUp ){
-// 						$head.attr('class', 'navbar-inner ' + animClassUp);
-// 				}
-// 		}, { offset: '100%' } );
-// } );
-//
-// var $intro = jQuery('.tw14-logo-purple');
-// jQuery('.ha-waypoint').each( function(i) {
-// 	var $el = jQuery( this ),
-// 			animClassDown = $el.data( 'animateDown' ),
-// 			animClassUp = $el.data( 'animateUp' );
-//
-// 	$el.waypoint( function( direction ) {
-// 			if( direction === 'down' && animClassDown ) {
-// 					$intro.attr('class', 'tw14-logo-purple ' + animClassDown);
-// 			}
-// 			else if( direction === 'up' && animClassUp ){
-// 					$intro.attr('class', 'tw14-logo-purple ' + animClassUp);
-// 			}
-// 	}, { offset: '100%' } );
-//
-// });
+var $head = jQuery( '#ha-header' );
+jQuery( '.ha-waypoint' ).each( function(i) {
+		var $el = jQuery( this ),
+				animClassDown = $el.data( 'animateDown' ),
+				animClassUp = $el.data( 'animateUp' );
+
+		$el.waypoint( function( direction ) {
+				if( direction === 'down' && animClassDown ) {
+						$head.attr('class', 'navbar-inner ' + animClassDown);
+				}
+				else if( direction === 'up' && animClassUp ){
+						$head.attr('class', 'navbar-inner ' + animClassUp);
+				}
+		}, { offset: '100%' } );
+} );
+
+var $intro = jQuery('.tw14-logo-purple');
+jQuery('.ha-waypoint').each( function(i) {
+	var $el = jQuery( this ),
+			animClassDown = $el.data( 'animateDown' ),
+			animClassUp = $el.data( 'animateUp' );
+
+	$el.waypoint( function( direction ) {
+			if( direction === 'down' && animClassDown ) {
+					$intro.attr('class', 'tw14-logo-purple ' + animClassDown);
+			}
+			else if( direction === 'up' && animClassUp ){
+					$intro.attr('class', 'tw14-logo-purple ' + animClassUp);
+			}
+	}, { offset: '100%' } );
+
+});
 // jQuery(function () {
-// 	var fullPriceDate = new Date();
-// 	fullPriceDate = new Date(2014, 5 - 1, 2);
-// 	jQuery('#defaultCountdown').countdown({until: fullPriceDate, format: 'DHm'});
+//   var fullPriceDate = new Date();
+//   fullPriceDate = new Date(2014, 5 - 1, 2);
+//   jQuery('#defaultCountdown').countdown({until: fullPriceDate, format: 'DHm'});
 // });
 </script>
 <!-- script type="text/javascript">
@@ -125,7 +125,12 @@
 <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
 <?php wp_footer(); // js scripts are inserted using this function ?>
 
-
+<div class="size">
+	<div class="visible-xs">xs</div>
+	<div class="visible-sm">sm</div>
+	<div class="visible-md">md</div>
+	<div class="visible-lg">lg</div>
+</div>
 </body>
 
 </html>

@@ -126,7 +126,7 @@ function bones_register_nav() {
     wp_nav_menu(
       array(
         'menu' => 'register_nav', /* menu name */
-        'menu_class' => 'nav',
+        'menu_class' => 'nav navbar-nav',
         'theme_location' => 'register_nav', /* where in the theme it's assigned */
         'container' => 'false', /* container class */
         'fallback_cb' => 'bones_main_nav_fallback', /* menu fallback */
@@ -141,6 +141,7 @@ function bones_footer_links() {
     wp_nav_menu(
     	array(
     		'menu' => 'footer_links', /* menu name */
+    		'menu_class' => 'menu nav nav-pills',
     		'theme_location' => 'footer_links', /* where in the theme it's assigned */
     		'container_class' => 'footer-links clearfix', /* container class */
     		// 'before' => '<i class="pipe"></i>',
