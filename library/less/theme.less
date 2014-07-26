@@ -550,6 +550,12 @@ input[type="password"] {
   }
 }
 
+@media (max-width: @screen-sm) {
+  .page-wrap {
+    padding-top: 20px;
+  }
+}
+
 
 
 
@@ -1612,12 +1618,13 @@ footer[role="contentinfo"] {
           margin:0;
         }
       }
-      .date .small-screen-only {
+      .date .visible-xs {
         margin-bottom: 20px;
       }
       .date {
         text-align: right;
       }
+
       img {
         .center-block();
         width: 80%;
@@ -1626,6 +1633,7 @@ footer[role="contentinfo"] {
         img {
           margin-top: 5em;
         }
+
       }
       .tw14-logo-purple {
         .center-block();

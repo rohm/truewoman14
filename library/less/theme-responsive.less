@@ -542,45 +542,6 @@ and (min-width: @screen-sm) {
 }
 
 
-/* iPads ---------------------- */
-@media only screen
-and (min-device-width : @screen-md)
-and (max-device-width : @screen-lg) {
-	body {
-		min-width:1024px;
-	}
-	.btn.pull-right {
-		float: right;
-	}
-
-}
-
-/* iPads (portrait) ----------- */
-@media only screen
-and (min-device-width : @screen-md)
-and (max-device-width : @screen-lg)
-and (orientation: landscape) {
-	body {
-		&.home {
-			#main {
-				article.page {
-					padding-top: 30px;
-					#intro {
-						.tw14-logo-purple {
-							margin-top: 0;
-						}
-					}
-				}
-			}
-		}
-		&.pagename-speakers {
-			background-image: url('../img/bg-art-tree.jpg');
-			background-position: left 00px ;
-			background-attachment: fixed;
-			background-size: 80% auto;
-		}
-	}
-}
 
 /* iPads (portrait) ----------- */
 @media only screen

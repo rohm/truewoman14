@@ -6827,6 +6827,11 @@ input[type="password"] {
     padding-top: 95px;
   }
 }
+@media (max-width: 768px) {
+  .page-wrap {
+    padding-top: 20px;
+  }
+}
 /* Components */
 .btn,
 .form-actions input[type="submit"] {
@@ -7911,7 +7916,7 @@ footer[role="contentinfo"] #sbi_camera_button {
   color: #555555;
   margin: 0;
 }
-.home article.page #intro .date .small-screen-only {
+.home article.page #intro .date .visible-xs {
   margin-bottom: 20px;
 }
 .home article.page #intro .date {
@@ -8776,30 +8781,6 @@ footer[role="contentinfo"] #sbi_camera_button {
   }
   footer[role="contentinfo"] .footer-social-nav em {
     display: none;
-  }
-}
-/* iPads ---------------------- */
-@media only screen and (min-device-width: 992px) and (max-device-width: 1200px) {
-  body {
-    min-width: 1024px;
-  }
-  .btn.pull-right {
-    float: right;
-  }
-}
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 992px) and (max-device-width: 1200px) and (orientation: landscape) {
-  body.home #main article.page {
-    padding-top: 30px;
-  }
-  body.home #main article.page #intro .tw14-logo-purple {
-    margin-top: 0;
-  }
-  body.pagename-speakers {
-    background-image: url('../img/bg-art-tree.jpg');
-    background-position: left 00px ;
-    background-attachment: fixed;
-    background-size: 80% auto;
   }
 }
 /* iPads (portrait) ----------- */
