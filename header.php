@@ -59,7 +59,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#">Brand</a>
+						<a class="navbar-brand" href="/">True Woman '14</a>
 					</div>
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
@@ -97,7 +97,7 @@
 										<?php bones_toolbar_nav(); // Adjust using Menus in Wordpress Admin ?>
 
 										<ul id="menu-share-nav" class="navbar-nav nav">
-
+											
 											<li class="menu-item has-dropdown">
 
 												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Share <i class="fa fa-share"></i></a>
@@ -111,6 +111,9 @@
 													</li>
 													<li id="menu-item-pinterest" class="menu-item">
 														<a href="//pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.truewoman14.com&media=http%3A%2F%2Ftruewoman14.com.s3.amazonaws.com%2Flibrary%2Fimg%2Ffacebook-og.jpg&description=True%20Woman%20%26rsquo%3B14%20%7C%20Finding%20Freedom%2C%20Fullness%20%26amp%3B%20Fruitfullness%20in%20Christ" data-pin-do="buttonPin" data-pin-config="none"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>
+													</li>
+													<li id="menu-item-hashtag" class="menu-item">
+														<a href="https://twitter.com/hashtag/truewoman14"><i class="fa fa-twitter"></i> #truewoman14</a>
 													</li>
 												</ul>
 											</li>

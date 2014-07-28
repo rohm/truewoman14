@@ -11,7 +11,7 @@
 				  <img id="footer-branding" src="<?php echo get_template_directory_uri(); ?>/library/img/footer_branding@2x.png" alt="True Woman is a Ministry of Revive Our Hearts" />
 				</div>
 				<div class="col-sm-6">
-					<nav class="footer-social-nav pull-right">
+					<nav class="footer-social-nav">
 						<em><strong>Connect with us!</strong></em>
 						<a href="http://www.facebook.com/TrueWomanMovement" class="btn btn-default facebook"><i class="fa fa-facebook"></i></a>
 						<a href="http://twitter.com/TrueWoman" class="btn btn-default twitter"><i class="fa fa-twitter"></i></a>
@@ -26,7 +26,7 @@
 				<div class="footer-links-wrap">
 					<?php bones_footer_links(); // Adjust using Menus in Wordpress Admin ?>
 					<strong class="tel">(877) 966-2608</strong>
-					<div id="toolbar-nav-2" class="small-screen-only footer-links"><?php bones_toolbar_nav(); // Adjust using Menus in Wordpress Admin ?></div>
+					
 				</div>
 			</nav>
 

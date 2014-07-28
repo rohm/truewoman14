@@ -1220,9 +1220,13 @@ ol ol {
   list-style: none;
 }
 .list-inline {
-  padding-left: 0;
   list-style: none;
+  padding-left: 0;
   margin-left: -5px;
+}
+.list-inline li {
+  background: none !important;
+  list-style-type: none;
 }
 .list-inline > li {
   display: inline-block;
@@ -2808,7 +2812,6 @@ fieldset[disabled] .btn-default.active {
   color: #ffffff;
   background-color: #049cdb;
   border-color: #048ac2;
-  color: #fff !important;
 }
 .wpcf7-submit:hover,
 .wpcf7-submit:focus,
@@ -6233,66 +6236,79 @@ body {
   height: 100%;
 }
 body {
+  background-color: #F6F6F6;
   font-family: "futura-pt";
   font-size: 18px;
   line-height: 1.428571429;
   color: #333333;
   -webkit-font-smoothing: antialiased;
   height: 100%;
-  background-color: #F6F6F6;
-  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-grapes.jpg');
-  background-repeat: no-repeat;
-  background-size: 688px auto;
-  background-attachment: fixed;
-  background-position: center 200px;
 }
-body.pagename-speakers {
-  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-tree.jpg');
-  background-position: left bottom;
-  background-attachment: fixed;
-  background-size: 725px auto;
+@media (min-width: 768px) {
+  body {
+    background-color: #F6F6F6;
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-grapes.jpg');
+    background-repeat: no-repeat;
+    background-size: 688px auto;
+    background-position: center 200px;
+  }
+  body.pagename-speakers {
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-tree.jpg');
+    background-position: left bottom;
+    background-attachment: fixed;
+    background-size: 725px auto;
+  }
+  body.pagename-location-travel {
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-indoors.jpg');
+    background-size: 1400px auto;
+    background-position: center -140px;
+    background-attachment: fixed;
+  }
+  body.pagename-promote {
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-birds.jpg');
+    background-size: 750px auto;
+    background-position: right -180px;
+    background-attachment: fixed;
+  }
+  body.pagename-faqs {
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-branch.jpg');
+    background-size: 1400px auto;
+    background-position: center -100px;
+    background-attachment: fixed;
+  }
+  body.pagename-schedule {
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-birds.jpg');
+    background-size: 750px auto;
+    background-position: right -180px;
+    background-attachment: fixed;
+  }
+  body.pagename-about {
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-grapes.jpg');
+    background-size: 788px auto;
+    background-position: 490px 30%;
+    background-attachment: fixed;
+  }
+  body.pagename-contact {
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-birds.jpg');
+    background-size: 750px auto;
+    background-position: right -180px;
+    background-attachment: fixed;
+  }
+  body.pagename-register {
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-location.jpg');
+    background-size: 1400px auto;
+    background-position: center -200px;
+    background-attachment: fixed;
+  }
 }
-body.pagename-location-travel {
-  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-indoors.jpg');
-  background-size: 1400px auto;
-  background-position: center -140px;
-  background-attachment: fixed;
-}
-body.pagename-promote {
-  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-birds.jpg');
-  background-size: 750px auto;
-  background-position: right -180px;
-  background-attachment: fixed;
-}
-body.pagename-faqs {
-  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-branch.jpg');
-  background-size: 1400px auto;
-  background-position: center -100px;
-  background-attachment: fixed;
-}
-body.pagename-schedule {
-  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-birds.jpg');
-  background-size: 750px auto;
-  background-position: right -180px;
-  background-attachment: fixed;
-}
-body.pagename-about {
-  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-grapes.jpg');
-  background-size: 788px auto;
-  background-position: 490px 30%;
-  background-attachment: fixed;
-}
-body.pagename-contact {
-  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-birds.jpg');
-  background-size: 750px auto;
-  background-position: right -180px;
-  background-attachment: fixed;
-}
-body.pagename-register {
-  background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-location.jpg');
-  background-size: 1400px auto;
-  background-position: center -200px;
-  background-attachment: fixed;
+@media (max-width: 768px) {
+  .home {
+    background-color: #F6F6F6;
+    background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bg-art-grapes.jpg');
+    background-repeat: no-repeat;
+    background-size: 688px auto;
+    background-position: center 30px;
+  }
 }
 @media (min-width: 1200px) {
   body.pagename-home {
@@ -6367,6 +6383,10 @@ hr {
 }
 legend {
   border-bottom: none;
+  font-weight: bold;
+}
+label {
+  font-weight: bold;
 }
 p.lead {
   color: #555555;
@@ -6381,8 +6401,14 @@ p.lead {
 .text-glow {
   text-shadow: 0 1px 16px #ffffff;
 }
-.nobullets {
+.nobullets,
+.list-unstyled {
   padding-left: 0;
+}
+.nobullets li,
+.list-unstyled li {
+  background: none !important;
+  list-style-type: none;
 }
 .oval-quotes {
   position: relative;
@@ -6551,6 +6577,13 @@ address h4 {
 @media (min-width: 768px) {
   .pagename-speakers #main article.page section.post_content h2.border {
     margin-left: 33.33333333333333%;
+  }
+}
+@media (max-width: 768px) {
+  .pagename-speakers .photo img {
+    float: left;
+    margin: 0 20px 20px 0;
+    max-width: 40% !important;
   }
 }
 .pagename-leaders #menu-back,
@@ -6836,8 +6869,10 @@ input[type="password"] {
 .btn,
 .form-actions input[type="submit"] {
   /*background: @purple-pale;*/
+  background-color: #F1ECE2;
   background-image: none;
-  color: #333333;
+  color: #555555;
+  border-color: #e0d5c0;
   /*color: @white;
   text-shadow: none;*/
   font-family: "futura-pt";
@@ -6857,10 +6892,9 @@ input[type="password"] {
 .form-actions input[type="submit"]:hover {
   /*background: darken(@purple-pale, 08%);
     color: @white;*/
-  background: #049cdb;
-  border-color: #8ab8bb;
+  background: rgba(180, 237, 239, 0.9);
+  border-color: rgba(138, 227, 230, 0.9);
   background-image: none;
-  color: #011c27;
 }
 .btn.btn-register,
 .form-actions input[type="submit"].btn-register {
@@ -6873,15 +6907,7 @@ input[type="password"] {
 }
 /* Call to Action Button */
 .btn-cta,
-.pagename-home .li-cta > a,
-.pagename-speakers .li-cta > a,
-.pagename-schedule .li-cta > a,
-.pagename-location-travel .li-cta > a,
-.pagename-promote .li-cta > a,
-.pagename-about .li-cta > a,
-.pagename-faqs .li-cta > a,
-.pagename-contact .li-cta > a,
-.pagename-leaders .li-cta > a {
+* .li-cta > a {
   background: #5d4775 !important;
   border: none;
   color: #c8ee95 !important;
@@ -6898,42 +6924,18 @@ input[type="password"] {
   box-shadow: 5px 5px 0 rgba(144, 67, 154, 0.5), -5px -5px 0 rgba(67, 172, 214, 0.5) !important;
 }
 .btn-cta i,
-.pagename-home .li-cta > a i,
-.pagename-speakers .li-cta > a i,
-.pagename-schedule .li-cta > a i,
-.pagename-location-travel .li-cta > a i,
-.pagename-promote .li-cta > a i,
-.pagename-about .li-cta > a i,
-.pagename-faqs .li-cta > a i,
-.pagename-contact .li-cta > a i,
-.pagename-leaders .li-cta > a i {
+* .li-cta > a i {
   font-family: "Adobe Caslon Pro", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: normal;
   text-transform: none;
 }
 .btn-cta i.fa,
-.pagename-home .li-cta > a i.fa,
-.pagename-speakers .li-cta > a i.fa,
-.pagename-schedule .li-cta > a i.fa,
-.pagename-location-travel .li-cta > a i.fa,
-.pagename-promote .li-cta > a i.fa,
-.pagename-about .li-cta > a i.fa,
-.pagename-faqs .li-cta > a i.fa,
-.pagename-contact .li-cta > a i.fa,
-.pagename-leaders .li-cta > a i.fa {
+* .li-cta > a i.fa {
   font-family: "FontAwesome";
 }
 .btn-cta .info,
-.pagename-home .li-cta > a .info,
-.pagename-speakers .li-cta > a .info,
-.pagename-schedule .li-cta > a .info,
-.pagename-location-travel .li-cta > a .info,
-.pagename-promote .li-cta > a .info,
-.pagename-about .li-cta > a .info,
-.pagename-faqs .li-cta > a .info,
-.pagename-contact .li-cta > a .info,
-.pagename-leaders .li-cta > a .info {
+* .li-cta > a .info {
   font-family: "futura-pt";
   font-weight: 500;
   font-style: normal;
@@ -6945,48 +6947,16 @@ input[type="password"] {
   display: block;
 }
 .btn-cta:hover,
-.pagename-home .li-cta > a:hover,
-.pagename-speakers .li-cta > a:hover,
-.pagename-schedule .li-cta > a:hover,
-.pagename-location-travel .li-cta > a:hover,
-.pagename-promote .li-cta > a:hover,
-.pagename-about .li-cta > a:hover,
-.pagename-faqs .li-cta > a:hover,
-.pagename-contact .li-cta > a:hover,
-.pagename-leaders .li-cta > a:hover,
+* .li-cta > a:hover,
 .btn-cta:active,
-.pagename-home .li-cta > a:active,
-.pagename-speakers .li-cta > a:active,
-.pagename-schedule .li-cta > a:active,
-.pagename-location-travel .li-cta > a:active,
-.pagename-promote .li-cta > a:active,
-.pagename-about .li-cta > a:active,
-.pagename-faqs .li-cta > a:active,
-.pagename-contact .li-cta > a:active,
-.pagename-leaders .li-cta > a:active {
+* .li-cta > a:active {
   background: #372a45 !important;
   color: #b1e769 !important;
 }
 .btn-cta:hover .arrow-right,
-.pagename-home .li-cta > a:hover .arrow-right,
-.pagename-speakers .li-cta > a:hover .arrow-right,
-.pagename-schedule .li-cta > a:hover .arrow-right,
-.pagename-location-travel .li-cta > a:hover .arrow-right,
-.pagename-promote .li-cta > a:hover .arrow-right,
-.pagename-about .li-cta > a:hover .arrow-right,
-.pagename-faqs .li-cta > a:hover .arrow-right,
-.pagename-contact .li-cta > a:hover .arrow-right,
-.pagename-leaders .li-cta > a:hover .arrow-right,
+* .li-cta > a:hover .arrow-right,
 .btn-cta:active .arrow-right,
-.pagename-home .li-cta > a:active .arrow-right,
-.pagename-speakers .li-cta > a:active .arrow-right,
-.pagename-schedule .li-cta > a:active .arrow-right,
-.pagename-location-travel .li-cta > a:active .arrow-right,
-.pagename-promote .li-cta > a:active .arrow-right,
-.pagename-about .li-cta > a:active .arrow-right,
-.pagename-faqs .li-cta > a:active .arrow-right,
-.pagename-contact .li-cta > a:active .arrow-right,
-.pagename-leaders .li-cta > a:active .arrow-right {
+* .li-cta > a:active .arrow-right {
   opacity: 100;
   filter: alpha(opacity=10000);
   -webkit-transition: opacity 0.5s;
@@ -6994,34 +6964,21 @@ input[type="password"] {
   transition: opacity 0.5s;
 }
 .btn-cta .caret-right,
-.pagename-home .li-cta > a .caret-right,
-.pagename-speakers .li-cta > a .caret-right,
-.pagename-schedule .li-cta > a .caret-right,
-.pagename-location-travel .li-cta > a .caret-right,
-.pagename-promote .li-cta > a .caret-right,
-.pagename-about .li-cta > a .caret-right,
-.pagename-faqs .li-cta > a .caret-right,
-.pagename-contact .li-cta > a .caret-right,
-.pagename-leaders .li-cta > a .caret-right {
+* .li-cta > a .caret-right {
   border-left-color: #c8ee95;
   border-width: 6px 0 6px 6px;
 }
 .btn-cta .arrow-right,
-.pagename-home .li-cta > a .arrow-right,
-.pagename-speakers .li-cta > a .arrow-right,
-.pagename-schedule .li-cta > a .arrow-right,
-.pagename-location-travel .li-cta > a .arrow-right,
-.pagename-promote .li-cta > a .arrow-right,
-.pagename-about .li-cta > a .arrow-right,
-.pagename-faqs .li-cta > a .arrow-right,
-.pagename-contact .li-cta > a .arrow-right,
-.pagename-leaders .li-cta > a .arrow-right {
+* .li-cta > a .arrow-right {
   display: inline-block;
   position: relative;
   font-size: 130%;
   margin-left: 3px;
   opacity: 50;
   filter: alpha(opacity=5000);
+}
+* .li-cta > a {
+  white-space: nowrap;
 }
 .input-append button[type="submit"] {
   padding-top: 4px;
@@ -7227,6 +7184,23 @@ article header .banner p {
   margin-left: 0;
   margin-right: 0;
   padding: 10px;
+  background: #fff;
+  width: 264px;
+  left: 50%;
+  margin-left: -132px;
+}
+.navbar nav.main-nav ul.navbar-nav ul.dropdown-menu:before {
+  position: absolute;
+  bottom: 100%;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  content: " ";
+  pointer-events: none;
+  left: 50%;
+  margin-left: -11px;
+  border-width: 11px;
+  border-bottom-color: #fff;
 }
 .navbar nav.main-nav ul.navbar-nav ul.dropdown-menu > li.menu-item {
   text-transform: none;
@@ -7472,10 +7446,6 @@ article header .banner p {
   font-weight: normal;
   position: relative;
 }
-#main article.page section.post_content h2 a,
-#main article.page section.post_content h2 a:visited {
-  color: #049cdb;
-}
 #main article.page section.post_content h2 span {
   position: absolute;
   top: -200px;
@@ -7518,6 +7488,7 @@ article header .banner p {
 }
 #main article.page section.post_content ul {
   margin-left: 0px;
+  padding-left: 0;
   list-style: none;
 }
 #main article.page section.post_content ul li {
@@ -7552,6 +7523,7 @@ article header .banner p {
 }
 #main article.page section.post_content .speakers li .photo img {
   max-width: 90%;
+  margin-bottom: 1em;
   border-radius: 4px;
   -webkit-box-shadow: 0 0px 1px rgba(0, 0, 0, 0.15), 0 3px 0 rgba(0, 0, 0, 0.07);
   box-shadow: 0 0px 1px rgba(0, 0, 0, 0.15), 0 3px 0 rgba(0, 0, 0, 0.07);
@@ -7586,7 +7558,7 @@ article header .banner p {
   text-align: center;
 }
 #main article.page .paper > .row > .col-sm-3 .nav li a {
-  padding: 10px 0;
+  padding: 10px 4px;
   background-image: url('http://truewoman14.s3.amazonaws.com/library/img/pencil-line-horizontal2.png');
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -7605,6 +7577,7 @@ article header .banner p {
 }
 #main article.page .paper > .row > .col-sm-3 .nav li a:hover {
   border-right: 6px solid #bc94c1;
+  background-color: transparent;
 }
 #main article.page section.post_content .style-guide-section > h2.section-title {
   background: #5d4876;
@@ -7780,12 +7753,18 @@ footer[role="contentinfo"] .attribution {
 }
 footer[role="contentinfo"] .footer-social-nav {
   font-family: "Adobe Caslon Pro", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", Times, serif;
+  float: right;
 }
 footer[role="contentinfo"] .footer-social-nav strong {
   margin-right: 7px;
 }
 footer[role="contentinfo"] .footer-social-nav .btn {
   padding: 10px 13px;
+}
+@media (max-width: 992px) {
+  footer[role="contentinfo"] .footer-social-nav {
+    float: none;
+  }
 }
 footer[role="contentinfo"] strong.tel {
   margin-top: .5em;
@@ -7877,21 +7856,19 @@ footer[role="contentinfo"] #sbi_camera_button {
 .home article.page h3 {
   margin-top: .3em !important;
 }
-@media (max-width: 979px) {
+@media (max-width: 1200px) {
   .home article.page h2.border {
     background-size: 260px auto;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .home article.page h2.border {
     background-size: 30% auto;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .home article.page h2.border {
-    background-position: center top;
-    background-size: 100% 0;
-    padding-top: 50px;
+    background: transparent !important;
   }
 }
 .home article.page #intro {
@@ -7920,7 +7897,12 @@ footer[role="contentinfo"] #sbi_camera_button {
   margin-bottom: 20px;
 }
 .home article.page #intro .date {
-  text-align: right;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .home article.page #intro .date {
+    text-align: right;
+  }
 }
 .home article.page #intro img {
   display: block;
@@ -7972,7 +7954,7 @@ footer[role="contentinfo"] #sbi_camera_button {
   margin: 80px 0 120px;
 }
 .home article.page .paper #speakers img {
-  margin-bottom: 10px;
+  margin: 0 auto 10px !important;
   border-radius: 4px;
   -webkit-box-shadow: 0 0px 1px rgba(0, 0, 0, 0.15), 0 3px 0 rgba(0, 0, 0, 0.07);
   box-shadow: 0 0px 1px rgba(0, 0, 0, 0.15), 0 3px 0 rgba(0, 0, 0, 0.07);
@@ -7985,8 +7967,11 @@ footer[role="contentinfo"] #sbi_camera_button {
   margin-bottom: 1.5em;
   line-height: 1;
   text-transform: none;
-  font-size: 22px;
+  font-size: 24px;
   text-align: center;
+}
+.home article.page .paper #speakers br {
+  display: none;
 }
 .home article.page .paper #testimonials {
   padding: 50px 50px 50px;
@@ -8308,34 +8293,6 @@ footer[role="contentinfo"] #sbi_camera_button {
 @media only screen and (min-width: 768px) {
   .small-screen-only {
     display: none;
-  }
-  .pagename-home .navbar nav.main-nav ul.nav li.li-cta,
-  .pagename-speakers .navbar nav.main-nav ul.nav li.li-cta,
-  .pagename-schedule .navbar nav.main-nav ul.nav li.li-cta,
-  .pagename-location-travel .navbar nav.main-nav ul.nav li.li-cta,
-  .pagename-promote .navbar nav.main-nav ul.nav li.li-cta,
-  .pagename-about .navbar nav.main-nav ul.nav li.li-cta,
-  .pagename-faqs .navbar nav.main-nav ul.nav li.li-cta,
-  .pagename-contact .navbar nav.main-nav ul.nav li.li-cta,
-  .pagenmae-leaders .navbar nav.main-nav ul.nav li.li-cta {
-    float: right;
-    min-width: 23%;
-  }
-  .pagename-home .navbar nav.main-nav ul.nav li.li-cta > a,
-  .pagename-speakers .navbar nav.main-nav ul.nav li.li-cta > a,
-  .pagename-schedule .navbar nav.main-nav ul.nav li.li-cta > a,
-  .pagename-location-travel .navbar nav.main-nav ul.nav li.li-cta > a,
-  .pagename-promote .navbar nav.main-nav ul.nav li.li-cta > a,
-  .pagename-about .navbar nav.main-nav ul.nav li.li-cta > a,
-  .pagename-faqs .navbar nav.main-nav ul.nav li.li-cta > a,
-  .pagename-contact .navbar nav.main-nav ul.nav li.li-cta > a,
-  .pagename-leaders .navbar nav.main-nav ul.nav li.li-cta > a {
-    padding-top: 12px !important;
-    padding-top: 6px !important \9;
-    padding-bottom: 12px !important;
-    margin-top: 19px;
-    margin-right: 1.5%;
-    font-size: 22px;
   }
   #main {
     margin-bottom: 0;
