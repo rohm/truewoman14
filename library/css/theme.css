@@ -2718,7 +2718,6 @@ select[multiple].input-lg {
   cursor: pointer;
   background-image: none;
   border: 1px solid transparent;
-  white-space: nowrap;
   padding: 6px 12px;
   font-size: 18px;
   line-height: 1.428571429;
@@ -6372,11 +6371,11 @@ hr {
   background-repeat: no-repeat;
   background-position: bottom center;
   height: 4px;
-  margin: 60px 0;
+  margin: 60px auto;
 }
 @media print, screen, (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 1.25/1), (min--moz-device-pixel-ratio: 1.25), (-moz-min-device-pixel-ratio: 1.25), (-ms-min-device-pixel-ratio: 1.25), (min-device-pixel-ratio: 1.25), (min-resolution: 120dpi), (min-resolution: 1.25dppx) {
   hr {
-    background-size: 376px 3px;
+    background-size: 100% 3px;
     background-image: url('http://truewoman14.s3.amazonaws.com/library/img/pencil-line-horizontal@2x.png');
     background-position: bottom center;
   }
@@ -6428,7 +6427,7 @@ p.lead {
   padding: 0 20px;
   margin: 0 auto;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 .oval-quotes p:after {
   content: "";
@@ -6449,12 +6448,12 @@ p.lead {
   display: block;
   padding-left: 60px;
   padding-top: 10px;
-  font-size: .9rem;
-  line-height: 1rem;
+  font-size: .9em;
+  line-height: 1.3;
   font-family: "Adobe Caslon Pro", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", Times, serif;
 }
 .oval-quotes-cite strong {
-  font-size: 1.1rem;
+  font-size: 1.1em;
   display: block;
   margin-bottom: .5rem;
   font-family: "futura-pt";
@@ -6560,22 +6559,24 @@ address h4 {
     width: 66.66666666666666%;
   }
 }
-.pagename-speakers #main article.page section.post_content h2.border {
+.pagename-speakers #main article.page section.post_content h2.section-title {
   text-align: left;
+  font-size: 2.5em;
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-left: 37.5px;
+  margin-bottom: 2em;
+  padding-left: 10px;
 }
 @media (min-width: 768px) {
-  .pagename-speakers #main article.page section.post_content h2.border {
+  .pagename-speakers #main article.page section.post_content h2.section-title {
     float: left;
     width: 66.66666666666666%;
   }
 }
 @media (min-width: 768px) {
-  .pagename-speakers #main article.page section.post_content h2.border {
+  .pagename-speakers #main article.page section.post_content h2.section-title {
     margin-left: 33.33333333333333%;
   }
 }
@@ -7040,6 +7041,9 @@ article header .banner p {
   line-height: 1.5em;
   margin: 0;
 }
+.logged-in .navbar-fixed-top {
+  margin-top: 32px;
+}
 /* Toolbar Nav */
 #toolbar-nav {
   margin-top: .65em;
@@ -7266,6 +7270,7 @@ article header .banner p {
   margin-left: 10px;
   color: #c8ee95;
   text-shadow: none;
+  white-space: nowrap;
   float: right;
 }
 .navbar nav.main-nav ul.navbar-nav > li.li-cta > a:hover,
@@ -7282,7 +7287,7 @@ article header .banner p {
   border: none;
 }
 #main-nav-xs .navbar-brand {
-  margin: 5px 15px 15px;
+  margin: 5px 0 15px 15px;
 }
 #main-nav-xs.navbar {
   border: none;
@@ -7671,6 +7676,43 @@ article header .banner p {
 #main article.page section.post_content .main-session table td.darken {
   background-color: rgba(189, 147, 192, 0.15);
 }
+#main article.page section.post_content .main-session table table {
+  background-color: transparent;
+}
+#main article.page section.post_content .main-session table table th {
+  background-color: rgba(67, 172, 214, 0.5);
+  color: inherit;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  font-size: .7em;
+  vertical-align: bottom;
+}
+#main article.page section.post_content .main-session table table td {
+  font-size: .9em;
+  vertical-align: bottom;
+}
+#main article.page section.post_content .main-session table table td.col-room-number {
+  width: 5%;
+  font-size: 1em;
+}
+#main article.page section.post_content .main-session table table td.col-room-name {
+  width: 12%;
+  text-transform: uppercase;
+  font-size: .7em;
+  padding-top: 13px;
+}
+#main article.page section.post_content .main-session table table td.col-room-number {
+  text-transform: uppercase;
+  font-size: .7em;
+  padding-top: 13px;
+}
+#main article.page section.post_content .main-session table table td.col-title {
+  font-weight: bold;
+  color: #B02D4F;
+}
+#main article.page section.post_content .main-session table table td.col-description {
+  width: 38%;
+}
 #main article.page section.post_content .pre-session h3 {
   background-color: #049cdb;
   color: #ffffff;
@@ -7770,18 +7812,6 @@ footer[role="contentinfo"] strong.tel {
   margin-top: .5em;
   display: inline-block;
 }
-footer[role="contentinfo"] #menu-footer-nav {
-  margin-left: 15px;
-}
-footer[role="contentinfo"] #menu-footer-nav li {
-  margin-left: 0;
-}
-footer[role="contentinfo"] #menu-footer-nav li > a:after {
-  content: " | ";
-  display: inline-block;
-  margin: 0 -20px 0 10px;
-  color: #afafaf;
-}
 footer[role="contentinfo"] .btn-cta {
   margin-bottom: 40px;
   padding-bottom: 16px;
@@ -7792,6 +7822,20 @@ footer[role="contentinfo"] img#footer-branding {
 }
 footer[role="contentinfo"] #sbi_camera_button {
   display: none !important;
+}
+@media (min-width: 768px) {
+  footer[role="contentinfo"] #menu-footer-nav {
+    margin-left: 15px;
+  }
+  footer[role="contentinfo"] #menu-footer-nav li {
+    margin-left: 0;
+  }
+  footer[role="contentinfo"] #menu-footer-nav li > a:after {
+    content: " | ";
+    display: inline-block;
+    margin: 0 -20px 0 10px;
+    color: #afafaf;
+  }
 }
 .video {
   min-height: auto;
@@ -7972,6 +8016,39 @@ footer[role="contentinfo"] #sbi_camera_button {
 }
 .home article.page .paper #speakers br {
   display: none;
+}
+.home article.page .paper #speakers h2.border {
+  clear: both;
+}
+.home article.page .paper #speakers .speaker {
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .home article.page .paper #speakers .speaker {
+    float: left;
+    width: 33.33333333333333%;
+  }
+}
+.home article.page .paper #speakers .speaker.speaker-susan {
+  clear: both;
+}
+@media (min-width: 768px) {
+  .home article.page .paper #speakers .speaker.speaker-susan {
+    margin-left: 33.33333333333333%;
+  }
+}
+.home article.page .paper #speakers .speaker.speaker-gettys {
+  clear: both;
+}
+@media (min-width: 768px) {
+  .home article.page .paper #speakers .speaker.speaker-gettys {
+    margin-left: 16.666666666666664%;
+  }
 }
 .home article.page .paper #testimonials {
   padding: 50px 50px 50px;

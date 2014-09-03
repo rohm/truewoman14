@@ -161,9 +161,9 @@ p, li, blockquote, address {
 hr {
   border:0;
   //background: transparent url("http://truewoman14.s3.amazonaws.com/library/img/pencil-line-horizontal.png") repeat-x top;
-  .retina-image("http://truewoman14.s3.amazonaws.com/library/img/pencil-line-horizontal", "png", no-repeat, 376px, 3px, bottom, center);
+  .retina-image("http://truewoman14.s3.amazonaws.com/library/img/pencil-line-horizontal", "png", no-repeat, 100%, 3px, bottom, center);
   height: 4px;
-  margin: 60px 0;
+  margin: 60px auto;
 }
 legend {
   border-bottom: none;
@@ -213,7 +213,7 @@ p.lead {
     padding: 0 20px;
     margin: 0 auto;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.2em;
 
     &:after {
       content: "";
@@ -235,11 +235,11 @@ p.lead {
   display: block;
   padding-left: 60px;
   padding-top: 10px;
-  font-size: .9rem;
-  line-height: 1rem;
+  font-size: .9em;
+  line-height: 1.3;
   font-family: @font-family-secondary;
   strong {
-    font-size: 1.1rem;
+    font-size: 1.1em;
     display: block;
     margin-bottom: .5rem;
     font-family: @font-family-base;
@@ -326,11 +326,13 @@ address {
 	#main {
 		article.page {
 			section.post_content {
-				h2.border {
+				h2.section-title {
 					text-align: left;
+					font-size: 2.5em;
 					.make-sm-column(8);
 					.make-sm-column-offset(4);
-					padding-left: @grid-gutter-width*1.25;
+					margin-bottom: 2em;
+					padding-left: 10px;
 				}
 			}
 		}
@@ -768,6 +770,12 @@ article header {
 // NAVS
 // ----------------------------------------------
 
+.logged-in {
+	.navbar-fixed-top {
+		margin-top: 32px;
+	}
+}
+
 
 /* Toolbar Nav */
 
@@ -1000,6 +1008,7 @@ article header {
           margin-left: 10px;
           color: @green-light;
           text-shadow: none;
+					white-space: nowrap;
           float: right;
           &:hover, &:active, &:focus {
             color: @purple;
@@ -1022,7 +1031,7 @@ article header {
 
 #main-nav-xs {
   .navbar-brand {
-    margin: 5px 15px 15px;
+    margin: 5px 0 15px 15px;
   }
   &.navbar {
     border: none;
@@ -1413,6 +1422,46 @@ article header {
         td.darken {
           background-color: rgba(189, 147, 192, .15);
         }
+				
+				table {
+					background-color: transparent;
+					th {
+						background-color: rgba(67, 172, 214, .5);
+						color: inherit;
+						line-height: 1.3em;
+						text-transform: uppercase;
+						font-size: .7em;
+						vertical-align: bottom;
+					}
+					td {
+						font-size: .9em;
+						vertical-align: bottom;
+						
+						
+						&.col-room-number {
+							width: 5%;
+							font-size: 1em;
+						}
+						&.col-room-name {
+							width: 12%;
+							text-transform: uppercase;
+							font-size: .7em;
+							padding-top: 13px;
+						}
+						&.col-room-number {
+							text-transform: uppercase;
+							font-size: .7em;
+							padding-top: 13px;
+						}
+						&.col-title {
+							font-weight: bold;
+							color: #B02D4F;
+						}
+						&.col-description {
+							width: 38%;
+						}
+					}
+				}
       }
     }
     .pre-session {
@@ -1535,19 +1584,7 @@ footer[role="contentinfo"] {
     margin-top: .5em;
     display: inline-block;
   }
-  #menu-footer-nav {
-    margin-left: 15px;
-    li {
-      margin-left: 0;
-      > a:after {
-        content: " | ";
-        display: inline-block;
-        margin: 0 -20px 0 10px;
-        color: lighten(@gray, 35%);
-      }
-    }
-
-  }
+  
   .btn-cta {
     margin-bottom: 40px;
     padding-bottom: 16px;
@@ -1557,6 +1594,23 @@ footer[role="contentinfo"] {
     margin-bottom: 25px;
   }
   #sbi_camera_button { display: none !important; }
+}
+
+@media (min-width: @screen-sm) {
+	footer[role="contentinfo"] {
+	  #menu-footer-nav {
+	    margin-left: 15px;
+	    li {
+	      margin-left: 0;
+	      > a:after {
+	        content: " | ";
+	        display: inline-block;
+	        margin: 0 -20px 0 10px;
+	        color: lighten(@gray, 35%);
+	      }
+	    }
+	  }
+	}
 }
 
 .video {
@@ -1744,7 +1798,22 @@ footer[role="contentinfo"] {
 				br {
 					display: none;
 				}
-
+				h2.border {
+					clear: both;
+				}
+				.speaker {
+					.make-sm-column(4);
+					.make-xs-column(6);
+					&.speaker-susan {
+						.make-sm-column-offset(4);
+						clear: both;
+					}
+					&.speaker-gettys {
+						.make-sm-column-offset(2);
+						clear: both;
+					}
+				}
+				
       } /* end Speakers */
 
 

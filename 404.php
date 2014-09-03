@@ -25,7 +25,7 @@
 									</li>
 									<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/location-travel/">Location <i class="amp">&amp;</i> Travel</a></li>
 									<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/promote/">Promote</a></li>
-									<li id="menu-item-32" class="li-cta menu-item menu-item-type-post_type menu-item-object-page"><a href="/register/">Register Now</a></li>
+									<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/register/">Register Now</a></li>
 									<!-- ?php bones_toolbar_nav(); // Adjust using Menus in Wordpress Admin ?-->
 									<!-- ?php bones_footer_links(); // Adjust using Menus in Wordpress Admin ?-->
 									<li id="menu-item-52" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about/">About</a></li><li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/faqs/">FAQs</a></li>

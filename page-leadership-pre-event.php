@@ -342,12 +342,12 @@ Template Name: Leadership Pre-Event
           <img id="footer-branding" src="<?php echo get_template_directory_uri(); ?>/library/img/footer_branding@2x.png" alt="True Woman is a Ministry of Revive Our Hearts" />
         </div>
         <div class="col-sm-6">
-          <nav class="footer-social-nav pull-right">
+          <nav class="footer-social-nav">
             <em><strong>Connect with us!</strong></em>
-            <a href="http://www.facebook.com/TrueWomanMovement" class="btn facebook"><i class="icon-facebook">Facebook</i></a>
-            <a href="http://twitter.com/TrueWoman" class="btn twitter"><i class="icon-twitter">Twitter</i></a>
+            <a href="http://www.facebook.com/TrueWomanMovement" class="btn btn-default facebook"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/TrueWoman" class="btn btn-default twitter"><i class="fa fa-twitter"></i></a>
             <!--a href="http://www.pinterest.com/reviveourhearts/" class="btn pinterest"><i class="icon-pinterest">Pinterest</i></a-->
-            <a href="http://vimeo.com/truewoman101" class="btn vimeo"><i class="icon-vimeo">Vimeo</i></a>
+            <a href="http://vimeo.com/truewoman101" class="btn btn-default vimeo"><i class="fa fa-vimeo-square"></i></a>
           </nav>
         </div>
       </div><!-- end .row -->

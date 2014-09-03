@@ -47,6 +47,7 @@ Template Name: Speakers
                     <li><a href="#susan">Susan Hunt</a></li>
                     <li><a href="#chrissy">Chrissy Toledo</a></li>
                     <li><a href="#scott">Scott Lindsey</a></li>
+                    <li><a href="#kim">Kim Wagner</a></li>
                     <li><a href="#dannah">Dannah Gresh</a></li>
                     <li><a href="#erin">Erin Davis</a></li>
                     <li><a href="#stephanie">Stephanie Martinez</a></li>
