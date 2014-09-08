@@ -124,7 +124,6 @@
 
 									<div class="nav-collapse">
 										<h1 class="special-page-title"><?php the_title(); ?></h1>
-										<?php bones_register_nav(); // Adjust using Menus in Wordpress Admin ?>
 
 									</div>
 								</div>
