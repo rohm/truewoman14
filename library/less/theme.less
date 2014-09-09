@@ -582,7 +582,8 @@ input[type="password"] {
 
 @media (min-width: @screen-sm) {
   .page-wrap {
-    padding-top: 95px;
+		// padding-top: 95px;
+    padding-top: 135px;
   }
 }
 
@@ -789,6 +790,8 @@ article header {
     margin-left: 20px;
     margin-right: -10px;
   }
+	
+	
 
   #menu-share-nav {
 
@@ -2077,6 +2080,59 @@ footer[role="contentinfo"] {
   }
 }
 
+.pagename-live,
+.pagename-envivo {
+	background: darken(@red, 5%);
+	footer[role="contentinfo"] {
+		background: transparent;
+		color: #fff;
+		padding-bottom: 0;
+	} 
+	a {
+		color: lighten(@link-color, 15%);
+		&:hover {
+			color: lighten(@link-color, 25%);
+		}
+	}
+	header {
+		h1 {
+			.make-xs-column(5);
+		}
+		.audio-only {
+			.make-xs-column(7);
+			line-height: 2.5em;
+			text-align: right;
+		}
+	}
+	#main article.page {
+		padding-top: 0;
+		header {
+			h1 {
+				color: #fff;
+				margin-top: 0;
+			}
+		}
+	}
+	#toolbar-nav {
+		.navbar-nav > li {
+			> a:after {
+				margin-left: 15px;
+				margin-right: 0;
+			}
+			&:last-child > a:after {
+				content: "";
+			}
+		}
+	}
+	.chat {
+		background: #fff;
+		padding: 30px;
+		min-height: 600px;
+		border-radius: 2px;
+		.box-shadow(0 3px 0 rgba(0,0,0,.2));
+	}
+}
+
 
 .promo-items {
   .info {
@@ -2158,6 +2214,10 @@ footer[role="contentinfo"] {
   line-height: @screen-indicator-size;
   border-radius: @screen-indicator-size;
   text-align: center;
+}
+
+.pure-form-aligned .pure-control-group label {
+	text-align: left;
 }
 
 @import "theme-responsive.less";

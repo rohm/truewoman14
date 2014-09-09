@@ -6858,7 +6858,7 @@ input[type="password"] {
 }
 @media (min-width: 768px) {
   .page-wrap {
-    padding-top: 95px;
+    padding-top: 135px;
   }
 }
 @media (max-width: 768px) {
@@ -8285,6 +8285,71 @@ footer[role="contentinfo"] #sbi_camera_button {
   white-space: nowrap;
   text-align: right;
 }
+.pagename-live,
+.pagename-envivo {
+  background: #9d2645;
+}
+.pagename-live footer[role="contentinfo"],
+.pagename-envivo footer[role="contentinfo"] {
+  background: transparent;
+  color: #fff;
+  padding-bottom: 0;
+}
+.pagename-live a,
+.pagename-envivo a {
+  color: #30c0fb;
+}
+.pagename-live a:hover,
+.pagename-envivo a:hover {
+  color: #62cffc;
+}
+.pagename-live header h1,
+.pagename-envivo header h1 {
+  position: relative;
+  float: left;
+  width: 41.66666666666667%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.pagename-live header .audio-only,
+.pagename-envivo header .audio-only {
+  position: relative;
+  float: left;
+  width: 58.333333333333336%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: 2.5em;
+  text-align: right;
+}
+.pagename-live #main article.page,
+.pagename-envivo #main article.page {
+  padding-top: 0;
+}
+.pagename-live #main article.page header h1,
+.pagename-envivo #main article.page header h1 {
+  color: #fff;
+  margin-top: 0;
+}
+.pagename-live #toolbar-nav .navbar-nav > li > a:after,
+.pagename-envivo #toolbar-nav .navbar-nav > li > a:after {
+  margin-left: 15px;
+  margin-right: 0;
+}
+.pagename-live #toolbar-nav .navbar-nav > li:last-child > a:after,
+.pagename-envivo #toolbar-nav .navbar-nav > li:last-child > a:after {
+  content: "";
+}
+.pagename-live .chat,
+.pagename-envivo .chat {
+  background: #fff;
+  padding: 30px;
+  min-height: 600px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
+}
 .promo-items .info {
   color: #46a546;
   font-weight: 500;
@@ -8362,6 +8427,9 @@ footer[role="contentinfo"] #sbi_camera_button {
   line-height: 40px;
   border-radius: 40px;
   text-align: center;
+}
+.pure-form-aligned .pure-control-group label {
+  text-align: left;
 }
 /*
 ////////////////////////////////////////////////////////////////

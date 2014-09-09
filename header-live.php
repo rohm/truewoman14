@@ -45,7 +45,7 @@
 	</head>
 
 
-	<body <?php body_class(); ?> data-type="background" data-speed="20">
+	<body <?php body_class(); ?> data-type="background" data-speed="20" id="live">
 
 	<div id="fb-root"></div>
 	<div class="page-wrap" data-type="background" data-speed="10">
@@ -92,9 +92,34 @@
 										<ul id="menu-back" class="nav navbar-nav"><li class="menu-item"><a href="/">&larr; Back to the Homepage</a></li></ul>
 										<ul id="menu-share-nav" class="nav navbar-nav">
 
+											<?php 
+												
+												if (is_page('envivo')) { 
+													echo '<li class="menu-item">
+														<a href="/live/">English</a>
+													</li>';
+												}
+												else { 
+													echo '<li class="menu-item">
+														<a href="/envivo/">Espanol</a>
+													</li>';
+												}
+											
+											?>
 											<li class="menu-item has-dropdown">
-
-												<a href="#" class="dropdown-toggle" data-toggle="dropdown">Share <i class="fa fa-share"></i></a>
+												
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													<?php
+														if (is_page('envivo')) {
+															echo 'Comparte';
+														}
+														else {
+															echo 'Share';
+														}
+													?>
+													 
+													
+													<i class="fa fa-share"></i></a>
 												<ul class="dropdown-menu">
 													<li id="menu-item-facebook" class="menu-item">
 														<div class="fb-like" data-href="http://www.truewoman14.com" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>
