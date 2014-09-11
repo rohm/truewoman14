@@ -787,3 +787,11 @@ function set_form_1_complete_cookie() {
 
 add_action( 'gform_after_submission_1', 'set_form_1_complete_cookie' );
 
+function set_form_2_complete_cookie() {
+	setcookie( 'form-1-complete', 1, strtotime( '+30 days' ), COOKIEPATH, COOKIE_DOMAIN, false, false );
+	
+}
+
+add_action( 'gform_after_submission_2', 'set_form_2_complete_cookie' );
+
+

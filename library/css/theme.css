@@ -8443,10 +8443,23 @@ footer[role="contentinfo"] #sbi_camera_button {
   background: transparent !important;
   padding-left: 0 !important;
 }
+.gform_wrapper div.validation_error,
+.gform_wrapper .gfield_error .gfield_label,
+.gform_wrapper .gfield_description.validation_message {
+  color: red;
+}
+.gform_wrapper li.gfield.gfield_error,
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+  border: 1px solid #ffb8b8;
+  background: #ffe0e0 !important;
+  border-radius: 3px;
+}
 .page-template-page-live-php .gform_wrapper {
   background-color: rgba(0, 0, 0, 0.2);
-  color: #fff;
+  background-color: #fff;
+  color: #333333;
   padding: 60px;
+  max-width: 100%;
 }
 .page-template-page-live-php .gform_wrapper input[type=text],
 .page-template-page-live-php .gform_wrapper input[type=email],
@@ -8466,7 +8479,7 @@ footer[role="contentinfo"] #sbi_camera_button {
 .page-template-page-live-php .gform_wrapper .ginput_complex label {
   text-transform: uppercase;
   font-family: "futura-pt";
-  color: rgba(255, 255, 255, 0.6);
+  color: #333333;
 }
 .page-template-page-live-php .gform_wrapper input[type="submit"] {
   background-color: #17b8fb;
@@ -8476,7 +8489,6 @@ footer[role="contentinfo"] #sbi_camera_button {
 }
 .page-template-page-live-php .gform_wrapper input[type="submit"]:hover {
   background-color: #7bd7fd;
-  color: #fff;
 }
 /*
 ////////////////////////////////////////////////////////////////

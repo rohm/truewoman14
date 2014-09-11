@@ -2221,13 +2221,26 @@ footer[role="contentinfo"] {
 		background: transparent !important;
 		padding-left: 0 !important;
 	}
+	div.validation_error,
+	.gfield_error .gfield_label,
+	.gfield_description.validation_message {
+		color: red;
+	}
+	li.gfield.gfield_error,
+	li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+		border: 1px solid lighten(red, 36%);
+		background: lighten(red, 44%) !important;
+		border-radius: 3px;
+	}
 }
 
 .page-template-page-live-php {
 	.gform_wrapper {
 		background-color: rgba(0,0,0,.2);
-		color: #fff;
+		background-color: #fff;
+		color: @text-color;
 		padding: @grid-gutter-width*2;
+		max-width: 100%;
 		input[type=text],
 		input[type=email],
 		input[type=url],
@@ -2249,7 +2262,7 @@ footer[role="contentinfo"] {
 			label {
 				text-transform: uppercase;
 				font-family: @font-family-base;
-				color: rgba(255,255,255,.6);
+				color: @text-color;
 			}
 		}
 		input[type="submit"] {
@@ -2257,7 +2270,6 @@ footer[role="contentinfo"] {
 			.transition(all .5s);
 			&:hover {
 				background-color: lighten(@brand-primary, 30%);
-				color: #fff;
 			}
 		}
 	}

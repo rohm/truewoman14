@@ -80,6 +80,8 @@
 			<div id="inner-header" class="clearfix">
 
 				<div class="navbar navbar-fixed-top">
+					
+					
 					<div id="ha-header" class="navbar-inner ha-header-large">
 						<div id="ha-header-brand" class="container">
 							<a class="navbar-brand" id="logo" title="<?php echo get_bloginfo('description'); ?>" href="<?php echo home_url(); ?>">

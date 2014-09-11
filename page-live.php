@@ -25,7 +25,18 @@ Template Name: Live
 													<?php the_title(); ?>
 												
 												</h1>
-												<a href="#" class="audio-only"><i class="fa fa-headphones fa-1x"></i> Switch to Audio Only</a>
+												<a href="#" class="audio-only"><i class="fa fa-headphones fa-1x"></i> 
+													<?php 
+												
+														if (is_page('envivo')) { 
+															echo 'Cambiar a sólo audio';
+														}
+														else { 
+															echo 'Switch to Audio Only';
+														}
+											
+													?>
+												</a>
 											</div>
 										</div>
 
@@ -37,12 +48,14 @@ Template Name: Live
 								// Need to figure out how to redirect to envivo for spanish users on envivo
 								// Maybe add a dropdown for language on form! 
 								
-									if ($_COOKIE['form-1-complete'] == 1) {
-									
-										include ('library/inc/_live.php');
-								
-									} else {
-									 	gravity_form(1, false, false, false, '', true, 12);
+									if ($_COOKIE['form-1-complete'] == 1 && (is_page('live'))) {
+											include ('library/inc/_live.php');
+										} elseif ($_COOKIE['form-1-complete'] == 1 && (is_page('envivo'))) {
+												include ('library/inc/_envivo.php');
+										} elseif ( is_page('envivo')) {
+												gravity_form(2, true, true, false, '', true, 12);
+										} else {
+										 		gravity_form(1, true, true, false, '', true, 12);
 									}
 									
 								?>
