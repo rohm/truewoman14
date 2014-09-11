@@ -29,8 +29,8 @@
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 
-  		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
+		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
+		<?php gravity_form_enqueue_scripts(1, true); ?>
 		<?php wp_head(); ?>
 		<!-- end of wordpress head -->
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -145,11 +145,8 @@
 							<nav class="main-nav" role="navigation">
 								<div class="container">
 
-									
-
 									<div class="nav-collapse">
 										<h1 class="special-page-title"><?php the_title(); ?></h1>
-
 									</div>
 								</div>
 							</nav>

@@ -777,3 +777,13 @@ function get_wpbs_theme_options(){
       }
 } // end get_wpbs_theme_options function
 
+// Trying to set a cookie through form submission through GravityForms
+
+
+function set_form_1_complete_cookie() {
+	setcookie( 'form-1-complete', 1, strtotime( '+30 days' ), COOKIEPATH, COOKIE_DOMAIN, false, false );
+	
+}
+
+add_action( 'gform_after_submission_1', 'set_form_1_complete_cookie' );
+
