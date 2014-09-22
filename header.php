@@ -42,15 +42,7 @@
 		<![endif]-->
 		<!-- typeahead plugin - if top nav search bar enabled -->
 		<!-- ?php require_once('library/typeahead.php'); ?-->
-		<script type="text/javascript" src="https://www.reviveourhearts.com/static/js/jquery.plugin.min.js"></script>
-		<script type="text/javascript" src="https://www.reviveourhearts.com/static/js/jquery.countdown.min.js"></script>
-		<script>
-        jQuery(function () {
-            var fullPriceDate = new Date();
-            fullPriceDate = new Date(2014, 9 - 1, 15);
-            jQuery('#defaultCountdown').countdown({until: fullPriceDate, format: 'DHm'});
-        });
-    </script>
+
 	</head>
 
 	<body <?php body_class(); ?> data-type="background" data-speed="20">
