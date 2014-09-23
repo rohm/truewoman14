@@ -1810,7 +1810,7 @@ footer[role="contentinfo"] {
 				.speaker {
 					.make-sm-column(4);
 					.make-xs-column(6);
-					&.speaker-susan {
+					&.speaker-kim {
 						.make-sm-column-offset(4);
 						clear: both;
 					}
@@ -2131,6 +2131,26 @@ footer[role="contentinfo"] {
 		border-radius: 2px;
 		.box-shadow(0 3px 0 rgba(0,0,0,.2));
 	}
+	.carousel {
+	  .item {
+	    left: 0 !important;
+	    .transition(opacity .4s); //adjust timing here
+	  }
+	  .carousel-control {
+	    background-image: none; // remove background gradients on controls
+	  }
+	  // Fade controls with items
+	  .next.left,
+	  .prev.right {
+	    opacity: 1;
+	    z-index: 1;
+	  }
+	  .active.left,
+	  .active.right {
+	    opacity: 0;
+	    z-index: 2;
+	  }
+	}
 }
 
 
@@ -2235,6 +2255,22 @@ footer[role="contentinfo"] {
 }
 
 .page-template-page-live-php {
+	#main article.page section.post_content .live-placeholder {
+		background-color: #333;
+		background-image: url('../img/live-placeholder-bg.jpg');
+		background-position: center top;
+		background-repeat: no-repeat;
+		color: #fff;
+		padding: 50px;
+		min-height: 360px;
+		.box-sizing(border-box);
+		text-align: center;
+		border-radius: 2px;
+		h2 {
+			font-size: 1.5em;
+			line-height: 1.7em;
+		}
+	}
 	.gform_wrapper {
 		background-color: rgba(0,0,0,.2);
 		background-color: #fff;

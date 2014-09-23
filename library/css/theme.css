@@ -8047,11 +8047,11 @@ footer[role="contentinfo"] #sbi_camera_button {
     width: 33.33333333333333%;
   }
 }
-.home article.page .paper #speakers .speaker.speaker-susan {
+.home article.page .paper #speakers .speaker.speaker-kim {
   clear: both;
 }
 @media (min-width: 768px) {
-  .home article.page .paper #speakers .speaker.speaker-susan {
+  .home article.page .paper #speakers .speaker.speaker-kim {
     margin-left: 33.33333333333333%;
   }
 }
@@ -8361,6 +8361,31 @@ footer[role="contentinfo"] #sbi_camera_button {
   -webkit-box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.2);
 }
+.pagename-live .carousel .item,
+.pagename-envivo .carousel .item {
+  left: 0 !important;
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+.pagename-live .carousel .carousel-control,
+.pagename-envivo .carousel .carousel-control {
+  background-image: none;
+}
+.pagename-live .carousel .next.left,
+.pagename-envivo .carousel .next.left,
+.pagename-live .carousel .prev.right,
+.pagename-envivo .carousel .prev.right {
+  opacity: 1;
+  z-index: 1;
+}
+.pagename-live .carousel .active.left,
+.pagename-envivo .carousel .active.left,
+.pagename-live .carousel .active.right,
+.pagename-envivo .carousel .active.right {
+  opacity: 0;
+  z-index: 2;
+}
 .promo-items .info {
   color: #46a546;
   font-weight: 500;
@@ -8453,6 +8478,24 @@ footer[role="contentinfo"] #sbi_camera_button {
   border: 1px solid #ffb8b8;
   background: #ffe0e0 !important;
   border-radius: 3px;
+}
+.page-template-page-live-php #main article.page section.post_content .live-placeholder {
+  background-color: #333;
+  background-image: url('../img/live-placeholder-bg.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 50px;
+  min-height: 360px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 2px;
+}
+.page-template-page-live-php #main article.page section.post_content .live-placeholder h2 {
+  font-size: 1.5em;
+  line-height: 1.7em;
 }
 .page-template-page-live-php .gform_wrapper {
   background-color: rgba(0, 0, 0, 0.2);

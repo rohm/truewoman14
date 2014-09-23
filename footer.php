@@ -125,12 +125,7 @@ jQuery('.ha-waypoint').each( function(i) {
 <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
 <?php wp_footer(); // js scripts are inserted using this function ?>
 
-<div class="size">
-	<div class="visible-xs">xs</div>
-	<div class="visible-sm">sm</div>
-	<div class="visible-md">md</div>
-	<div class="visible-lg">lg</div>
-</div>
+
 </body>
 
 </html>
