@@ -1025,6 +1025,7 @@ article header {
 .navbar-inner {
   background: @red;
   border: none;
+	min-height: 78px;
   /*.box-shadow(none) !important;*/
 }
 
@@ -2098,10 +2099,13 @@ footer[role="contentinfo"] {
 		h1 {
 			.make-xs-column(5);
 		}
-		.audio-only {
+		nav {
 			.make-xs-column(7);
 			line-height: 2.5em;
 			text-align: right;
+			> a {
+				margin-left: 15px;
+			}
 		}
 	}
 	#main article.page {

@@ -25,18 +25,31 @@ Template Name: Live
 													<?php the_title(); ?>
 												
 												</h1>
-												<a href="#" class="audio-only"><i class="fa fa-headphones fa-1x"></i> 
-													<?php 
+												<nav>
+													<a class="schedule" href="/schedule/#main-conference">
+														<i class="fa fa-list"></i> Schedule
+													</a>
+													<?php
+													 if ($_COOKIE['form-1-complete']) {
+														 ?>   
+													 
+															<a href="#" class="audio-only"><i class="fa fa-headphones fa-1x"></i> 
+																<?php 
 												
-														if (is_page('envivo')) { 
-															echo 'Cambiar a sólo audio';
-														}
-														else { 
-															echo 'Switch to Audio Only';
-														}
+																	if (is_page('envivo')) { 
+																		echo 'Cambiar a sólo audio';
+																	}
+																	else { 
+																		echo 'Switch to Audio Only';
+																	}
 											
+																?>
+															</a>
+														
+														 <?php
+													 }
 													?>
-												</a>
+												</nav>
 											</div>
 										</div>
 

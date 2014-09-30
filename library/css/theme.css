@@ -7292,6 +7292,7 @@ article header .banner p {
 .navbar-inner {
   background: #b22b4e;
   border: none;
+  min-height: 78px;
   /*.box-shadow(none) !important;*/
 }
 .navbar-default .navbar-collapse {
@@ -8323,8 +8324,8 @@ footer[role="contentinfo"] #sbi_camera_button {
   padding-left: 15px;
   padding-right: 15px;
 }
-.pagename-live header .audio-only,
-.pagename-envivo header .audio-only {
+.pagename-live header nav,
+.pagename-envivo header nav {
   position: relative;
   float: left;
   width: 58.333333333333336%;
@@ -8333,6 +8334,10 @@ footer[role="contentinfo"] #sbi_camera_button {
   padding-right: 15px;
   line-height: 2.5em;
   text-align: right;
+}
+.pagename-live header nav > a,
+.pagename-envivo header nav > a {
+  margin-left: 15px;
 }
 .pagename-live #main article.page,
 .pagename-envivo #main article.page {
