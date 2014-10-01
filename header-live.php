@@ -16,6 +16,9 @@
 		<meta property="og:image" content="http://truewoman14.s3.amazonaws.com/library/img/facebook-og.jpg"/>
 		<meta property="og:site_name" content="<?php bloginfo('name'); ?>"/>
 		<meta property="og:description" content="If you long to know Christ in a close, all-consuming way . . . if you long to come apart and fix your eyes on Him . . . True Woman &rsquo;14 is your ticket." />
+		<meta name="apple-itunes-app" content="app-id=920024022" />
+		<meta name="google-play-app" content="app-id=com.attendify.truewoman2014" />
+		
 		<script type="text/javascript" src="//use.typekit.net/xmt6rje.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
@@ -36,6 +39,7 @@
 		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href="<?php echo get_template_directory_uri(); ?>/library/css/theme.css" rel="stylesheet" type="text/css">
 		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/library/css/jquery.smartbanner.css" type="text/css" media="screen">
 		<!--[if lte IE 10]>
 			<link href="<?php echo get_template_directory_uri(); ?>/library/css/ie.css" rel="stylesheet" type="text/css"></link>
 		<![endif]-->
@@ -65,8 +69,58 @@
 
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse" id="xs-menus">
-						<?php bones_main_nav(); // Adjust using Menus in Wordpress Admin ?>
-						<?php bones_toolbar_nav(); // Adjust using Menus in Wordpress Admin ?>
+						<ul id="menu-share-nav" class="nav navbar-nav">
+
+							<?php 
+								
+								if (is_page('envivo')) { 
+									echo '<li class="menu-item">
+										<a href="/live/">English</a>
+									</li>
+									<li class="menu-item menu-item-donate">
+										<a href="https://www.reviveourhearts.com/donate/">Donaciones</a>
+									</li>';
+								}
+								else { 
+									echo '<li class="menu-item">
+										<a href="/envivo/">Espa&ntilde;ol</a>
+									</li>
+									<li class="menu-item menu-item-donate">
+										<a href="https://www.avivanuestroscorazones.com/donate/">Donate</a>
+									</li>';
+								}
+							
+							?>
+
+							<li class="menu-item has-dropdown">
+								
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<?php
+										if (is_page('envivo')) {
+											echo 'Comparte';
+										}
+										else {
+											echo 'Share';
+										}
+									?>
+									 
+									
+									<i class="fa fa-share"></i></a>
+								<ul class="dropdown-menu">
+									<li id="menu-item-facebook" class="menu-item">
+										<div class="fb-like" data-href="http://www.truewoman14.com" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+									</li>
+									<li id="menu-item-twitter" class="menu-item">
+										<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.truewoman14.com" data-via="truewoman"  data-hashtags="truewoman14">Tweet</a>
+										<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+									</li>
+									<li id="menu-item-pinterest" class="menu-item">
+										<a href="//pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.truewoman14.com&media=http%3A%2F%2Ftruewoman14.com.s3.amazonaws.com%2Flibrary%2Fimg%2Ffacebook-og.jpg&description=True%20Woman%20%26rsquo%3B14%20%7C%20Finding%20Freedom%2C%20Fullness%20%26amp%3B%20Fruitfullness%20in%20Christ" data-pin-do="buttonPin" data-pin-config="none"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" /></a>
+									</li>
+								</ul>
+							</li>
+
+						</ul>
 
 
 					</div><!-- /.navbar-collapse -->
@@ -99,15 +153,22 @@
 												if (is_page('envivo')) { 
 													echo '<li class="menu-item">
 														<a href="/live/">English</a>
+													</li>
+													<li class="menu-item menu-item-donate">
+														<a href="https://www.reviveourhearts.com/donate/">Donaciones</a>
 													</li>';
 												}
 												else { 
 													echo '<li class="menu-item">
-														<a href="/envivo/">Espanol</a>
+														<a href="/envivo/">Espa&ntilde;ol</a>
+													</li>
+													<li class="menu-item menu-item-donate">
+														<a href="https://www.avivanuestroscorazones.com/donate/">Donate</a>
 													</li>';
 												}
 											
 											?>
+
 											<li class="menu-item has-dropdown">
 												
 												<a href="#" class="dropdown-toggle" data-toggle="dropdown">

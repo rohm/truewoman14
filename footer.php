@@ -42,6 +42,12 @@
 <![endif]-->
 <!-- <script src="<?php echo get_template_directory_uri(); ?>/library/js/jquery.plugin.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/library/js/jquery.countdown.min.js"></script> -->
+<script src="<?php echo get_template_directory_uri(); ?>/library/js/jquery.smartbanner.js"></script>
+    <script type="text/javascript">
+      jQuery(function() { 
+				$.smartbanner() 
+			});
+    </script>
 <script src="<?php echo get_template_directory_uri(); ?>/library/js/waypoints.min.js"></script>
 <script type="text/javascript">
 var $head = jQuery( '#ha-header' );

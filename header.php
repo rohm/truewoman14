@@ -16,6 +16,9 @@
 		<meta property="og:image" content="http://truewoman14.s3.amazonaws.com/library/img/facebook-og.jpg"/>
 		<meta property="og:site_name" content="<?php bloginfo('name'); ?>"/>
 		<meta property="og:description" content="If you long to know Christ in a close, all-consuming way . . . if you long to come apart and fix your eyes on Him . . . True Woman &rsquo;14 is your ticket." />
+		<meta name="apple-itunes-app" content="app-id=920024022" />
+		<meta name="google-play-app" content="app-id=com.attendify.truewoman2014" />
+		
 		<script type="text/javascript" src="//use.typekit.net/xmt6rje.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 

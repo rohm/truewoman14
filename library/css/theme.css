@@ -8064,6 +8064,11 @@ footer[role="contentinfo"] #sbi_camera_button {
     margin-left: 16.666666666666664%;
   }
 }
+@media (min-width: 768px) {
+  .home article.page .paper #speakers .speaker.speaker-ctc {
+    margin-left: 33.33333333333333%;
+  }
+}
 .home article.page .paper #testimonials {
   padding: 50px 50px 50px;
   text-align: center;
@@ -8125,6 +8130,11 @@ footer[role="contentinfo"] #sbi_camera_button {
     background-size: 8px 8px;
     background-image: url('http://truewoman14.s3.amazonaws.com/library/img/bullet-circle@2x.png');
     background-position: 2px 6px;
+  }
+}
+@media (max-width: 768px) {
+  .speaker:nth-child(2n+1) {
+    clear: both;
   }
 }
 .pagename-faqs #main article.page .qa-faqs h2.faq-catname,
@@ -8339,6 +8349,20 @@ footer[role="contentinfo"] #sbi_camera_button {
 .pagename-envivo header nav > a {
   margin-left: 15px;
 }
+.pagename-live h1,
+.pagename-envivo h1,
+.pagename-live h2,
+.pagename-envivo h2,
+.pagename-live h3,
+.pagename-envivo h3,
+.pagename-live h4,
+.pagename-envivo h4,
+.pagename-live h5,
+.pagename-envivo h5,
+.pagename-live h6,
+.pagename-envivo h6 {
+  color: #fff;
+}
 .pagename-live #main article.page,
 .pagename-envivo #main article.page {
   padding-top: 0;
@@ -8350,12 +8374,14 @@ footer[role="contentinfo"] #sbi_camera_button {
 }
 .pagename-live #toolbar-nav .navbar-nav > li > a:after,
 .pagename-envivo #toolbar-nav .navbar-nav > li > a:after {
-  margin-left: 15px;
+  margin-left: 0;
   margin-right: 0;
-}
-.pagename-live #toolbar-nav .navbar-nav > li:last-child > a:after,
-.pagename-envivo #toolbar-nav .navbar-nav > li:last-child > a:after {
   content: "";
+}
+.pagename-live #toolbar-nav .navbar-nav > li > a,
+.pagename-envivo #toolbar-nav .navbar-nav > li > a {
+  padding: 10px!important;
+  margin: 0px !important;
 }
 .pagename-live .chat,
 .pagename-envivo .chat {
@@ -8390,6 +8416,28 @@ footer[role="contentinfo"] #sbi_camera_button {
 .pagename-envivo .carousel .active.right {
   opacity: 0;
   z-index: 2;
+}
+.pagename-live .table,
+.pagename-envivo .table {
+  background: transparent;
+  border-color: #9d2645;
+}
+.pagename-live .table td,
+.pagename-envivo .table td,
+.pagename-live .table th,
+.pagename-envivo .table th {
+  background-color: #83233C;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: #9d2645;
+  color: #fff;
+}
+.pagename-live .table .column-session,
+.pagename-envivo .table .column-session {
+  width: 70%;
+}
+.pagename-live .table .column-time,
+.pagename-envivo .table .column-time {
+  width: 30%;
 }
 .promo-items .info {
   color: #46a546;

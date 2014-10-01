@@ -2,7 +2,7 @@
 									<div class="col-sm-8">
 										<!-- iframe src="http://new.livestream.com/accounts/4812924/events/3230785/player?width=640&height=360&autoPlay=false&mute=false" width="100%" height="360" frameborder="0" scrolling="no"> </iframe -->
 										<div class="live-placeholder">
-											<h2>The True Woman &rsquo;14 Livestream begins shortly before 6:45&nbsp;p.m. on Thursday, October 9.</h2>
+											<h2>La transmisión en vivo de la conferencia de True Woman 2014 iniciará unos minutos antes de las 6:45 PM, ET, el&nbsp;jueves&nbsp;9 de&nbsp;octubre.</h2>
 										</div>
 									</div>
 									<div class="twitter-stream col-sm-4">
